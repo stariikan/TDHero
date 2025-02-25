@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\TD\UI\DamageNumberUI.cs" />
     <Compile Include="Assets\Scripts\TD\Magic\ElectricShield.cs" />
     <Compile Include="Assets\Scripts\TD\Level\LevelManager.cs" />
+    <Compile Include="Assets\Unity_content\Effects\Vefects\Trails VFX\Scripts\Demo_TurningAround.cs" />
     <Compile Include="Assets\Scripts\TD\General\ModelColorChanger.cs" />
     <Compile Include="Assets\Scripts\TD\Generate\Map_Generate.cs" />
     <Compile Include="Assets\Scripts\TD\UI\TowerMenu\TowerMenu.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Assets\Scripts\TD\Monsters\Enemy_stats.cs" />
     <Compile Include="Assets\Scripts\TD\UI\InputDisplay.cs" />
     <Compile Include="Assets\Scripts\TD\Player\PlayerStats.cs" />
+    <Compile Include="Assets\Unity_content\Effects\Vefects\Trails VFX\Scripts\Demo_FreeCam.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -109,6 +111,8 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\ThirdPartyLicenses\Arvo Font License.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Unity_content\Effects\Vefects\Trails VFX\VFX\Shaders\SH_Vefects_VFX_AdvTrail.shader" />
+    <None Include="Assets\Unity_content\Effects\Vefects\Trails VFX\VFX\Shaders\SH_Vefects_VFX_Distortion.shader" />
     <None Include="Assets\Unity_content\Environment\Polytope Studio\Lowpoly_Village\Sources\Shaders\PT_Buildings_Shader_PBR.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\Fonts\BebasNeue\OFL.txt" />

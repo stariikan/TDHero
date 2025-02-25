@@ -1,0 +1,528 @@
+Using pre-set license
+Built from '2023.1/staging' branch; Version is '2023.1.20f1 (35a524b12060) revision 3515684'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32699 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.1.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/UnityGame/MagicInsector
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+60771
+Successfully changed project path to: C:/UnityGame/MagicInsector
+C:/UnityGame/MagicInsector
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [9252] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 2540651356 [EditorId] 2540651356 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [9252] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 2540651356 [EditorId] 2540651356 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 13.49 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.1.20f1 (35a524b12060)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityGame/MagicInsector/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.6590
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.005932 seconds.
+- Loaded All Assemblies, in  0.569 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 412 ms
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.897 seconds
+Domain Reload Profiling: 1462ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (252ms)
+		LoadAssemblies (172ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (243ms)
+			TypeCache.Refresh (241ms)
+				TypeCache.ScanAssembly (222ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (897ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (838ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (561ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (186ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  1.311 seconds
+Refreshing native plugins compatible for Editor in 5.75 ms, found 5 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\UnityGame\MagicInsector\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <376f43f3329c444db4613258b017d5db>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-TD
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.135 seconds
+Domain Reload Profiling: 2442ms
+	BeginReloadAssembly (385ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (815ms)
+		LoadAssemblies (402ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (516ms)
+			TypeCache.Refresh (468ms)
+				TypeCache.ScanAssembly (445ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1136ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (826ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (136ms)
+			ProcessInitializeOnLoadAttributes (612ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 7.82 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 112 unused Assets / (4.3 MB). Loaded Objects now: 4781.
+Memory consumption went from 327.1 MB to 322.8 MB.
+Total: 10.680500 ms (FindLiveObjects: 0.952200 ms CreateObjectMapping: 0.453200 ms MarkObjects: 7.046200 ms  DeleteObjects: 2.226800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/Demo_TurningAround.cs: 81f6d63e64c8ded113e2ad22fedd7e86 -> 9d68750fa4869b8fd6d7a0e3b1544925
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Demo_FreeCam.cs: e0dde267075d440dc69d9f081a817ac2 -> 4b2f37dcaf4b64981991393c1397d03c
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 777383.078248 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Models/tree_pine.fbx
+  artifactKey: Guid(28ec0bb42af1dca4f955e51a6975f5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Models/tree_pine.fbx using Guid(28ec0bb42af1dca4f955e51a6975f5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880c6f1d60a29d9e33da4cf42e751caf') in 0.312123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonNightmare/BlueHP.mat
+  artifactKey: Guid(81d2b67dc7484724095d4343217c4e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonNightmare/BlueHP.mat using Guid(81d2b67dc7484724095d4343217c4e31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0419d12e78e6364a8d5bd77874172f') in 0.027051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Unity_content/UI/SteampunkUI/Fonts/Custom Sprite Font/Custom Sprite Font.asset
+  artifactKey: Guid(c4a71e6953099f44e85f2befe7e14bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/SteampunkUI/Fonts/Custom Sprite Font/Custom Sprite Font.asset using Guid(c4a71e6953099f44e85f2befe7e14bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efb7e61ff55c80ce9417f4912453aec') in 0.036999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Matereals/vegetation/Flowers.mat
+  artifactKey: Guid(9499c6107f11eb54e91bf81d1cf996c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Matereals/vegetation/Flowers.mat using Guid(9499c6107f11eb54e91bf81d1cf996c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a982adcc3d26b163efbcacd7734190da') in 0.021674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Models/mountain_snow_2.fbx
+  artifactKey: Guid(c8efccd6fa8cc4b468a8c28cac6efec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Models/mountain_snow_2.fbx using Guid(c8efccd6fa8cc4b468a8c28cac6efec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631e45389c7bd6fb0ffaf106733a914f') in 0.023086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Materials/Shading/Graphs_Waterfall_Material.mat
+  artifactKey: Guid(7dc30d60f799a8c448490dbcfbf27809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Materials/Shading/Graphs_Waterfall_Material.mat using Guid(7dc30d60f799a8c448490dbcfbf27809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640742d4d12d7c8cc4a6c7d9aa8d8ffb') in 0.008200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Models/cliff_5.fbx
+  artifactKey: Guid(dac459845209bf24198646d051433cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Models/cliff_5.fbx using Guid(dac459845209bf24198646d051433cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aed037218d81c867ab06184aed86710') in 0.032856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Models/tree_pine_naked.fbx
+  artifactKey: Guid(36a01830a9d14734a88d5dba38f0070e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Models/tree_pine_naked.fbx using Guid(36a01830a9d14734a88d5dba38f0070e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c9a8e97a1f9cbe1b8d2a8ed434a42f') in 0.027529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Models/tree_normal_naked.fbx
+  artifactKey: Guid(9653b399efa7b4f41a042501ecd11479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Models/tree_normal_naked.fbx using Guid(9653b399efa7b4f41a042501ecd11479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2006987189989c08f53236369e48cb') in 0.029796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/tree/Trees .fbx
+  artifactKey: Guid(668c78fc50ba1014ba896ad39944b04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/tree/Trees .fbx using Guid(668c78fc50ba1014ba896ad39944b04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be56bfc6fc7c0d04f321585c5312a93c') in 0.127864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonSoulEater/BlueHP.mat
+  artifactKey: Guid(5fcde950c31077243850f23d14ba9a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonSoulEater/BlueHP.mat using Guid(5fcde950c31077243850f23d14ba9a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c2850a637b6ec82c57140444c77587') in 0.023135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonNightmare/AlbinoHP.mat
+  artifactKey: Guid(8000a685f5b509b45b455c9ffd1f347f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonNightmare/AlbinoHP.mat using Guid(8000a685f5b509b45b455c9ffd1f347f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '181c6e9330d258539363867a52c56264') in 0.029619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Unity_content/UI/SteampunkUI/Fonts/Arvo/Arvo.ttf
+  artifactKey: Guid(e5c356a4b721b024daa3ce4df25a2a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/SteampunkUI/Fonts/Arvo/Arvo.ttf using Guid(e5c356a4b721b024daa3ce4df25a2a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3ec4f8ddfac6824db3525cc5b6f258') in 0.337341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 20.318882 seconds.
+  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonSoulEater/GreenHP.mat
+  artifactKey: Guid(1b51484aceb3349479b6c084713a5517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonSoulEater/GreenHP.mat using Guid(1b51484aceb3349479b6c084713a5517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6fc6f36f5070a6f6ef17d078acc9e21') in 0.023028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.463649 seconds.
+  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonTerrorBringer/GreenHP.mat
+  artifactKey: Guid(63a8442de5af83f49902935ef0d8904e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonTerrorBringer/GreenHP.mat using Guid(63a8442de5af83f49902935ef0d8904e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987d87da35b61ed4bafce71b7111aa27') in 0.020583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.039177 seconds.
+  path: Assets/Unity_content/Enemies/DreamGrid/Demo/Materials/Ground.mat
+  artifactKey: Guid(0eb6e17e6a0b64d4ab298727e23544f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/DreamGrid/Demo/Materials/Ground.mat using Guid(0eb6e17e6a0b64d4ab298727e23544f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639720df5ac55671d71853777fec4aa8') in 0.015209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 56.676399 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Materials/Ground/Ground_Dirt_Material.mat
+  artifactKey: Guid(afc641d8c852f5a47ba395f485469743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Materials/Ground/Ground_Dirt_Material.mat using Guid(afc641d8c852f5a47ba395f485469743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b05d098dd40d3da0ee59ef006e480b') in 0.078745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Materials/Ground/Ground_Grass_Leaves_Green_Material.mat
+  artifactKey: Guid(8787faed01d461043a97b78c9c54c029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Materials/Ground/Ground_Grass_Leaves_Green_Material.mat using Guid(8787faed01d461043a97b78c9c54c029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a43cef101434b346562aae39e9452a') in 0.060889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 2.652021 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Materials/Ground/Ground_Grass_Material_Sphere.mat
+  artifactKey: Guid(ce8572ef25b89e344b09d27a8b17ea23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Materials/Ground/Ground_Grass_Material_Sphere.mat using Guid(ce8572ef25b89e344b09d27a8b17ea23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f063cf844fe359ba9c28410222de3a') in 0.094374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Materials/Ground/Ground_Sand_Leaves_Green_Material.mat
+  artifactKey: Guid(c530e1b9556167144a57a41ad710c98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Materials/Ground/Ground_Sand_Leaves_Green_Material.mat using Guid(c530e1b9556167144a57a41ad710c98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '506cd68f85297c02e94892dcc717a791') in 0.061229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 1588.787444 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Animation
+  artifactKey: Guid(951d0eb99704d4a4d9111839be06b4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Animation using Guid(951d0eb99704d4a4d9111839be06b4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3b098bbdf5698fd57110a523ee9e66') in 0.000851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 73.045786 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature
+  artifactKey: Guid(242716be0d628d7429f8c23930d40798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature using Guid(242716be0d628d7429f8c23930d40798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a916bf04f182d981ba67c4646b9e28') in 0.000691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.749614 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Weeping_Willow_Yellow_Material_Albedo.png
+  artifactKey: Guid(19498d101a827ba46bc4b684901b16f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Weeping_Willow_Yellow_Material_Albedo.png using Guid(19498d101a827ba46bc4b684901b16f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f427b6e446938ebc53fcbd2a9c0c49f') in 0.075705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Weeping_Willow_Yellow_Material_AO.png
+  artifactKey: Guid(c1d4e2e5275ae764f917361f112bb44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Weeping_Willow_Yellow_Material_AO.png using Guid(c1d4e2e5275ae764f917361f112bb44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2e97e3f37004bb0a5c5d40c1f166d4') in 0.047693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.195419 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Weeping_Willow_Material_Albedo.png
+  artifactKey: Guid(db7ed30986b220341bd2d5bfc6947a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Weeping_Willow_Material_Albedo.png using Guid(db7ed30986b220341bd2d5bfc6947a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '244a27648da4a8c7e6f5bdfc117d5139') in 0.033605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.291760 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Pine_Snow_Material_Albedo.png
+  artifactKey: Guid(f3cc801e9767af245bb8e8a719d363ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Pine_Snow_Material_Albedo.png using Guid(f3cc801e9767af245bb8e8a719d363ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972b1b49da722702e437fcec4271cd14') in 0.032425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Pine_Snow_Material_AO.png
+  artifactKey: Guid(c598ecfd46f5f294fb30cfe101fdc4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Pine_Snow_Material_AO.png using Guid(c598ecfd46f5f294fb30cfe101fdc4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5730fba6f426f93d68eb0568093e18') in 0.029046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.147430 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Pine_Material_Albedo.png
+  artifactKey: Guid(730a544b77a98354aacf59921388f947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Pine_Material_Albedo.png using Guid(730a544b77a98354aacf59921388f947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '109feb153b366db012131f7fa8d47f92') in 0.032492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Pine_Material_AO.png
+  artifactKey: Guid(259300c289afc144596349f81d640db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Pine_Material_AO.png using Guid(259300c289afc144596349f81d640db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d87144e28b5627fd0301feafd2fd2e') in 0.027222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.148399 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Normal_Yellow_Material_Albedo.png
+  artifactKey: Guid(d86bfb0c919e8a54199128cb5be73452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Normal_Yellow_Material_Albedo.png using Guid(d86bfb0c919e8a54199128cb5be73452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb2e63db8a2bd0d4f4ee52d0af2c93b') in 0.032233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.202873 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Normal_Material_Albedo.png
+  artifactKey: Guid(dbc0e33dc0a438242b66ffe2c6a62ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/leaves/Branch_Leaves_Normal_Material_Albedo.png using Guid(dbc0e33dc0a438242b66ffe2c6a62ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4875c6d16a7460e87d19727933cbd8') in 0.035404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.220190 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/waterfall_bottom_ripples.png
+  artifactKey: Guid(0e702041e31923143944af144471cb06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/waterfall_bottom_ripples.png using Guid(0e702041e31923143944af144471cb06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f66489501f06d5e2a01151c4e7ca9ef') in 0.265585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.600220 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Textures/clouds_map.png
+  artifactKey: Guid(2b4161acfcca63746aac6e4eebb0660b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Textures/clouds_map.png using Guid(2b4161acfcca63746aac6e4eebb0660b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78544e92e4fb7d1621ffdc8c33e25fcb') in 0.016651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 24.422894 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Terrain
+  artifactKey: Guid(83b0331a7da12bd4cb415b4dbf1bd5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Terrain using Guid(83b0331a7da12bd4cb415b4dbf1bd5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0472bd4f1777fcae877bc6db0688d30d') in 0.000658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.777724 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Terrain/layers
+  artifactKey: Guid(0b1f111fd7e123e47b2e04756d8aad66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Terrain/layers using Guid(0b1f111fd7e123e47b2e04756d8aad66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9161347988c0c3350dde071747671791') in 0.000603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 145.162366 seconds.
+  path: Assets/Unity_content/Environment/LowPolyNature/Shaders/Water_Flow_Shader.shadergraph
+  artifactKey: Guid(f59b7a064344e5c4eba8715c656c4bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/LowPolyNature/Shaders/Water_Flow_Shader.shadergraph using Guid(f59b7a064344e5c4eba8715c656c4bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7798f9d304cd5640a74d99529784830') in 0.015374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.

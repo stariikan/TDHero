@@ -15,7 +15,7 @@ C:/UnityGame/MagicInsector
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52795
+61255
 Successfully changed project path to: C:/UnityGame/MagicInsector
 C:/UnityGame/MagicInsector
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/UnityGame/MagicInsector
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9648] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 1231218628 [EditorId] 1231218628 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11912] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 3322483859 [EditorId] 3322483859 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9648] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 1231218628 [EditorId] 1231218628 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11912] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 3322483859 [EditorId] 3322483859 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 150.26 ms, found 5 plugins.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 12.79 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.1.20f1 (35a524b12060)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Resources/UnitySubsystems
@@ -70,7 +70,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -86,44 +86,44 @@ Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.005724 seconds.
-- Loaded All Assemblies, in  1.710 seconds
+Registered in 0.006299 seconds.
+- Loaded All Assemblies, in  0.463 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 420 ms
+Android Extension - Scanning For ADB Devices 410 ms
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.801 seconds
-Domain Reload Profiling: 2508ms
-	BeginReloadAssembly (354ms)
+- Finished resetting the current domain, in  0.845 seconds
+Domain Reload Profiling: 1306ms
+	BeginReloadAssembly (139ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (231ms)
-	RebuildNativeTypeToScriptingClass (14ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (13ms)
 	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (1048ms)
-		LoadAssemblies (351ms)
+	LoadAllAssembliesAndSetupDomain (202ms)
+		LoadAssemblies (136ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1041ms)
-			TypeCache.Refresh (1040ms)
-				TypeCache.ScanAssembly (749ms)
+		AnalyzeDomain (195ms)
+			TypeCache.Refresh (194ms)
+				TypeCache.ScanAssembly (179ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (801ms)
+	FinalizeReload (846ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (752ms)
+		SetupLoadedEditorAssemblies (789ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (532ms)
+			InitializePlatformSupportModulesInManaged (537ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (9ms)
-			ProcessInitializeOnLoadAttributes (138ms)
-			ProcessInitializeOnLoadMethodAttributes (70ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (168ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -144,8 +144,8 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  2.328 seconds
-Refreshing native plugins compatible for Editor in 5.26 ms, found 5 plugins.
+- Loaded All Assemblies, in  1.061 seconds
+Refreshing native plugins compatible for Editor in 5.23 ms, found 5 plugins.
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
@@ -153,164 +153,49 @@ Native extension for WindowsStandalone target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-TD
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.192 seconds
-Domain Reload Profiling: 3516ms
-	BeginReloadAssembly (254ms)
+- Finished resetting the current domain, in  1.085 seconds
+Domain Reload Profiling: 2139ms
+	BeginReloadAssembly (324ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (1983ms)
-		LoadAssemblies (1621ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (622ms)
+		LoadAssemblies (358ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (449ms)
-			TypeCache.Refresh (415ms)
-				TypeCache.ScanAssembly (357ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1193ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (977ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (836ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 5.34 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4215 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 112 unused Assets / (4.3 MB). Loaded Objects now: 4777.
-Memory consumption went from 326.4 MB to 322.0 MB.
-Total: 8.423400 ms (FindLiveObjects: 0.408800 ms CreateObjectMapping: 0.111700 ms MarkObjects: 6.173900 ms  DeleteObjects: 1.727100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 606204.592890 seconds.
-  path: Assets/Scripts/TD/Magic/PoisonSphere.cs
-  artifactKey: Guid(02c7293e780e0384ca0a082c20db2016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/TD/Magic/PoisonSphere.cs using Guid(02c7293e780e0384ca0a082c20db2016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ca2df69affaf5006ea3da9363c8c8e') in 0.003860 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  0.786 seconds
-Refreshing native plugins compatible for Editor in 5.65 ms, found 5 plugins.
-Native extension for Android target not found
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\UnityGame\MagicInsector\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <cb3602b5bf2148caa08db7780ec02b19>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <cb3602b5bf2148caa08db7780ec02b19>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <cb3602b5bf2148caa08db7780ec02b19>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <cb3602b5bf2148caa08db7780ec02b19>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <cb3602b5bf2148caa08db7780ec02b19>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <376f43f3329c444db4613258b017d5db>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
-[MODES] ModeService[none].Initialize
-[MODES] ModeService[none].LoadModes
-[MODES] Loading mode Default (0) for mode-current-id-TD
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.210 seconds
-Domain Reload Profiling: 1990ms
-	BeginReloadAssembly (181ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (49ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (520ms)
-		LoadAssemblies (303ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (305ms)
-			TypeCache.Refresh (287ms)
-				TypeCache.ScanAssembly (275ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
+		AnalyzeDomain (368ms)
+			TypeCache.Refresh (335ms)
+				TypeCache.ScanAssembly (317ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
 			ResolveRequiredComponents (11ms)
-	FinalizeReload (1211ms)
+	FinalizeReload (1085ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (561ms)
+		SetupLoadedEditorAssemblies (819ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (21ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (423ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (643ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 4.49 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 11.62 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4027 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 77 unused Assets / (4.3 MB). Loaded Objects now: 4779.
-Memory consumption went from 283.7 MB to 279.4 MB.
-Total: 7.792000 ms (FindLiveObjects: 0.428100 ms CreateObjectMapping: 0.130200 ms MarkObjects: 5.889800 ms  DeleteObjects: 1.342100 ms)
+Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 112 unused Assets / (4.3 MB). Loaded Objects now: 4781.
+Memory consumption went from 326.9 MB to 322.6 MB.
+Total: 9.236900 ms (FindLiveObjects: 0.679100 ms CreateObjectMapping: 0.180100 ms MarkObjects: 6.029700 ms  DeleteObjects: 2.345900 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
@@ -320,5 +205,184 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 779492.783720 seconds.
+  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/Vegetation/Flowers .fbx
+  artifactKey: Guid(66e5e502f6b51bb45abb02403474de3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/Vegetation/Flowers .fbx using Guid(66e5e502f6b51bb45abb02403474de3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23b6f957fe5ca9db3356a28dd617e526') in 0.176157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Electric_01.mat
+  artifactKey: Guid(28b125ea515132044b10f9ce4856c123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Electric_01.mat using Guid(28b125ea515132044b10f9ce4856c123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4960d5f4a9cd386c63ce52ad836f1d6b') in 0.155907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Shaders/Cloud.shadergraph
+  artifactKey: Guid(16f6b6d4f32c637419ca0e9a948f9241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Shaders/Cloud.shadergraph using Guid(16f6b6d4f32c637419ca0e9a948f9241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43fe9cccac38a79eab7487a6a0e2892d') in 0.017874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Fire_01.mat
+  artifactKey: Guid(1f40e5c28f5947e4080405595ab73414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Fire_01.mat using Guid(1f40e5c28f5947e4080405595ab73414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4187b2457b674b26b4228840d525d4') in 0.024399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Unity_content/Enemies/Mini Legion Rock Golem PBR HP Polyart/Materials/HP_Golem.mat
+  artifactKey: Guid(c8a253bc1d9e7814a87d01583a336bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/Mini Legion Rock Golem PBR HP Polyart/Materials/HP_Golem.mat using Guid(c8a253bc1d9e7814a87d01583a336bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e38c569f5cf58912c38d03218595ec') in 0.038285 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Distortion_01.mat
+  artifactKey: Guid(e8814d0af8059dd48b0f6abda21d5896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Distortion_01.mat using Guid(e8814d0af8059dd48b0f6abda21d5896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6266ad13f96485e321904337c443d489') in 0.089870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Unity_content/Enemies/RPGMonsterPartnersPBRPolyart/Animations/Chest Monster/Run.fbx
+  artifactKey: Guid(9484889ca71f47daa5169249032175d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/RPGMonsterPartnersPBRPolyart/Animations/Chest Monster/Run.fbx using Guid(9484889ca71f47daa5169249032175d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefbd0145bd1e1f5181c67c8b64f51a3') in 0.066367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 56
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Unity_content/Enemies/Monster Minion Survivor PBR Polyart/Material/PA_Default.mat
+  artifactKey: Guid(984bce432f27eec45886623bba2c741e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/Monster Minion Survivor PBR Polyart/Material/PA_Default.mat using Guid(984bce432f27eec45886623bba2c741e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a151cce804bc7fda060927268924c2') in 0.030588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Unity_content/Environment/Low-Poly medival defense/Models/Materials/No Name.mat
+  artifactKey: Guid(295a6c49f6e16d24ea757cfb42edef70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/Low-Poly medival defense/Models/Materials/No Name.mat using Guid(295a6c49f6e16d24ea757cfb42edef70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e0e25d0380586aaea9e4ae85d9056c') in 0.022689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Unity_content/Enemies/Spider Green/Spider_model/Materials/New Material.mat
+  artifactKey: Guid(9bbb4a8cbf1f9c94f98e9a4853fa3d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/Spider Green/Spider_model/Materials/New Material.mat using Guid(9bbb4a8cbf1f9c94f98e9a4853fa3d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff2816fcf51c83aa1ae036db63ff5cc') in 0.016763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Unity_content/Enemies/Mini Legion Lich PBR HP Polyart/Materials/HP.mat
+  artifactKey: Guid(62b1b109ebfd33d4ab81c69ff22c6813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/Mini Legion Lich PBR HP Polyart/Materials/HP.mat using Guid(62b1b109ebfd33d4ab81c69ff22c6813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1510641771d95857e2e446151570579') in 0.041437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Animations/DragonTerrorBringer/Run.fbx
+  artifactKey: Guid(9700edab3a23d7d408e78a7cb99cf41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Animations/DragonTerrorBringer/Run.fbx using Guid(9700edab3a23d7d408e78a7cb99cf41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46a8b8d50966887cf75596522183562') in 0.054252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 178
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Electric_02.mat
+  artifactKey: Guid(ee171b5befa8bf646b69e4e8108a1244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Electric_02.mat using Guid(ee171b5befa8bf646b69e4e8108a1244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95abf3d178458dcfff5340a048caa346') in 0.036051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/tree/tree 4.fbx
+  artifactKey: Guid(061d2d13dcd8c814a836683283acae47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/tree/tree 4.fbx using Guid(061d2d13dcd8c814a836683283acae47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6a59004f3e5e61cba2ecd80888afc5') in 0.069766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Nature_02.mat
+  artifactKey: Guid(ccf4748f8fcb76842b8aed4ebcaffbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Nature_02.mat using Guid(ccf4748f8fcb76842b8aed4ebcaffbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be295ba962bff4c3d554170329f07240') in 0.016097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Earth_01.mat
+  artifactKey: Guid(de1cc0bd4e4d6944ca9d3bd82a5b8389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Earth_01.mat using Guid(de1cc0bd4e4d6944ca9d3bd82a5b8389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7192b6e5148fee2415491b66bb696dce') in 0.273115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Unity_content/Enemies/RPGMonsterPartnersPBRPolyart/Materials/PolyartDefault.mat
+  artifactKey: Guid(f1724eecaf9d4e7e93cc07cfcb6b4b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/RPGMonsterPartnersPBRPolyart/Materials/PolyartDefault.mat using Guid(f1724eecaf9d4e7e93cc07cfcb6b4b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a47244bddc6ebc2352be576c1405bb') in 0.028513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Dark_01.mat
+  artifactKey: Guid(bd8728c523aee044a962fccad8ca32e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Dark_01.mat using Guid(bd8728c523aee044a962fccad8ca32e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0896d345c281025b13d6db4c5c33b9') in 0.021737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Ice_01.mat
+  artifactKey: Guid(1bb24205a20f8f54891fc083866b39f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Ice_01.mat using Guid(1bb24205a20f8f54891fc083866b39f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f4b986f3d0ccf99fad2098a6f25071') in 0.020812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Dark_02.mat
+  artifactKey: Guid(9a2e5fcb985bf2e4d9a5c45621ec2bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Dark_02.mat using Guid(9a2e5fcb985bf2e4d9a5c45621ec2bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40187af60eb6f625ff8705754a4f02d1') in 0.018628 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Unity_content/Enemies/Mini Legion Footman PBR HP Polyart/Materials/PolyartStandard.mat
+  artifactKey: Guid(8c9cf7a0881e564429410703d99e25cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/Mini Legion Footman PBR HP Polyart/Materials/PolyartStandard.mat using Guid(8c9cf7a0881e564429410703d99e25cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '867d22c50ec5b9be628d05d09865589d') in 0.018405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.003698 seconds.
+  path: Assets/Unity_content/Enemies/RPGMonsterPartnersPBRPolyart/Materials/Stage.mat
+  artifactKey: Guid(9d745d7c35ef4606ade41df53b324991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/Enemies/RPGMonsterPartnersPBRPolyart/Materials/Stage.mat using Guid(9d745d7c35ef4606ade41df53b324991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da16e785d04fdb2e7ecf68d9bc380339') in 0.014839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
