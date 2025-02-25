@@ -15,7 +15,7 @@ C:/UnityGame/MagicInsector
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-61255
+63175
 Successfully changed project path to: C:/UnityGame/MagicInsector
 C:/UnityGame/MagicInsector
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/UnityGame/MagicInsector
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29088] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 4157000156 [EditorId] 4157000156 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14844] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 1368545975 [EditorId] 1368545975 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29088] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 4157000156 [EditorId] 4157000156 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14844] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 1368545975 [EditorId] 1368545975 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 13.08 ms, found 5 plugins.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 146.21 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.1.20f1 (35a524b12060)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Resources/UnitySubsystems
@@ -70,7 +70,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -86,44 +86,44 @@ Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.005490 seconds.
-- Loaded All Assemblies, in  0.466 seconds
+Registered in 0.006534 seconds.
+- Loaded All Assemblies, in  0.751 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 374 ms
+Android Extension - Scanning For ADB Devices 310 ms
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.822 seconds
-Domain Reload Profiling: 1285ms
-	BeginReloadAssembly (136ms)
+- Finished resetting the current domain, in  0.681 seconds
+Domain Reload Profiling: 1431ms
+	BeginReloadAssembly (123ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (203ms)
-		LoadAssemblies (132ms)
+	RebuildCommonClasses (203ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (354ms)
+		LoadAssemblies (120ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (195ms)
-			TypeCache.Refresh (194ms)
-				TypeCache.ScanAssembly (180ms)
+		AnalyzeDomain (348ms)
+			TypeCache.Refresh (347ms)
+				TypeCache.ScanAssembly (337ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (823ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (682ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (769ms)
+		SetupLoadedEditorAssemblies (638ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (509ms)
+			InitializePlatformSupportModulesInManaged (432ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (9ms)
-			ProcessInitializeOnLoadAttributes (171ms)
-			ProcessInitializeOnLoadMethodAttributes (77ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -144,8 +144,151 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  1.077 seconds
-Refreshing native plugins compatible for Editor in 5.50 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.970 seconds
+Refreshing native plugins compatible for Editor in 5.66 ms, found 5 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Error loading file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\UnityGame\MagicInsector\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks) [0x00000] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string,System.Text.Encoding,bool)
+  at System.IO.File.InternalReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding) [0x00034] in <cb3602b5bf2148caa08db7780ec02b19>:0 
+  at UnityEditor.StateCache`1[T].GetState (UnityEngine.Hash128 key, T defaultValue) [0x00041] in <376f43f3329c444db4613258b017d5db>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:GetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-TD
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.786 seconds
+Domain Reload Profiling: 1753ms
+	BeginReloadAssembly (274ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (602ms)
+		LoadAssemblies (372ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (322ms)
+			TypeCache.Refresh (291ms)
+				TypeCache.ScanAssembly (277ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (787ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (570ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (424ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 4.49 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4216 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 113 unused Assets / (4.3 MB). Loaded Objects now: 4757.
+Memory consumption went from 323.7 MB to 319.3 MB.
+Total: 6.319600 ms (FindLiveObjects: 0.644600 ms CreateObjectMapping: 0.148200 ms MarkObjects: 4.263900 ms  DeleteObjects: 1.261700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/LevelManager.cs: a2ce7bc2fb34a6790fd5ee5995fd61bf -> dd6ff4b7cb8258127a35fa38083f7cf8
+  custom:scripting/monoscript/fileName/Demo_TurningAround.cs: 9d68750fa4869b8fd6d7a0e3b1544925 -> 
+  custom:scripting/monoscript/fileName/MagicExplosion.cs: 6c9414dadbad0a3b7a9db76d87e9d6fe -> 6cd78dd05bebb28a89aeefb094c56cf8
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/FlameThrower.cs: d89b5036ec5582323d0073dd3ddc305c -> 3addc16bdaaa927ae58bab059e9d06c8
+  custom:scripting/monoscript/fileName/TD_Timer.cs: cb1add1123ab806c0cfbb05142477fe5 -> b815c175a6f029d818411730dbf6d4f3
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/TextBoxRefresh.cs: 7aae1852a7d88e1cfaa2aab33a808eab -> 4239ff09ef62430f153e5f159ab76230
+  custom:scripting/monoscript/fileName/TurnOfUiObject.cs: abba35dd0d22fcadc68339db108eb761 -> 247686ddbdd25b263bdc598a3ae8898b
+  custom:scripting/monoscript/fileName/Explosion.cs: e884e458a4728cc06decc939a8ddcef4 -> 1f33d8d0012df6686e52e896530a2d8e
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/UIBarLogic.cs: 5a404ca680f970f06b4afb90ff10e653 -> baf9673ab260d10d8c7e634c1c19c15b
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/HighlightOnClick.cs: 620efe6061ac5b3405ccf501df57eec4 -> 37509f8c9c28c36356df0411854c2a80
+  custom:scripting/monoscript/fileName/LightningStun.cs: 5354d8b5b05ecd711428670d083ea351 -> 3c8cf044934ffa7e284c7131dc306761
+  custom:scripting/monoscript/fileName/Monster_Generate.cs: d5e822751dee6ee24f0e86b098c8c33d -> 63ed287c755a9e8d6d72bb9f2c3c78c7
+  custom:scripting/monoscript/fileName/Enemy_stats.cs: 6eae42ef054a4b8891d7e97e1dfe3478 -> f9438e915bf1dffacb0604ad51373e13
+  custom:scripting/monoscript/fileName/Demo_FreeCam.cs: 4b2f37dcaf4b64981991393c1397d03c -> 
+  custom:scripting/monoscript/fileName/Pause.cs: 4d5a0d93ec4794ac85a01102b9b5c620 -> 75b204017261d8fe58fe1103de080b8a
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/Enemy_movement.cs: a167361220522d568b9c8f020b9fe74c -> 132a637118252a096a19ba6a9552338b
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/TowerState.cs: 2dec6d416e9fdf5fe39042e6f8b7645d -> 4d56bbd46401b518b3ffffe2b983e34e
+  custom:scripting/monoscript/fileName/Loading_Percent.cs: b335aa6fa321743e886b902f398d8595 -> 46e93e036e0c0a1114097eadb26c7e61
+  custom:scripting/monoscript/fileName/Camera_movement.cs: 3221e5a4bea242686b73bf81d59480ab -> 8adfcc4cb3b8dde3102986b3c5f590ef
+  custom:scripting/monoscript/fileName/CommonProjectile.cs: 77e5de44ea19eacb2ff3a332d46418c7 -> ceb12de376b651944caf1e9a526b9b28
+  custom:scripting/monoscript/fileName/UICounter.cs: 29da5e35c88430c24ea0173e9caf3175 -> 72a8af0fb1403f4146f465558dcd7364
+  custom:scripting/monoscript/fileName/PoisonSphere.cs: bfb6a3094e79830d28341dc277bee44e -> c904dff2da94e437e6ea0c62686e0a23
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/TowerUpgradeMenu.cs: e135e0337d4f0a6b5f57a5029a53704e -> 213c90a615edf080d031f0bd95c6dd8a
+  custom:scripting/monoscript/fileName/Loading_Screen.cs: 4d004cc3972aed22e9a9b079f86bb7d5 -> 4b54588c7a5ffea0b31ce532a2510568
+  custom:scripting/monoscript/fileName/TowerMenu.cs: ecea80c4b83fc2d074c2e5fb3a153d95 -> d37524e4f3a17361b0b5de82208ede66
+  custom:scripting/monoscript/fileName/InputDisplay.cs: a6a0218f227945cd0af94d94770cbdfe -> 07d72a77674aaa2974463d0f5c102816
+  custom:scripting/monoscript/fileName/PlayerStats.cs: bcec4bf5594bec3cc7cbddbbbb7faf6f -> b06cbe57aa4f0acb313536805311dc61
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/FreezeThrower.cs: 5c121d3ece7a7a79772a4bb1562eccfb -> 58a6ad28a48b0b93ab8a07515fa310d6
+  custom:scripting/monoscript/fileName/DamageNumberUI.cs: c361820b0eeb781e79e7f42579394b7b -> 096520db03bb86567f25f21926439a36
+  custom:scripting/monoscript/fileName/TileSelect.cs: 1d9f49cf57b974019146d48f0953f92e -> 66e59bcef26bb4b86e19ff6747628447
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/Tornado.cs: 1303cbf0404434b5021f5bc6d5e80858 -> b9b4eb825169a7d7f4acd21525c6251c
+  custom:scripting/monoscript/fileName/ElectricShield.cs: ea92feecb58e05d5314e571dceafbd4f -> a81e1a0e2cb3a277d52d1653c5a53ed8
+  custom:scripting/monoscript/fileName/Map_Generate.cs: c1504bd554d47c283e30eff98fffca42 -> 7d639e93ca3a91377678a22cae742bf3
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/TowerButton.cs: c031ab7d4e4174366a1e959c83d13c96 -> 2b2b44a5237ec48f4b1a685b1ba7697f
+  custom:scripting/monoscript/fileName/ModelColorChanger.cs: e430ed7dc2c0d51eb792d310bb67d2cd -> 24b823aa75be99508c8ec06b25167474
+  custom:scripting/monoscript/fileName/TDCombat.cs: 67013d88f5fb5fd4cab13cd586cb8130 -> d8764926fde80e8801b08a41570b4f60
+  custom:scripting/monoscript/fileName/TDPlayerMovement.cs: 251e8dd40746f7309899327880ac8756 -> 75bd26c826506561aee6a1e1fc313852
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  0.891 seconds
+Refreshing native plugins compatible for Editor in 6.27 ms, found 5 plugins.
 Native extension for Android target not found
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
@@ -153,368 +296,99 @@ Native extension for WindowsStandalone target not found
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-TD
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.117 seconds
-Domain Reload Profiling: 2188ms
-	BeginReloadAssembly (325ms)
+- Finished resetting the current domain, in  1.370 seconds
+Domain Reload Profiling: 2257ms
+	BeginReloadAssembly (204ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (639ms)
-		LoadAssemblies (367ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (608ms)
+		LoadAssemblies (338ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (375ms)
-			TypeCache.Refresh (340ms)
-				TypeCache.ScanAssembly (321ms)
-			ScanForSourceGeneratedMonoScriptInfo (23ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1117ms)
+		AnalyzeDomain (368ms)
+			TypeCache.Refresh (350ms)
+				TypeCache.ScanAssembly (333ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1370ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (841ms)
+		SetupLoadedEditorAssemblies (672ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (110ms)
-			ProcessInitializeOnLoadAttributes (660ms)
-			ProcessInitializeOnLoadMethodAttributes (34ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (500ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
-Refreshing native plugins compatible for Editor in 4.39 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 6.66 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4219 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 112 unused Assets / (4.3 MB). Loaded Objects now: 4781.
-Memory consumption went from 326.9 MB to 322.6 MB.
-Total: 7.787600 ms (FindLiveObjects: 0.486900 ms CreateObjectMapping: 0.109100 ms MarkObjects: 5.658500 ms  DeleteObjects: 1.530900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 779492.859157 seconds.
-  path: Assets/Unity_content/Effects/Vefects/Trails VFX/Scene/Materials/M_Grid.mat
-  artifactKey: Guid(1f0ecf64f0cd0d64b82f3103c6239873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/Scene/Materials/M_Grid.mat using Guid(1f0ecf64f0cd0d64b82f3103c6239873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02978335a95e483d9163be0c277cb198') in 0.257025 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Sound.mat
-  artifactKey: Guid(80811086e76b6d943a17f4fd3e0b3708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Sound.mat using Guid(80811086e76b6d943a17f4fd3e0b3708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffb7f3649c5f0ded7cc8455704947ea2') in 0.137133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Cosmos_02.mat
-  artifactKey: Guid(c4a9898349834844e8f70246d5e33538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Cosmos_02.mat using Guid(c4a9898349834844e8f70246d5e33538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5188ae5aaba8540f98a4dddeceee5e6') in 0.018021 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Water_02.mat
-  artifactKey: Guid(0d20bbb949108214db3d7d56e0fa77d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Water_02.mat using Guid(0d20bbb949108214db3d7d56e0fa77d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429540c2606952361a0bd2b24bf1076f') in 0.028444 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Ice_02.mat
-  artifactKey: Guid(0d1c0ab63d065cd459058bc7c0c50ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Ice_02.mat using Guid(0d1c0ab63d065cd459058bc7c0c50ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf73c90b17502bdfdb91942eced9765') in 0.018579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Unity_content/Enemies/Mini Legion Grunt PBR HP Polyart/Mesh/Stage.fbx
-  artifactKey: Guid(6b33a5e700c865a49afb2eeccdfa6ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Mini Legion Grunt PBR HP Polyart/Mesh/Stage.fbx using Guid(6b33a5e700c865a49afb2eeccdfa6ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac901a96301e2a2b817d15ae427047b') in 0.065259 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Unity_content/Enemies/Monster Minion Survivor PBR Polyart/Material/PBR_Default.mat
-  artifactKey: Guid(a84a831fbc5f47928208907cc90d503a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Monster Minion Survivor PBR Polyart/Material/PBR_Default.mat using Guid(a84a831fbc5f47928208907cc90d503a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123b98021d4e56b039326adc489af38b') in 0.074096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Unity_content/Enemies/RPGMonsterPartnersPBRPolyart/Animations/Chest Monster/Victory.fbx
-  artifactKey: Guid(dd0e69b4e97448009cf1883ac275ba47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/RPGMonsterPartnersPBRPolyart/Animations/Chest Monster/Victory.fbx using Guid(dd0e69b4e97448009cf1883ac275ba47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c859f671e1b7a730904afe50120cdfe') in 0.079297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 56
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/Vegetation/Mushrooms.fbx
-  artifactKey: Guid(03b5b945a453bf347bf174dc7b245b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/Vegetation/Mushrooms.fbx using Guid(03b5b945a453bf347bf174dc7b245b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b11c00550a01f762b6af3a5d52ae27') in 0.059806 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Unity_content/Enemies/DreamGrid/Characters/Bear/Materials/monster_bear01_Body1.mat
-  artifactKey: Guid(9001c2cee242686469e316cf8ee773f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/DreamGrid/Characters/Bear/Materials/monster_bear01_Body1.mat using Guid(9001c2cee242686469e316cf8ee773f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958c609b72853bbdb39aa3700b4b1f61') in 0.036497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Shaders/NotherLIghts.shadergraph
-  artifactKey: Guid(e21383a2fc7a4c84fbed563f8aa569a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Shaders/NotherLIghts.shadergraph using Guid(e21383a2fc7a4c84fbed563f8aa569a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874aca142b49330609c4c0adc6050c34') in 0.012442 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Unity_content/Enemies/Mini Legion Lich PBR HP Polyart/Materials/Polyart.mat
-  artifactKey: Guid(1c806747a31989b4b9a2e62ce578c705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Mini Legion Lich PBR HP Polyart/Materials/Polyart.mat using Guid(1c806747a31989b4b9a2e62ce578c705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7dd2c52948923ddd356dcbd158e3851') in 0.020774 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Unity_content/Enemies/RPG Monster DUO PBR Polyart/Materials/PolyartDefault.mat
-  artifactKey: Guid(f5f7d4d2b3764ec4aa59441ec6c2697b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/RPG Monster DUO PBR Polyart/Materials/PolyartDefault.mat using Guid(f5f7d4d2b3764ec4aa59441ec6c2697b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa5bf76b90cb991a2a21c61d639fb35') in 0.260137 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/Vegetation/water flower.fbx
-  artifactKey: Guid(bdca7dbfa451ada41bd22f43568fae63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Models/Vegetation/water flower.fbx using Guid(bdca7dbfa451ada41bd22f43568fae63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7497da17b07d87c8aadfbb4b92542a29') in 0.050148 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Unity_content/Environment/Low-Poly medival defense/Models/Materials/InnerGateAoMap.mat
-  artifactKey: Guid(a7e76a189894ff1459c0f948a9c9d468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Environment/Low-Poly medival defense/Models/Materials/InnerGateAoMap.mat using Guid(a7e76a189894ff1459c0f948a9c9d468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382082643cf68bf6fbcd1c0739d8f1cd') in 0.017794 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Unity_content/Enemies/Mini Legion Footman PBR HP Polyart/Materials/HP.mat
-  artifactKey: Guid(d00167a3bf66725439ef5da3c0bbe05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Mini Legion Footman PBR HP Polyart/Materials/HP.mat using Guid(d00167a3bf66725439ef5da3c0bbe05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13622ef605194a4ba30e5a8f76818337') in 0.030697 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Nature_01.mat
-  artifactKey: Guid(17f7d5076bc13bf4d95ab396ce010486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Effects/Vefects/Trails VFX/VFX/Materials/M_VFX_Trail_Nature_01.mat using Guid(17f7d5076bc13bf4d95ab396ce010486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f77ac125caee1159942948e85fdfaa1') in 0.020069 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.834680 seconds.
-  path: Assets/Unity_content/Enemies/Mini Legion Rock Golem PBR HP Polyart/Materials/PolyartStandard.mat
-  artifactKey: Guid(957781e2e64d0264f970dde36a30bd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Mini Legion Rock Golem PBR HP Polyart/Materials/PolyartStandard.mat using Guid(957781e2e64d0264f970dde36a30bd93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb28f3e48b557783eed9dd527e16f217') in 0.018326 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.705282 seconds.
-  path: Assets/Unity_content/Environment/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Medieval_Village_Fence_01 1.fbx
-  artifactKey: Guid(bb9b2e893602d46409a85630c7954a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Environment/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Medieval_Village_Fence_01 1.fbx using Guid(bb9b2e893602d46409a85630c7954a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a051f52737a4435a7ece052eeab69fde') in 0.022090 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 1.055233 seconds.
-  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonTerrorBringer/PurpleHP.mat
-  artifactKey: Guid(2cc3d51c3b46bec4a95b1cf2d2488afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonTerrorBringer/PurpleHP.mat using Guid(2cc3d51c3b46bec4a95b1cf2d2488afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d71aab9d086e182740596eed8965150') in 0.031158 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.417468 seconds.
-  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonSoulEater/RedHP.mat
-  artifactKey: Guid(483bc84e9c06fb74a978565bf66ff42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonSoulEater/RedHP.mat using Guid(483bc84e9c06fb74a978565bf66ff42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2219bf409911701ea242b32aa39a04') in 0.042162 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.020954 seconds.
-  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonUsurper/RedHP.mat
-  artifactKey: Guid(1131ac1e42ee4884ab91bd69310a2715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/DragonUsurper/RedHP.mat using Guid(1131ac1e42ee4884ab91bd69310a2715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84112617d096d386ee064b54faad89c4') in 0.028853 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.220877 seconds.
-  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Matereals/Rock.mat
-  artifactKey: Guid(4886aa93276f3e94a842a4d97c3f9037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Matereals/Rock.mat using Guid(4886aa93276f3e94a842a4d97c3f9037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d18a68111b4c0be80acfd7760dae911') in 0.008201 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.083433 seconds.
-  path: Assets/Unity_content/Effects/1/FreeQuickEffectsVol1/Materials/Scene/Sky.mat
-  artifactKey: Guid(28bdf5580579db141aab2df149908772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Effects/1/FreeQuickEffectsVol1/Materials/Scene/Sky.mat using Guid(28bdf5580579db141aab2df149908772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a95d29c1541ab60a56959557363ec88') in 0.028116 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.486463 seconds.
-  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/Skybox_Mat.mat
-  artifactKey: Guid(48ce278709c9add4cb03de6de56e1f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/Skybox_Mat.mat using Guid(48ce278709c9add4cb03de6de56e1f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2d273e3580bd6811ad7e7b84658785d') in 0.015668 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.412431 seconds.
-  path: Assets/Unity_content/Enemies/Monster Minion Survivor PBR Polyart/Material/Skybox_Mat.mat
-  artifactKey: Guid(0a7b525dd4ad463ca9f53578ad59ab0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Monster Minion Survivor PBR Polyart/Material/Skybox_Mat.mat using Guid(0a7b525dd4ad463ca9f53578ad59ab0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fc59e876174a5ff6d52cb36f679bb1') in 0.015800 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.006158 seconds.
-  path: Assets/Unity_content/Enemies/RPG Monster DUO PBR Polyart/Materials/Skybox_Mat.mat
-  artifactKey: Guid(0f3ba9a6813349ad806fa2aaaa9eb8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/RPG Monster DUO PBR Polyart/Materials/Skybox_Mat.mat using Guid(0f3ba9a6813349ad806fa2aaaa9eb8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b02cba1f2cf09a473a051535f9c3693') in 0.022163 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.346910 seconds.
-  path: Assets/Unity_content/Enemies/Mini Legion Rock Golem PBR HP Polyart/Materials/Skybox_Mat.mat
-  artifactKey: Guid(7a0829b84da95824781fc0ab1c892dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Mini Legion Rock Golem PBR HP Polyart/Materials/Skybox_Mat.mat using Guid(7a0829b84da95824781fc0ab1c892dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc37515b336307d04b9ffa2f9dc8fed') in 0.014800 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Unity_content/Enemies/Monster Minion Survivor PBR Polyart/Material/Stage.mat
-  artifactKey: Guid(18aba47f173d4ec3b2e09d3ac0ca556d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Monster Minion Survivor PBR Polyart/Material/Stage.mat using Guid(18aba47f173d4ec3b2e09d3ac0ca556d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ea95de59203f3cda1682c4746ccd73') in 0.015693 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.025306 seconds.
-  path: Assets/Unity_content/Enemies/Mini Legion Footman PBR HP Polyart/Materials/Stage.mat
-  artifactKey: Guid(127b75ac34746cc4c845c332c53db5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Mini Legion Footman PBR HP Polyart/Materials/Stage.mat using Guid(127b75ac34746cc4c845c332c53db5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc7b470c31f8de3b065a473146c300f2') in 0.015703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.255960 seconds.
-  path: Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/Stage.mat
-  artifactKey: Guid(34466cf7960487a4380913c62e795ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/FourEvilDragonsHP/Materials/Stage.mat using Guid(34466cf7960487a4380913c62e795ebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b686f0950180033ebd0395c294fca245') in 0.014487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.020180 seconds.
-  path: Assets/Unity_content/Enemies/Mini Legion Lich PBR HP Polyart/Materials/Stage 1.mat
-  artifactKey: Guid(351b27a07d44e81489e46872299040e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Mini Legion Lich PBR HP Polyart/Materials/Stage 1.mat using Guid(351b27a07d44e81489e46872299040e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4049783b71ad1642e4f17cad3f59850c') in 0.014440 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.068622 seconds.
-  path: Assets/Unity_content/Effects/1/FreeQuickEffectsVol1/Materials/Swirl01_AB.mat
-  artifactKey: Guid(9dfe6cb2a56b1d042bfcf083da865616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Effects/1/FreeQuickEffectsVol1/Materials/Swirl01_AB.mat using Guid(9dfe6cb2a56b1d042bfcf083da865616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9246e342f35d05519b3789c6238f87b8') in 0.026788 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.808626 seconds.
-  path: Assets/Unity_content/Enemies/Spider Green/Spider_model/Materials/texture_spider.mat
-  artifactKey: Guid(78d88e566e5f7b14aaa719c52b23bd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Enemies/Spider Green/Spider_model/Materials/texture_spider.mat using Guid(78d88e566e5f7b14aaa719c52b23bd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff1e09258e0de64cefa0e27c2f0edc51') in 0.034757 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.361372 seconds.
-  path: Assets/Unity_content/Towers/Tower/Materials/Tower.mat
-  artifactKey: Guid(6e06b6d0c696f9544b327c597d334766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Towers/Tower/Materials/Tower.mat using Guid(6e06b6d0c696f9544b327c597d334766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd457a8a4d6d5646af17d70da098c6add') in 0.022912 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.448807 seconds.
-  path: Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Matereals/Water shader.mat
-  artifactKey: Guid(4957927f722a62b4fbbf1a725fe2a324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity_content/Environment/Cody Dreams/Low Poly Stylized Nature/Matereals/Water shader.mat using Guid(4957927f722a62b4fbbf1a725fe2a324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a69edadc6324ce5aad70953717a9eb54') in 0.010536 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 15.53 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (4.3 MB). Loaded Objects now: 4826.
-Memory consumption went from 229.3 MB to 225.0 MB.
-Total: 15.686000 ms (FindLiveObjects: 0.936000 ms CreateObjectMapping: 0.396300 ms MarkObjects: 12.204800 ms  DeleteObjects: 2.146800 ms)
+Unloading 4029 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (4.3 MB). Loaded Objects now: 4759.
+Memory consumption went from 281.5 MB to 277.2 MB.
+Total: 6.949100 ms (FindLiveObjects: 0.460300 ms CreateObjectMapping: 0.102500 ms MarkObjects: 4.640900 ms  DeleteObjects: 1.743600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/LevelManager.cs: a2ce7bc2fb34a6790fd5ee5995fd61bf -> dd6ff4b7cb8258127a35fa38083f7cf8
+  custom:scripting/monoscript/fileName/Demo_TurningAround.cs: 9d68750fa4869b8fd6d7a0e3b1544925 -> 
+  custom:scripting/monoscript/fileName/MagicExplosion.cs: 6c9414dadbad0a3b7a9db76d87e9d6fe -> 6cd78dd05bebb28a89aeefb094c56cf8
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/FlameThrower.cs: d89b5036ec5582323d0073dd3ddc305c -> 3addc16bdaaa927ae58bab059e9d06c8
+  custom:scripting/monoscript/fileName/TD_Timer.cs: cb1add1123ab806c0cfbb05142477fe5 -> b815c175a6f029d818411730dbf6d4f3
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/TextBoxRefresh.cs: 7aae1852a7d88e1cfaa2aab33a808eab -> 4239ff09ef62430f153e5f159ab76230
+  custom:scripting/monoscript/fileName/TurnOfUiObject.cs: abba35dd0d22fcadc68339db108eb761 -> 247686ddbdd25b263bdc598a3ae8898b
+  custom:scripting/monoscript/fileName/Explosion.cs: e884e458a4728cc06decc939a8ddcef4 -> 1f33d8d0012df6686e52e896530a2d8e
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/UIBarLogic.cs: 5a404ca680f970f06b4afb90ff10e653 -> baf9673ab260d10d8c7e634c1c19c15b
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/HighlightOnClick.cs: 620efe6061ac5b3405ccf501df57eec4 -> 37509f8c9c28c36356df0411854c2a80
+  custom:scripting/monoscript/fileName/LightningStun.cs: 5354d8b5b05ecd711428670d083ea351 -> 3c8cf044934ffa7e284c7131dc306761
+  custom:scripting/monoscript/fileName/Monster_Generate.cs: d5e822751dee6ee24f0e86b098c8c33d -> 63ed287c755a9e8d6d72bb9f2c3c78c7
+  custom:scripting/monoscript/fileName/Enemy_stats.cs: 6eae42ef054a4b8891d7e97e1dfe3478 -> f9438e915bf1dffacb0604ad51373e13
+  custom:scripting/monoscript/fileName/Demo_FreeCam.cs: 4b2f37dcaf4b64981991393c1397d03c -> 
+  custom:scripting/monoscript/fileName/Pause.cs: 4d5a0d93ec4794ac85a01102b9b5c620 -> 75b204017261d8fe58fe1103de080b8a
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/Enemy_movement.cs: a167361220522d568b9c8f020b9fe74c -> 132a637118252a096a19ba6a9552338b
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/TowerState.cs: 2dec6d416e9fdf5fe39042e6f8b7645d -> 4d56bbd46401b518b3ffffe2b983e34e
+  custom:scripting/monoscript/fileName/Loading_Percent.cs: b335aa6fa321743e886b902f398d8595 -> 46e93e036e0c0a1114097eadb26c7e61
+  custom:scripting/monoscript/fileName/Camera_movement.cs: 3221e5a4bea242686b73bf81d59480ab -> 8adfcc4cb3b8dde3102986b3c5f590ef
+  custom:scripting/monoscript/fileName/CommonProjectile.cs: 77e5de44ea19eacb2ff3a332d46418c7 -> ceb12de376b651944caf1e9a526b9b28
+  custom:scripting/monoscript/fileName/UICounter.cs: 29da5e35c88430c24ea0173e9caf3175 -> 72a8af0fb1403f4146f465558dcd7364
+  custom:scripting/monoscript/fileName/PoisonSphere.cs: bfb6a3094e79830d28341dc277bee44e -> c904dff2da94e437e6ea0c62686e0a23
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/TowerUpgradeMenu.cs: e135e0337d4f0a6b5f57a5029a53704e -> 213c90a615edf080d031f0bd95c6dd8a
+  custom:scripting/monoscript/fileName/Loading_Screen.cs: 4d004cc3972aed22e9a9b079f86bb7d5 -> 4b54588c7a5ffea0b31ce532a2510568
+  custom:scripting/monoscript/fileName/TowerMenu.cs: ecea80c4b83fc2d074c2e5fb3a153d95 -> d37524e4f3a17361b0b5de82208ede66
+  custom:scripting/monoscript/fileName/InputDisplay.cs: a6a0218f227945cd0af94d94770cbdfe -> 07d72a77674aaa2974463d0f5c102816
+  custom:scripting/monoscript/fileName/PlayerStats.cs: bcec4bf5594bec3cc7cbddbbbb7faf6f -> b06cbe57aa4f0acb313536805311dc61
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/FreezeThrower.cs: 5c121d3ece7a7a79772a4bb1562eccfb -> 58a6ad28a48b0b93ab8a07515fa310d6
+  custom:scripting/monoscript/fileName/DamageNumberUI.cs: c361820b0eeb781e79e7f42579394b7b -> 096520db03bb86567f25f21926439a36
+  custom:scripting/monoscript/fileName/TileSelect.cs: 1d9f49cf57b974019146d48f0953f92e -> 66e59bcef26bb4b86e19ff6747628447
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/Tornado.cs: 1303cbf0404434b5021f5bc6d5e80858 -> b9b4eb825169a7d7f4acd21525c6251c
+  custom:scripting/monoscript/fileName/ElectricShield.cs: ea92feecb58e05d5314e571dceafbd4f -> a81e1a0e2cb3a277d52d1653c5a53ed8
+  custom:scripting/monoscript/fileName/Map_Generate.cs: c1504bd554d47c283e30eff98fffca42 -> 7d639e93ca3a91377678a22cae742bf3
   custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/TowerButton.cs: c031ab7d4e4174366a1e959c83d13c96 -> 2b2b44a5237ec48f4b1a685b1ba7697f
+  custom:scripting/monoscript/fileName/ModelColorChanger.cs: e430ed7dc2c0d51eb792d310bb67d2cd -> 24b823aa75be99508c8ec06b25167474
+  custom:scripting/monoscript/fileName/TDCombat.cs: 67013d88f5fb5fd4cab13cd586cb8130 -> d8764926fde80e8801b08a41570b4f60
+  custom:scripting/monoscript/fileName/TDPlayerMovement.cs: 251e8dd40746f7309899327880ac8756 -> 75bd26c826506561aee6a1e1fc313852
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
