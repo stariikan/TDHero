@@ -98,11 +98,11 @@ public class InputDisplay : MonoBehaviour
                
         if (inputText.text == "FEQ" || inputText.text == "FE" || inputText.text == "F")
         {
-            if (magicIcon[7] != null) magicIcon[7].SetActive(true);
+            if (magicIcon[25] != null) magicIcon[25].SetActive(true);
         }
         else
         {
-            if (magicIcon[7] != null) magicIcon[7].SetActive(false);
+            if (magicIcon[25] != null) magicIcon[25].SetActive(false);
         }
             
         if (inputText.text == "FEE" || inputText.text == "FE" || inputText.text == "F")
@@ -250,11 +250,11 @@ public class InputDisplay : MonoBehaviour
 
         if (inputText.text == "EEQ" || inputText.text == "EE" || inputText.text == "E")
         {
-            if (magicIcon[25] != null) magicIcon[25].SetActive(true);
+            if (magicIcon[7] != null) magicIcon[7].SetActive(true);
         }
         else
         {
-            if (magicIcon[25] != null) magicIcon[25].SetActive(false);
+            if (magicIcon[7] != null) magicIcon[7].SetActive(false);
         }
 
 

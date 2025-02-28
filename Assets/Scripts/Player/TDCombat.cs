@@ -163,7 +163,9 @@ public class TDCombat : MonoBehaviour
                     uiMagicInfo.text = magicName;
                     break;
                 case "EEQ":
-
+                    if (magicObject[7] != null) magic = Instantiate(magicObject[7], weapon.transform.position, this.transform.rotation);
+                    magicName = "Lower";
+                    uiMagicInfo.text = magicName;
                     break;
 
                 default:

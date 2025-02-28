@@ -21,6 +21,7 @@ public class Monster_Generate : MonoBehaviour
 
     public GameObject waveDelayTimer; // UI Wave timer
     public GameObject stageCounter;  // UI Stage counter
+    public GameObject roadNavigationSystem;
 
     private int firstEnemyNumber; // Enemy number to chose wich enemy will be on the stage
     private int lastEnemyNumber; // Enemy number to chose wich enemy will be on the stage
@@ -35,6 +36,8 @@ public class Monster_Generate : MonoBehaviour
         aliveMonsters = 0;
         timerStageDelay = stageDelay;
         bossLVL = false;
+        roadNavigationSystem.GetComponent<NavMeshManager>().UpdateNavMesh();
+
     }
     // Update is called once per frame
     void Update()

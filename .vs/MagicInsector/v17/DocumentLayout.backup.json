@@ -3,23 +3,27 @@
   "WorkspaceRootPath": "C:\\UnityGame\\MagicInsector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\buildings\\towerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\enemies\\enemy_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemy_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Monsters\\Enemy_stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Monsters\\Enemy_stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\buildings\\towerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buildings\\towerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\magic\\liftenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\liftenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\liftenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\player\\tdcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\player\\tdcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\tdcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\monsters\\enemy_stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\monsters\\enemy_stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\ui\\inputdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\ui\\inputdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\inputdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Enemy_movement.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Enemies\\Enemy_movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemy_movement.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Enemies\\Enemy_movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemy_movement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T02:27:57.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TowerState.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Buildings\\TowerState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Buildings\\TowerState.cs",
@@ -46,12 +63,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Buildings\\TowerState.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAA0wDwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T08:10:52.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T08:10:52.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "InputDisplay.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\InputDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\InputDisplay.cs",
@@ -59,12 +75,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\InputDisplay.cs",
               "ViewState": "AgIAAOQAAAAAAAAAAAAowIgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T08:01:45.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T08:01:45.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TDCombat.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\TDCombat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TDCombat.cs",
@@ -72,12 +87,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\TDCombat.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAIwKIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T07:48:20.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T07:48:20.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LiftEnemies.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\LiftEnemies.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\LiftEnemies.cs",
@@ -85,25 +99,22 @@
               "RelativeToolTip": "Assets\\Scripts\\Magic\\LiftEnemies.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T07:24:56.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T07:24:56.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Enemy_stats.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Monsters\\Enemy_stats.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Monsters\\Enemy_stats.cs",
               "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Monsters\\Enemy_stats.cs",
               "RelativeToolTip": "Assets\\Scripts\\Monsters\\Enemy_stats.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAtwH4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T07:31:52.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T07:31:52.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TowerMenu.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\TD\\UI\\TowerMenu\\TowerMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TD\\UI\\TowerMenu\\TowerMenu.cs",
@@ -111,8 +122,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TD\\UI\\TowerMenu\\TowerMenu.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAIwFcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T06:34:12.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T06:34:12.905Z"
             }
           ]
         }
