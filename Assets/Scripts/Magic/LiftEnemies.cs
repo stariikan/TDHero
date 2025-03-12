@@ -32,7 +32,7 @@ public class LiftEnemies : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             Vector3 newPosition = hit.point;
-            newPosition.y += 0.1f;  // Adjust Y position
+            newPosition.y = 0.1f;  // Adjust Y position
             this.gameObject.transform.position = newPosition;  // Assign back to transform
             transform.rotation = Quaternion.Euler(-90, 0, 0);
         }

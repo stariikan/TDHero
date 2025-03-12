@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Magic\FlameThrower.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\General\TD_Timer.cs" />
+    <Compile Include="Assets\Scripts\Magic\LightningChain.cs" />
     <Compile Include="Assets\Scripts\Projectiles\CommonProjectile.cs" />
     <Compile Include="Assets\Scripts\Buildings\TowerState.cs" />
     <Compile Include="Assets\Scripts\Magic\LightningStun.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\Magic\MagicExplosion.cs" />
     <Compile Include="Assets\Scripts\Camera\Camera_movement.cs" />
     <Compile Include="Assets\Scripts\UI\TowerMenu\TowerUpgradeMenu.cs" />
+    <Compile Include="Assets\Scripts\Magic\SunStrike.cs" />
     <Compile Include="Assets\Scripts\UI\TowerMenu\TowerMenu.cs" />
     <Compile Include="Assets\Scripts\Projectiles\Explosion.cs" />
     <Compile Include="Assets\Scripts\UI\TurnOfUiObject.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Assets\Scripts\UI\UIBarLogic.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Unity_content\Effects\FX_Kandol_Pack\FX_magic_plane_II\Shaders\built-in\Flipbook_Effects_built-in.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Unity_content\Enemies\Supercyan Character Pack Zombie Sample\Shaders\Legacy\CelShader.shader" />

@@ -14,7 +14,7 @@ public class MagicExplosion : MonoBehaviour
     void Start()
     {
         timer = 0f;
-        collider = this.gameObject.AddComponent<SphereCollider>();
+        collider = this.gameObject.GetComponent<SphereCollider>();
         collider.radius = explosionRadius;
         ExplosionMousePosition();
     }
@@ -26,7 +26,7 @@ public class MagicExplosion : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             Vector3 newPosition = hit.point;
-            newPosition.y += 2;  // Adjust Y position
+            newPosition.y = 0.1f;  // Adjust Y position
             this.gameObject.transform.position = newPosition;  // Assign back to transform
         }
 

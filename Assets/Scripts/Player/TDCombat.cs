@@ -99,7 +99,9 @@ public class TDCombat : MonoBehaviour
                     uiMagicInfo.text = magicName;
                     break;
                 case "FQF":
-
+                    if (magicObject[9] != null) magic = Instantiate(magicObject[9], weapon.transform.position, this.transform.rotation);
+                    magicName = "Sun Strike";
+                    uiMagicInfo.text = magicName;
                     break;
                 case "FQQ":
 
@@ -155,7 +157,9 @@ public class TDCombat : MonoBehaviour
 
                     break;
                 case "EQE":
-
+                    if (magicObject[8] != null) magic = Instantiate(magicObject[8], weapon.transform.position, this.transform.rotation);
+                    magicName = "LightningChain";
+                    uiMagicInfo.text = magicName;
                     break;
                 case "EEF":
                     if (magicObject[6] != null) magic = Instantiate(magicObject[6], weapon.transform.position, this.transform.rotation);
@@ -167,7 +171,6 @@ public class TDCombat : MonoBehaviour
                     magicName = "Lower";
                     uiMagicInfo.text = magicName;
                     break;
-
                 default:
                     return;
             }
