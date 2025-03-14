@@ -1,0 +1,622 @@
+Using pre-set license
+Built from '2023.1/staging' branch; Version is '2023.1.20f1 (35a524b12060) revision 3515684'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32699 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.1.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/UnityGame/MagicInsector
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+52205
+Successfully changed project path to: C:/UnityGame/MagicInsector
+C:/UnityGame/MagicInsector
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [31860] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 1179339154 [EditorId] 1179339154 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [31860] Host "[IP] 192.168.0.175 [Port] 0 [Flags] 2 [Guid] 1179339154 [EditorId] 1179339154 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-CV2C3R8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 11.01 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.1.20f1 (35a524b12060)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityGame/MagicInsector/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.6590
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.006768 seconds.
+- Loaded All Assemblies, in  0.405 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 306 ms
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.664 seconds
+Domain Reload Profiling: 1066ms
+	BeginReloadAssembly (127ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (172ms)
+		LoadAssemblies (125ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (150ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (664ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (620ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (421ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (130ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Loaded All Assemblies, in  1.017 seconds
+Refreshing native plugins compatible for Editor in 4.68 ms, found 5 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-TD
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.778 seconds
+Domain Reload Profiling: 1790ms
+	BeginReloadAssembly (284ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (627ms)
+		LoadAssemblies (363ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (377ms)
+			TypeCache.Refresh (347ms)
+				TypeCache.ScanAssembly (332ms)
+			ScanForSourceGeneratedMonoScriptInfo (20ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (778ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (566ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (423ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 6.49 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4220 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 113 unused Assets / (4.3 MB). Loaded Objects now: 4752.
+Memory consumption went from 320.1 MB to 315.7 MB.
+Total: 7.423300 ms (FindLiveObjects: 0.532000 ms CreateObjectMapping: 0.105600 ms MarkObjects: 5.407200 ms  DeleteObjects: 1.376900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 136691.619354 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_1.png
+  artifactKey: Guid(83da52182bc637e498b2e0da38d233a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_1.png using Guid(83da52182bc637e498b2e0da38d233a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bd0cb8ff6565e6eaf2bce01396187a') in 0.097097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.221920 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_4.png
+  artifactKey: Guid(cc16da6188962544787f7f3b5c7f499f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Fire_4.png using Guid(cc16da6188962544787f7f3b5c7f499f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0057fc01cdfe51a7ebf8c60919075b96') in 0.023764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.374962 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Holy_4.png
+  artifactKey: Guid(ea2fcfff1b6007641a93cdb51dffaa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Holy_4.png using Guid(ea2fcfff1b6007641a93cdb51dffaa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a035b48bf60d78352ab7dfaab828b4a2') in 0.017312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.025324 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_1.png
+  artifactKey: Guid(ad07527a07f828544b6f6a2a7f00e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_1.png using Guid(ad07527a07f828544b6f6a2a7f00e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e3b49cc7ef84fd7aafdd7995d9456d') in 0.017378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007013 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_3.png
+  artifactKey: Guid(57dc60da6e682344680826a29342ad11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_3.png using Guid(57dc60da6e682344680826a29342ad11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0d2af5985448a572e6e8a96fb9c92a') in 0.017297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006364 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_5.png
+  artifactKey: Guid(3d4455fbc99f65b49a27cf9a63eaa3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_5.png using Guid(3d4455fbc99f65b49a27cf9a63eaa3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a08e6b173163beb10b8d337cd214f2') in 0.018654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.005177 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Water_2.png
+  artifactKey: Guid(10dc9c67ffb56dd4f800103585f26888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Water_2.png using Guid(10dc9c67ffb56dd4f800103585f26888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e91b5259950e52533eaa6f1a4a88eba') in 0.017442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.008126 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Water_4.png
+  artifactKey: Guid(e7c66fb6bf0e75f47b713684aafe510a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Water_4.png using Guid(e7c66fb6bf0e75f47b713684aafe510a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35d5207de0ee975daf61b580beb2272') in 0.019172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.008130 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_1.png
+  artifactKey: Guid(07720b55bb7cb3c45a9e509ca5b5e01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_1.png using Guid(07720b55bb7cb3c45a9e509ca5b5e01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d4a6657a328a84d0d1e4eb45752572') in 0.019162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_3.png
+  artifactKey: Guid(6cf658fed04e9ec4eb4dce5566ae2ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_3.png using Guid(6cf658fed04e9ec4eb4dce5566ae2ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcae83f144b1d5c57d6339db5c80c3c4') in 0.016243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_5.png
+  artifactKey: Guid(00d93e870e281474eaffc504915561f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_5.png using Guid(00d93e870e281474eaffc504915561f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641269dc689936fdea4a064e95abd30d') in 0.018546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 193.337448 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_1.png
+  artifactKey: Guid(06b5cddace56b90498046276b4690865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_1.png using Guid(06b5cddace56b90498046276b4690865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f0425705041331c76cb6c994efece7') in 0.021692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_3.png
+  artifactKey: Guid(efd273d4fe6178c4481d3218d6e247d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Free RPG Icons Pack/Icons/Weapon/Free RPG Icons Pack_Wand_3.png using Guid(efd273d4fe6178c4481d3218d6e247d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47794a92462cc6d15c70c32dd0fea76d') in 0.018753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.231308 seconds.
+  path: Assets/Unity_content/UI/Art/7.png
+  artifactKey: Guid(1013bf3e59c217e4c93f8e7fb81f5412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Art/7.png using Guid(1013bf3e59c217e4c93f8e7fb81f5412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016883f2d4ae0256c95f3538ea91aef5') in 0.017822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Unity_content/UI/Art/16.png
+  artifactKey: Guid(daef5eafe8a1c2d49af11c5378e32c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Art/16.png using Guid(daef5eafe8a1c2d49af11c5378e32c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736bd245bd76e5d889a8d8f8a950915a') in 0.014527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.968564 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Assassin/Brawler/Brawler18.png
+  artifactKey: Guid(d473e35d9c998d443a00d04000f893e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Assassin/Brawler/Brawler18.png using Guid(d473e35d9c998d443a00d04000f893e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9b39fbcea384af8049a2811ad9328a') in 0.024442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.455811 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Assassin/DemonHunter/DemonHunter20.png
+  artifactKey: Guid(63b30c77b2de31d4398b65d935f4713c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Assassin/DemonHunter/DemonHunter20.png using Guid(63b30c77b2de31d4398b65d935f4713c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8bca96c500b89e9b2819ad05ab4e2ac') in 0.019176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.510124 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Assassin/Ranger/Ranger7.png
+  artifactKey: Guid(530bcabb1501d8148a19a77465ecac03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Assassin/Ranger/Ranger7.png using Guid(530bcabb1501d8148a19a77465ecac03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272c0b6ce1c32a44f76b1e875eefef52') in 0.018104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.331639 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Assassin/Rogue/Rogue11.png
+  artifactKey: Guid(912f2333824ee3946814a450e92ab11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Assassin/Rogue/Rogue11.png using Guid(912f2333824ee3946814a450e92ab11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80bf3608bbce20bcb36da3ce7389056b') in 0.019123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.227090 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Elementalist/Arcanist/Arcanist15.png
+  artifactKey: Guid(cdec13907ffc75749ab2ed436bec6b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Elementalist/Arcanist/Arcanist15.png using Guid(cdec13907ffc75749ab2ed436bec6b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e571e40a3ad2a969e6576dd75bad9063') in 0.019136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.398985 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Elementalist/Cryomancer/Cryomancer17.png
+  artifactKey: Guid(f5ab3f534c1138f4786f23cd74103223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Elementalist/Cryomancer/Cryomancer17.png using Guid(f5ab3f534c1138f4786f23cd74103223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15b68e73a2a794cdfc0b20d95980f00d') in 0.017769 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.485452 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Elementalist/Electromancer/Electromancer16.png
+  artifactKey: Guid(1458237dbb3c6d54f8fe9d39c0175d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Elementalist/Electromancer/Electromancer16.png using Guid(1458237dbb3c6d54f8fe9d39c0175d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3652451a4f56bb1b4c82edb218246468') in 0.018971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.260976 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Elementalist/Geomancer/Geomancer5.png
+  artifactKey: Guid(14a0f66a7be165c4ba476e3d7c40e390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Elementalist/Geomancer/Geomancer5.png using Guid(14a0f66a7be165c4ba476e3d7c40e390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e5eb549b745d8b478f988a4f2ed6c1') in 0.020483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.336449 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Elementalist/Pyromancer/Pyromancer7.png
+  artifactKey: Guid(8ec5b52b09d90074a83d61c1334190f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Elementalist/Pyromancer/Pyromancer7.png using Guid(8ec5b52b09d90074a83d61c1334190f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c516f61693f0e1aee3bc4eadfce62156') in 0.022553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.745097 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Cultist/Cultist12.png
+  artifactKey: Guid(e691198d56e3a1848b5009e1ff94dbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Cultist/Cultist12.png using Guid(e691198d56e3a1848b5009e1ff94dbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8fcdefe04ee40607551119f5e1a7060') in 0.022024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.393767 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Medium/Medium15.png
+  artifactKey: Guid(c0c621637e6ca054cb6f00c56255ade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Medium/Medium15.png using Guid(c0c621637e6ca054cb6f00c56255ade7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab1a97ce74e8f508aff8bfe90533eaa') in 0.020445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.680277 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Necromancer/Necromancer13.png
+  artifactKey: Guid(f9fdbb78149b97549afa65f0b3557e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Necromancer/Necromancer13.png using Guid(f9fdbb78149b97549afa65f0b3557e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dc4a62bf240498878ec1eb487f1d00') in 0.027203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.339508 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Paladin/Paladin14.png
+  artifactKey: Guid(c46d83f2b73aaa141bd5015819342d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Paladin/Paladin14.png using Guid(c46d83f2b73aaa141bd5015819342d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa9f84c3dfce8de3fa24410d1a521ff') in 0.019271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.029428 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Priest/Priest13.png
+  artifactKey: Guid(0ad2337320c1b5841ba3ceb24de6e91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/HolyDarkness/Priest/Priest13.png using Guid(0ad2337320c1b5841ba3ceb24de6e91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b88aeb414c10ff787c280f0d0e1cbd0') in 0.024703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.251594 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Symbiose/Beastmaster/BeastMaster19.png
+  artifactKey: Guid(c46be55a65cb30e44b7c89e3c0d531da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Symbiose/Beastmaster/BeastMaster19.png using Guid(c46be55a65cb30e44b7c89e3c0d531da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886b272ac82477cc925ab95a61891dcb') in 0.022768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.260928 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Symbiose/Druid/Druid9.png
+  artifactKey: Guid(824a48daf7b55394e80e1df5048db839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Symbiose/Druid/Druid9.png using Guid(824a48daf7b55394e80e1df5048db839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c2c06cb5771f0cb4333dd24dd0cfba') in 0.020323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.809818 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Symbiose/Enchanter/Enchanter18.png
+  artifactKey: Guid(0f182fb2863faa7449e020de33b77e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Symbiose/Enchanter/Enchanter18.png using Guid(0f182fb2863faa7449e020de33b77e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26455f09a033949b3d75a803bddf3d5') in 0.021737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.604730 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Symbiose/Shaman/Shaman17.png
+  artifactKey: Guid(7184252199212cf4a9288a2a2d70dee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Symbiose/Shaman/Shaman17.png using Guid(7184252199212cf4a9288a2a2d70dee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf6ea0a600ac17dfbcc165e3fe57cb04') in 0.021323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.910881 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Symbiose/Shapeshifter/ShapeShifter20.png
+  artifactKey: Guid(1004daa7515009d4ea9ae2e8b15feda7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Symbiose/Shapeshifter/ShapeShifter20.png using Guid(1004daa7515009d4ea9ae2e8b15feda7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2cee97425e5196726035500922e5360') in 0.021712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.433597 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Warrior/Barbarian/Barbarian20.png
+  artifactKey: Guid(c890dd06d4a350946ab11e4778bf47d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Warrior/Barbarian/Barbarian20.png using Guid(c890dd06d4a350946ab11e4778bf47d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f85b803887263c629389eae1f8f8d5') in 0.024330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.799834 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Warrior/Berserker/Berserker13.png
+  artifactKey: Guid(4d7635c366a76274c85747592d98d2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Warrior/Berserker/Berserker13.png using Guid(4d7635c366a76274c85747592d98d2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce60772fad960d30c5fea3de3c93453') in 0.026336 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.613251 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Warrior/Deathknight/Deathknight14.png
+  artifactKey: Guid(917871e5c6d34ed4b93dfafad1277db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Warrior/Deathknight/Deathknight14.png using Guid(917871e5c6d34ed4b93dfafad1277db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfa9f6c440f760d6ac26ce2d718f8e9') in 0.024850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.570578 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Warrior/Dragonknight/Dragonknight18.png
+  artifactKey: Guid(e8a68fd17ce42174e9b24babd0ae6629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Warrior/Dragonknight/Dragonknight18.png using Guid(e8a68fd17ce42174e9b24babd0ae6629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72012b7043d989f05caf3de92f3b0a39') in 0.020885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.320147 seconds.
+  path: Assets/Unity_content/UI/Icons/Classes/Warrior/Guardian/Guardian20.png
+  artifactKey: Guid(b066c869b51f9384fa8ac9cce36b4648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Icons/Classes/Warrior/Guardian/Guardian20.png using Guid(b066c869b51f9384fa8ac9cce36b4648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb68d7750397c06c73f29492652414c') in 0.021123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.382385 seconds.
+  path: Assets/Unity_content/UI/RGP icons free start pack/backgrounds/bg_swhirl_yellow.png
+  artifactKey: Guid(b891a2cc80c288a4a8fc1a6ec6384310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/RGP icons free start pack/backgrounds/bg_swhirl_yellow.png using Guid(b891a2cc80c288a4a8fc1a6ec6384310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5730b6f23225aa61fb01438f2a229f49') in 0.024186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.356283 seconds.
+  path: Assets/Unity_content/UI/RGP icons free start pack/items/bone_skull.png
+  artifactKey: Guid(1c728f7cc6548f24cadceb6478fa25cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/RGP icons free start pack/items/bone_skull.png using Guid(1c728f7cc6548f24cadceb6478fa25cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9449db1173362da77a20ddf0308e70ff') in 0.021560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Unity_content/UI/RGP icons free start pack/items/bone_white.png
+  artifactKey: Guid(b45939f11371c524684402713923fe54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/RGP icons free start pack/items/bone_white.png using Guid(b45939f11371c524684402713923fe54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72a432aa11ba1d1b660cc805c3a0945') in 0.027449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Unity_content/UI/RGP icons free start pack/items/bottle_standard_empty.png
+  artifactKey: Guid(c257574b1b8ee104582a93ecac457485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/RGP icons free start pack/items/bottle_standard_empty.png using Guid(c257574b1b8ee104582a93ecac457485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146318428798a01ff231514363ccd4ab') in 0.024873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.090471 seconds.
+  path: Assets/Unity_content/UI/Snowflakes/32X32/2.png
+  artifactKey: Guid(3329b9c657355c54e825f404142d8cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Snowflakes/32X32/2.png using Guid(3329b9c657355c54e825f404142d8cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a5b7d4b26c92de6491c3cf1b885ff5') in 0.016527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Unity_content/UI/Snowflakes/32X32/3.png
+  artifactKey: Guid(7f1fc1aa5d958b94f8d5e034bb2a8050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Snowflakes/32X32/3.png using Guid(7f1fc1aa5d958b94f8d5e034bb2a8050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10499ab97eccc336a0f30204b1771922') in 0.017291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Unity_content/UI/Snowflakes/32X32/5.png
+  artifactKey: Guid(63cc144eab8975c438a6a20465fdbe05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Snowflakes/32X32/5.png using Guid(63cc144eab8975c438a6a20465fdbe05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'badd7e35397af0fbd4a7a00ad75c0609') in 0.018776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.373945 seconds.
+  path: Assets/Unity_content/UI/Snowflakes/512X512/2.png
+  artifactKey: Guid(ff1c77cab3c9e4945902f7e0e17001cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Snowflakes/512X512/2.png using Guid(ff1c77cab3c9e4945902f7e0e17001cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba55aded6bdb424bb09fa4777a8431c1') in 0.016074 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Unity_content/UI/Snowflakes/512X512/5.png
+  artifactKey: Guid(b3fcad9f8e741e54ba6b73ab15c119f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Snowflakes/512X512/5.png using Guid(b3fcad9f8e741e54ba6b73ab15c119f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbef0eea8a2c1f54ba9dc2d6af5e5772') in 0.019758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Unity_content/UI/Snowflakes/512X512/4.png
+  artifactKey: Guid(e6c5c93e1aac05147ae9dafb492dfcfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/Snowflakes/512X512/4.png using Guid(e6c5c93e1aac05147ae9dafb492dfcfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03dd353dcdeac5557fc3356e86b2d89d') in 0.018131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.017453 seconds.
+  path: Assets/Unity_content/UI/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_1.png
+  artifactKey: Guid(2dc12ad8908ff3047bb25165c5b3aee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_1.png using Guid(2dc12ad8908ff3047bb25165c5b3aee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00da4680f60e4928b4cabd72de6899ca') in 0.049579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Unity_content/UI/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_4.png
+  artifactKey: Guid(fc2c96f1421fbe54e82922ae89afef74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity_content/UI/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_4.png using Guid(fc2c96f1421fbe54e82922ae89afef74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e680bd565e2afb47d4cfbd2b407981') in 0.092648 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

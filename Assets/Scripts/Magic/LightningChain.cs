@@ -12,7 +12,7 @@ public class LightningChain : MonoBehaviour
     private bool secondChain = false;
     private bool isFired = false;
     private int currentBounce; 
-    private int maxBounce;          // Maximum number of bounces
+    public int maxBounce;          // Maximum number of bounces
 
     public Transform player;
     private Transform magicTranform;

@@ -70,13 +70,13 @@ public class DamageNumberUI : MonoBehaviour
         {
             time += Time.deltaTime;
             offset.y = Mathf.Lerp(startY, targetY, time / duration);
-            offset.x = Mathf.Lerp(startX, targetX, Mathf.Sin(time / duration * Mathf.PI)); // Smooth oscillation
+            //offset.x = Mathf.Lerp(startX, targetX, Mathf.Sin(time / duration * Mathf.PI)); // Smooth oscillation
             yield return null;
         }
 
         // Ensure final position is exactly at the target
         offset.y = targetY;
-        offset.x = targetX;
+        //offset.x = targetX;
 
         // Wait for X seconds before moving down
         yield return new WaitForSeconds(0.5f);

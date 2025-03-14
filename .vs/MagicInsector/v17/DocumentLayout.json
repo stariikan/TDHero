@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\UnityGame\\MagicInsector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\magic\\sunstrike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\sunstrike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\ui\\damagenumberui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\damagenumberui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\magic\\lowerenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\lowerenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|c:\\unitygame\\magicinsector\\assets\\scripts\\ui\\text\\magicdescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\text\\magicdescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\lightningchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\lightningchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\poisonsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\poisonsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\player\\tdcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\tdcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\ui\\inputdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\inputdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\electricshield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\electricshield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\lightningchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\lightningchain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\magicexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\magicexplosion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\lowerenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\lowerenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\ui\\inputdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\inputdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\sunstrike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\magic\\sunstrike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\magic\\liftenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,24 +70,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SunStrike.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\SunStrike.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\SunStrike.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\SunStrike.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Magic\\SunStrike.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwFAAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MagicDescription.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\Text\\MagicDescription.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Text\\MagicDescription.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\Text\\MagicDescription.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\Text\\MagicDescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T03:53:15.173Z",
+              "WhenOpened": "2025-03-14T07:35:16.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "ElectricShield.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\ElectricShield.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\ElectricShield.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\ElectricShield.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Magic\\ElectricShield.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T07:02:02.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MagicExplosion.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\MagicExplosion.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\MagicExplosion.cs",
@@ -79,12 +107,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Magic\\MagicExplosion.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T03:12:34.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T03:12:34.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "LowerEnemies.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\LowerEnemies.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\LowerEnemies.cs",
@@ -92,12 +119,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Magic\\LowerEnemies.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T03:03:43.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T03:03:43.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "FreezeThrower.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\FreezeThrower.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\FreezeThrower.cs",
@@ -109,20 +135,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "LightningChain.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\LightningChain.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\LightningChain.cs",
               "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\LightningChain.cs",
               "RelativeToolTip": "Assets\\Scripts\\Magic\\LightningChain.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwD8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T03:16:20.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T03:16:20.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "NavMeshManager.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Enemies\\NavMeshManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\NavMeshManager.cs",
@@ -134,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Enemy_movement.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Enemies\\Enemy_movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemy_movement.cs",
@@ -146,7 +171,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
+              "Title": "TDCombat.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\TDCombat.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TDCombat.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\TDCombat.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\TDCombat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T07:48:20.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DamageNumberUI.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\DamageNumberUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\DamageNumberUI.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\DamageNumberUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\DamageNumberUI.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAA0wE4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T05:48:29.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PoisonSphere.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\PoisonSphere.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\PoisonSphere.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\PoisonSphere.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Magic\\PoisonSphere.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T07:02:39.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "TowerState.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Buildings\\TowerState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Buildings\\TowerState.cs",
@@ -158,33 +220,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "InputDisplay.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\InputDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\InputDisplay.cs",
               "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\InputDisplay.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\InputDisplay.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowHoAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T08:01:45.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T08:01:45.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TDCombat.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\TDCombat.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TDCombat.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\TDCombat.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\TDCombat.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAwwGUAAABRAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "SunStrike.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\SunStrike.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\SunStrike.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\SunStrike.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Magic\\SunStrike.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwFAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T07:48:20.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T03:53:15.173Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "LiftEnemies.cs",
               "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Magic\\LiftEnemies.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magic\\LiftEnemies.cs",

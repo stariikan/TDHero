@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\UI\TowerMenu\TowerUpgradeMenu.cs" />
     <Compile Include="Assets\Scripts\Magic\SunStrike.cs" />
     <Compile Include="Assets\Scripts\UI\TowerMenu\TowerMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\Text\MagicDescription.cs" />
     <Compile Include="Assets\Scripts\Projectiles\Explosion.cs" />
     <Compile Include="Assets\Scripts\UI\TurnOfUiObject.cs" />
     <Compile Include="Assets\Scripts\UI\HighlightOnClick.cs" />

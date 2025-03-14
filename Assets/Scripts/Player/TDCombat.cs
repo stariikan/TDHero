@@ -68,107 +68,139 @@ public class TDCombat : MonoBehaviour
             switch (magicWord)
             {
                 case "FFF":
-                    if (magicObject[0] != null) magic = Instantiate(magicObject[0], weapon.transform.position, weapon.transform.rotation);
-                    magicName = "Firestorm";
-                    uiMagicInfo.text = magicName;
-                    break;
-                case "QQQ":
-                    if (magicObject[1] != null) magic = Instantiate(magicObject[1], weapon.transform.position, weapon.transform.rotation);
-                    magicName = "Storm Surge";
-                    uiMagicInfo.text = magicName;
-                    break;
-                case "FEF":
-                    if (magicObject[2] != null) magic = Instantiate(magicObject[2], weapon.transform.position, weapon.transform.rotation);
-                    magicName = "Lightning Shield";
-                    uiMagicInfo.text = magicName;
-                    this.gameObject.GetComponent<PlayerStats>().godmode = true;
-                    break;
-                case "FFQ":
-                    if (magicObject[3] != null) magic = Instantiate(magicObject[3], weapon.transform.position, weapon.transform.rotation);
-                    magicName = "Flame Barrage";
-                    uiMagicInfo.text = magicName;
-                    break;
-                case "EEE":
-                    if (magicObject[4] != null) magic = Instantiate(magicObject[4], weapon.transform.position, weapon.transform.rotation);
-                    magicName = "Lightning";
-                    uiMagicInfo.text = magicName;
-                    break;
-                case "FFE":
-                    if (magicObject[5] != null) magic = Instantiate(magicObject[5], weapon.transform.position, this.transform.rotation);
-                    magicName = "PoisonShpere";
-                    uiMagicInfo.text = magicName;
-                    break;
-                case "FQF":
-                    if (magicObject[9] != null) magic = Instantiate(magicObject[9], weapon.transform.position, this.transform.rotation);
+                    if (magicObject[1] != null) magic = Instantiate(magicObject[1], weapon.transform.position, this.transform.rotation);
                     magicName = "Sun Strike";
                     uiMagicInfo.text = magicName;
                     break;
-                case "FQQ":
-
+                case "FFE":
+                    if (magicObject[2] != null) magic = Instantiate(magicObject[2], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Flame Thrower";
+                    uiMagicInfo.text = magicName;
                     break;
-                case "FQE":
-
+                case "FFQ":
+                    if (magicObject[3] != null) magic = Instantiate(magicObject[3], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Fire Bomb";
+                    uiMagicInfo.text = magicName;
                     break;
-
-                case "FEQ":
-
+                case "FEF":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[4], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
                     break;
-                case "FEE":
-
-                    break;
-                case "QFF":
-
-                    break;
-                case "QFQ":
-
-                    break;
-                case "QFE":
-
-                    break;
-                case "QQF":
-
-                    break;
-
-                case "QQE":
-
-                    break;
-                case "QEF":
-
-                    break;
-                case "QEQ":
-
-                    break;
-                case "QEE":
-
+                case "FQF":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[5], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
                     break;
                 case "EFF":
-
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[6], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
                     break;
-                case "EFQ":
-
+                case "QFF":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[7], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
                     break;
-                case "EFE":
-
+                case "QQQ":
+                    if (magicObject[8] != null) magic = Instantiate(magicObject[8], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Ice Thrower";
+                    uiMagicInfo.text = magicName;
                     break;
-                case "EQF":
-
+                case "QQE":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[9], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "QQF":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[10], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "QEQ":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[11], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "QFQ":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[12], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
                     break;
                 case "EQQ":
-
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[13], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
                     break;
-                case "EQE":
-                    if (magicObject[8] != null) magic = Instantiate(magicObject[8], weapon.transform.position, this.transform.rotation);
-                    magicName = "LightningChain";
+                case "FQQ":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[14], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "EEE":
+                    if (magicObject[15] != null) magic = Instantiate(magicObject[15], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Lightning Strike";
                     uiMagicInfo.text = magicName;
                     break;
                 case "EEF":
-                    if (magicObject[6] != null) magic = Instantiate(magicObject[6], weapon.transform.position, this.transform.rotation);
-                    magicName = "Lift";
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[16], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
                     uiMagicInfo.text = magicName;
                     break;
                 case "EEQ":
-                    if (magicObject[7] != null) magic = Instantiate(magicObject[7], weapon.transform.position, this.transform.rotation);
-                    magicName = "Lower";
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[17], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "EFE":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[18], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "EQE":
+                    if (magicObject[19] != null) magic = Instantiate(magicObject[19], weapon.transform.position, this.transform.rotation);
+                    magicName = "Lightning Chain";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "FEE":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[20], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "QEE":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[21], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "FQE":
+                    if (magicObject[22] != null) magic = Instantiate(magicObject[22], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Electric Shield";
+                    uiMagicInfo.text = magicName;
+                    this.gameObject.GetComponent<PlayerStats>().godmode = true;
+                    break;
+                case "FEQ":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[23], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "QFE":
+                    if (magicObject[24] != null) magic = Instantiate(magicObject[24], weapon.transform.position, this.transform.rotation);
+                    magicName = "Poison Shpere";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "EQF":
+                    if (magicObject[25] != null) magic = Instantiate(magicObject[25], weapon.transform.position, this.transform.rotation);
+                    magicName = "Drag The Enemy";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "QEF":
+                    if (magicObject[0] != null) magic = Instantiate(magicObject[26], weapon.transform.position, weapon.transform.rotation);
+                    magicName = "Nothing";
+                    uiMagicInfo.text = magicName;
+                    break;
+                case "EFQ":
+                    if (magicObject[27] != null) magic = Instantiate(magicObject[27], weapon.transform.position, this.transform.rotation);
+                    magicName = "Lift The Enemy";
                     uiMagicInfo.text = magicName;
                     break;
                 default:

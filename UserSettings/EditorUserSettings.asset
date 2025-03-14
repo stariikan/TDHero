@@ -65,6 +65,9 @@ EditorUserSettings:
     RecentlyUsedScenePath-9:
       value: 22424703114646790c1a182e15074d11111816651f2b233e283a5232ece93939f6ee39e7d836362f2d3dfb39172a4f2afc031d12
       flags: 0
+    UIToolkit.EnableEventDebugger:
+      value: 37434103
+      flags: 0
     lightmappingBakingProfile:
       value: 51
       flags: 0
