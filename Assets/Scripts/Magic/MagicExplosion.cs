@@ -1,64 +1,22 @@
 using UnityEngine;
 
-public class MagicExplosion : MonoBehaviour
+public class MagicExplosion : MagicBase
 {
-    public float lifeTime = 1.5f; // Time before the projectile is destroyed
-    public float damage;         // Damage dealt by the projectile
-    public float explosionRadius = 5f; // Radius of the AOE explosion
-    public string enemyTag;          // Tag to identify enemies
-    public string enemyTag2;          // Tag to identify enemies
-    private float timer;             // Timer to track lifetime
+    public float explosionRadius = 5f;
+    private SphereCollider sphereCollider;
 
-    private SphereCollider collider; // Capsule collider for the enemy
-
-    void Start()
+    protected override void Start()
     {
-        timer = 0f;
-        collider = this.gameObject.GetComponent<SphereCollider>();
-        collider.radius = explosionRadius;
-        ExplosionMousePosition();
+        base.Start();
+        sphereCollider = GetComponent<SphereCollider>();
+        sphereCollider.radius = explosionRadius;
     }
-    public void ExplosionMousePosition() 
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit))
+    protected override void ApplyEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy))
         {
-            Vector3 newPosition = hit.point;
-            newPosition.y = 0.1f;  // Adjust Y position
-            this.gameObject.transform.position = newPosition;  // Assign back to transform
-        }
-
-    }
-    public void SetDamage(float dmg)
-    {
-        damage = dmg;
-    }
-    public void SetRadius(float radius)
-    {
-        explosionRadius = radius;
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag(enemyTag) || other.CompareTag(enemyTag2))
-        {
-            Enemy_stats enemyStats = other.GetComponent<Enemy_stats>();
-            if (enemyStats != null)
-            {
-                enemyStats.GetDamage(damage);
-            }
-        }
-        else return;
-    }
-    void Update()
-    {
-        timer += Time.deltaTime;
-        
-        // Trigger the explosion when the bomb's lifetime expires
-        if (timer >= lifeTime)
-        {
-            Destroy(gameObject);
+            enemy.GetDamage(damage);
         }
     }
 }

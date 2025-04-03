@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TileSelect : MonoBehaviour
+public class Tile : MonoBehaviour
 {
     // When tile selected true
     public bool tileState;
@@ -51,13 +51,6 @@ public class TileSelect : MonoBehaviour
         freezingTowerState = false;
         towerLvl = 0;
     }
-    public void TileUnselected() 
-    {
-        tileState = false;
-        tileTowerUI.GetComponent<TowerMenu>().CloseWindow();
-        tileTowerUpgradeUI.GetComponent<TowerUpgradeMenu>().CloseWindow();
-        selectedTileLight.SetActive(false);
-    }
     public void BuildCommonTower()
     {
         towerPrice = commonTower[towerLvl].GetComponent<TowerState>().towerPrice;
@@ -75,7 +68,7 @@ public class TileSelect : MonoBehaviour
             towerName = tower.name;
             tower.SetActive(true);
             playerObj.GetComponent<PlayerStats>().CoinMinus(towerPrice);
-            TileUnselected();
+            CloseTile();
         }
         else tileMessage.text = "Not enough money. " + "Tower Price = " + towerPrice;
     }
@@ -96,7 +89,7 @@ public class TileSelect : MonoBehaviour
             towerName = tower.name;
             tower.SetActive(true);
             playerObj.GetComponent<PlayerStats>().CoinMinus(towerPrice);
-            TileUnselected();
+            CloseTile();
         }
         else tileMessage.text = "Tower Price: " + towerPrice + ". Not enough money.";
     }
@@ -117,7 +110,7 @@ public class TileSelect : MonoBehaviour
             towerName = tower.name;
             tower.SetActive(true);
             playerObj.GetComponent<PlayerStats>().CoinMinus(towerPrice);
-            TileUnselected();
+            CloseTile();
         }
         else tileMessage.text = "Tower Price: " + towerPrice + ". Not enough money.";
     }
@@ -138,7 +131,7 @@ public class TileSelect : MonoBehaviour
             towerName = tower.name;
             tower.SetActive(true);
             playerObj.GetComponent<PlayerStats>().CoinMinus(towerPrice);
-            TileUnselected();
+            CloseTile();
         }
         else tileMessage.text = "Tower Price: " + towerPrice + ". Not enough money.";
     }
@@ -156,7 +149,7 @@ public class TileSelect : MonoBehaviour
         {
             towerPrice = commonTower[towerLvl + 1].GetComponent<TowerState>().towerPrice;
             playerCoins = playerObj.GetComponent<PlayerStats>().coins;
-            if (towerLvl <= 5 && playerCoins >= towerPrice)
+            if (towerLvl < 6 && playerCoins >= towerPrice)
             {
                 towerLvl += 1;
                 GameObject targetObject = GameObject.Find(towerName);
@@ -169,7 +162,7 @@ public class TileSelect : MonoBehaviour
                 towerName = tower.name;
                 tower.SetActive(true);
                 playerObj.GetComponent<PlayerStats>().CoinMinus(towerPrice);
-                TileUnselected();
+                CloseTile();
                 Debug.Log("Tower Upgraded");
             }
             else tileMessage.text = "Tower Price: " + towerPrice + ". Not enough money.";
@@ -178,7 +171,7 @@ public class TileSelect : MonoBehaviour
         {
             towerPrice = splashTower[towerLvl + 1].GetComponent<TowerState>().towerPrice;
             playerCoins = playerObj.GetComponent<PlayerStats>().coins;
-            if (towerLvl <= 5 && playerCoins >= towerPrice)
+            if (towerLvl < 6 && playerCoins >= towerPrice)
             {
                 towerLvl += 1;
                 GameObject targetObject = GameObject.Find(towerName);
@@ -191,7 +184,7 @@ public class TileSelect : MonoBehaviour
                 towerName = tower.name;
                 tower.SetActive(true);
                 playerObj.GetComponent<PlayerStats>().CoinMinus(towerPrice);
-                TileUnselected();
+                CloseTile();
                 Debug.Log("Tower Upgraded");
             }
             else tileMessage.text = "Tower Price: " + (towerLvl + 1) + ". Not enough money.";
@@ -200,7 +193,7 @@ public class TileSelect : MonoBehaviour
         {
             towerPrice = antiAirTower[towerLvl + 1].GetComponent<TowerState>().towerPrice;
             playerCoins = playerObj.GetComponent<PlayerStats>().coins;
-            if (towerLvl <= 5 && playerCoins >= towerPrice)
+            if (towerLvl < 6 && playerCoins >= towerPrice)
             {
                 towerLvl += 1;
                 GameObject targetObject = GameObject.Find(towerName);
@@ -213,7 +206,7 @@ public class TileSelect : MonoBehaviour
                 towerName = tower.name;
                 tower.SetActive(true);
                 playerObj.GetComponent<PlayerStats>().CoinMinus(towerPrice);
-                TileUnselected();
+                CloseTile();
                 Debug.Log("Tower Upgraded");
             }
             else tileMessage.text = "Tower Price: " + (towerLvl + 1) + ". Not enough money.";
@@ -222,7 +215,7 @@ public class TileSelect : MonoBehaviour
         {
             towerPrice = freezingTower[towerLvl + 1].GetComponent<TowerState>().towerPrice;
             playerCoins = playerObj.GetComponent<PlayerStats>().coins;
-            if (towerLvl <= 5 && playerCoins >= towerPrice)
+            if (towerLvl < 6 && playerCoins >= towerPrice)
             {
                 towerLvl += 1;
                 GameObject targetObject = GameObject.Find(towerName);
@@ -235,7 +228,7 @@ public class TileSelect : MonoBehaviour
                 towerName = tower.name;
                 tower.SetActive(true);
                 playerObj.GetComponent<PlayerStats>().CoinMinus(towerPrice);
-                TileUnselected();
+                CloseTile();
                 Debug.Log("Tower Upgraded");
             }
             else tileMessage.text = "Tower Price: " + towerPrice + ". Not enough money.";
@@ -258,43 +251,35 @@ public class TileSelect : MonoBehaviour
         }
         towerLvl = 0;
         towerName = "";
-        TileUnselected();
+        CloseTile();
     }
-    // Update is called once per frame
-    void Update()
-    {
-        if (tileState == true && Input.GetMouseButtonDown(1)) TileUnselected();
-    }
-    void OnMouseOver()
+    public void SelectTile()
     {
         bool isPaused = mainCamera.GetComponent<Pause>().isPaused;
         tileUiIsActive = tileTowerUI.GetComponent<TowerMenu>().windowIsActive;
         towerUpgradeUiActive = tileTowerUpgradeUI.GetComponent<TowerUpgradeMenu>().windowIsActive;
-        if (tileState == false && tileUiIsActive == false && Input.GetMouseButtonDown(0) && isPaused == false) // Left mouse button clicked
+
+        if (tileState || towerUpgradeUiActive || tileUiIsActive || isPaused) return; // Exit if paused or UI is active
+
+        if (!commonTowerState && !splashTowerState && !antiAirTowerState && !freezingTowerState)
         {
-            if (!commonTowerState && !splashTowerState && !antiAirTowerState && !freezingTowerState)
-            {
-                if (tileUiIsActive == false && towerUpgradeUiActive == false)
-                {
-                    //Debug.Log("Mouse clicked on " + gameObject.name);
-                    tileState = true;
-                    tileTowerUI.GetComponent<TowerMenu>().OpenWindow(this.gameObject.name);
-                    selectedTileLight.SetActive(true);
-                    selectedTileLight.transform.position = this.gameObject.transform.position + new Vector3(5, 5.3f, 5);
-                }
-            }
-            if (commonTowerState || splashTowerState || antiAirTowerState || freezingTowerState)
-            {
-                if (tileUiIsActive == false && towerUpgradeUiActive == false)
-                {
-                    //Debug.Log("Mouse clicked on " + gameObject.name);
-                    tileState = true;
-                    tileTowerUpgradeUI.GetComponent<TowerUpgradeMenu>().OpenWindow(this.gameObject.name);
-                    tileTowerUpgradeUI.GetComponent<TowerUpgradeMenu>().ReciveTowerName(towerName);
-                    selectedTileLight.SetActive(true);
-                    selectedTileLight.transform.position = this.gameObject.transform.position + new Vector3(5, 5.3f, 5);
-                }
-            }
+            tileState = true;
+            tileTowerUI.GetComponent<TowerMenu>().OpenWindow(this.gameObject.name);
         }
+        if (commonTowerState || splashTowerState || antiAirTowerState || freezingTowerState)
+        {
+            tileState = true;
+            tileTowerUpgradeUI.GetComponent<TowerUpgradeMenu>().OpenWindow(this.gameObject.name);
+            tileTowerUpgradeUI.GetComponent<TowerUpgradeMenu>().ReciveTowerName(towerName);
+        }
+        selectedTileLight.SetActive(true);
+        selectedTileLight.transform.position = this.transform.position + new Vector3(5, 5.3f, 5);
+    }
+    public void CloseTile()
+    {
+        tileState = false;
+        tileTowerUI.GetComponent<TowerMenu>().CloseWindow();
+        tileTowerUpgradeUI.GetComponent<TowerUpgradeMenu>().CloseWindow();
+        selectedTileLight.SetActive(false);
     }
 }

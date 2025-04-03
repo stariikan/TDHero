@@ -17,35 +17,35 @@ public class TowerButton : MonoBehaviour
     {
         if (whichButtonIsIt == 0) 
         {
-            tileObject.GetComponent<TileSelect>().BuildCommonTower();
+            tileObject.GetComponent<Tile>().BuildCommonTower();
         }
         if (whichButtonIsIt == 1)
         {
-            tileObject.GetComponent<TileSelect>().BuildSplashTower();
+            tileObject.GetComponent<Tile>().BuildSplashTower();
         }
         if (whichButtonIsIt == 2)
         {
-            tileObject.GetComponent<TileSelect>().BuildAntiAirTower();
+            tileObject.GetComponent<Tile>().BuildAntiAirTower();
         }
         if (whichButtonIsIt == 3)
         {
-            tileObject.GetComponent<TileSelect>().BuildFreezingTower();
+            tileObject.GetComponent<Tile>().BuildFreezingTower();
         }
         if (whichButtonIsIt == 4)
         {
-            tileObject.GetComponent<TileSelect>().TileUnselected();
+            tileObject.GetComponent<Tile>().CloseTile();
         }
         if (whichButtonIsIt == 5)
         {
-            tileObject.GetComponent<TileSelect>().RemoveAllTowers();
+            tileObject.GetComponent<Tile>().RemoveAllTowers();
         }
         if (whichButtonIsIt == 6)
         {
-            tileObject.GetComponent<TileSelect>().SellTower();
+            tileObject.GetComponent<Tile>().SellTower();
         }
         if (whichButtonIsIt == 7)
         {
-            tileObject.GetComponent<TileSelect>().UpgradeTower();
+            tileObject.GetComponent<Tile>().UpgradeTower();
         }
     }
     public void ReciveTileName(string name)

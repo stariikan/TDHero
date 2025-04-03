@@ -1,64 +1,39 @@
 using UnityEngine;
 
-public class LightningStun : MonoBehaviour
+public class LightningStun : MagicBase
 {
-    public float lifeTime = 1.5f; // Time before the projectile is destroyed
-    public float damage;         // Damage dealt by the projectile
-    public float explosionRadius = 5f; // Radius of the AOE explosion
-    public string enemyTag;          // Tag to identify enemies
-    public string enemyTag2;          // Tag to identify enemies
-    private float timer;             // Timer to track lifetime
+    public float explosionRadius = 5f;
+    private BoxCollider boxCollider;
+    public Vector3 offset;
+    private Transform projectileTransform;
 
-    private SphereCollider collider; // Capsule collider for the enemy
-
-    void Start()
+    protected override void Start()
     {
-        collider = GetComponent<SphereCollider>();
-        timer = 0f;
-        collider.radius = explosionRadius;
-        ExplosionMousePosition();
-    }
-    public void ExplosionMousePosition() 
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+        base.Start();
 
-        if (Physics.Raycast(ray, out hit))
+        boxCollider = GetComponent<BoxCollider>();
+        if (boxCollider == null)
         {
-            Vector3 newPosition = hit.point;
-            newPosition.y += 5;  // Adjust Y position
-            this.gameObject.transform.position = newPosition;  // Assign back to transform
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            Debug.LogError("BoxCollider is missing on LightningStun!");
+            return;
         }
 
+        // Set the Z-axis size for BoxCollider
+        Vector3 newSize = boxCollider.size;
+        newSize.z = explosionRadius;
+        boxCollider.size = newSize;
+
+        // Adjust position and rotation
+        projectileTransform = transform;
+        projectileTransform.position += offset;
+        projectileTransform.rotation = Quaternion.Euler(90, 0, 0);
     }
-    public void SetDamage(float dmg)
+
+    protected override void ApplyEffect(Collider other)
     {
-        damage = dmg;
-    }
-    public void SetRadius(float radius)
-    {
-        explosionRadius = radius;
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag(enemyTag) || other.CompareTag(enemyTag2))
+        if (other.TryGetComponent(out Enemy_stats enemy))
         {
-            Enemy_stats enemyStats = other.GetComponent<Enemy_stats>();
-            if (enemyStats != null)
-            {
-                enemyStats.Stun();
-            }
-        }
-        else return;
-    }
-    void Update()
-    {
-        timer += Time.deltaTime;
-        // Trigger the explosion when the bomb's lifetime expires
-        if (timer >= lifeTime)
-        {
-            Destroy(gameObject);
+            enemy.Stun(); // Apply the stun effect
         }
     }
 }

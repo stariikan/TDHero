@@ -8,11 +8,12 @@ TagManager:
   - Enemy
   - FxTemporaire
   - Flying_Enemy
+  - Tile
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Tile
   - Water
   - UI
   - Ground

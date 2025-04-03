@@ -1,102 +1,112 @@
 using System.Collections.Generic;
 using UnityEngine;
+
 public class TowerState : MonoBehaviour
 {
     // Tower stats
-    public float damage;                // Damage of the tower
-    public float attackDelayTime;      // Attack speed
-    public float attackTimer;         // Timer for attack speed
-    public float attackRange;        // Attack range of the Tower
+    public float damage;
+    public float attackDelayTime;
+    private float attackTimer;
+    public float attackRange;
 
-    public float freezingPower;    
-
+    public float freezingPower;
     public float bombRadius;
     public float bombDamage;
+    public float towerPrice;
 
-    public float towerPrice;        // Building price or Upgrade price
-
-    // Game object of projectile (shell)
+    // Projectile prefab
     public GameObject projectile;
+    public Vector3 offset = Vector3.zero;
 
-    public Vector3 offset = new Vector3(0, 0, 0);
-
-    // Layer mask for detecting enemies
+    // Enemy detection
     public string enemyTag;
     public string enemyTag2;
+    private HashSet<Collider> enemiesInRange = new HashSet<Collider>();
 
-    void Start()
+    private void Start()
     {
-        attackTimer = 0;
+        attackTimer = 0f;
+        gameObject.GetComponent<SphereCollider>().radius = attackRange;
+    }
+
+    private void Update()
+    {
+        attackTimer += Time.deltaTime;
+
+        if (attackTimer >= attackDelayTime && enemiesInRange.Count > 0)
+        {
+            Attack();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag(enemyTag) || other.CompareTag(enemyTag2))
+        {
+            enemiesInRange.Add(other);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (enemiesInRange.Contains(other))
+        {
+            enemiesInRange.Remove(other);
+        }
+    }
+
+    private void Attack()
+    {
+        if (enemiesInRange.Count == 0) return;
+
+        // Select first enemy in HashSet
+        Collider targetEnemy = null;
+        foreach (var enemy in enemiesInRange)
+        {
+            if (enemy != null && enemy.gameObject.activeInHierarchy)
+            {
+                targetEnemy = enemy;
+                break;
+            }
+        }
+
+        if (targetEnemy == null) return;
+
+        // Instantiate projectile
+        GameObject magic = Instantiate(projectile, transform.position + offset, transform.rotation);
+        magic.name = "Projectile";
+
+        CommonProjectile projectileComponent = magic.GetComponent<CommonProjectile>();
+        if (projectileComponent != null)
+        {
+            projectileComponent.SetTarget(targetEnemy.name);
+            projectileComponent.SetDamage(damage);
+            projectileComponent.SetBombDamage(bombDamage);
+            projectileComponent.SetBombRadius(bombRadius);
+            projectileComponent.SetFreezingPower(freezingPower);
+        }
+
+        magic.SetActive(true);
+
+        // Reset attack timer
+        attackTimer = 0f;
     }
 
     public void RemoveTower()
     {
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 
-    public void IncreaseDamage(float plus)
-    {
-        damage += plus;
-    }
-
-    public void IncreaseAttackSpeed(float plus)
-    {
-        attackDelayTime -= plus;
-    }
-
+    public void IncreaseDamage(float plus) => damage += plus;
+    public void IncreaseAttackSpeed(float plus) => attackDelayTime = Mathf.Max(0.1f, attackDelayTime - plus);
     public void IncreaseAttackRange(float plus)
     {
-        attackRange += plus; // Increase range dynamically
-    }
-
-    private void DetectEnemiesAndAttack()
-    {
-        // Detect all colliders in attack range
-        Collider[] colliders = Physics.OverlapSphere(transform.position, attackRange);
-
-        // Filter only enemies with the "Enemy" tag
-        List<Collider> enemiesInRange = new List<Collider>();
-        foreach (Collider col in colliders)
-        {
-            if (col.CompareTag(enemyTag) || col.CompareTag(enemyTag2))
-            {
-                enemiesInRange.Add(col);
-            }
-        }
-
-        // If there are enemies, attack the first one
-        if (enemiesInRange.Count > 0 && attackTimer >= attackDelayTime)
-        {
-            Collider targetEnemy = enemiesInRange[0]; // Pick the first enemy
-            GameObject magic = Instantiate(projectile, transform.position + offset, transform.rotation);
-            magic.name = "projectile";
-
-            CommonProjectile projectileComponent = magic.GetComponent<CommonProjectile>();
-            if (projectileComponent != null)
-            {
-                projectileComponent.SetTarget(targetEnemy.name);
-                projectileComponent.SetDamage(damage);
-                projectileComponent.SetBombDamage(bombDamage);
-                projectileComponent.SetBombRadius(bombRadius);
-                projectileComponent.SetFreezingPower(freezingPower);
-            }
-
-            magic.SetActive(true);
-            attackTimer = 0;
-        }
-    }
-
-    void Update()
-    {
-        attackTimer += Time.deltaTime;
-
-        // Check for enemies and attack
-        DetectEnemiesAndAttack();
+        attackRange += plus;
+        GetComponent<SphereCollider>().radius = attackRange;
     }
 
     private void OnDrawGizmosSelected()
     {
-        // Draw a sphere in the editor to visualize the attack range
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
     }

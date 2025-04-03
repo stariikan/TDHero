@@ -1,49 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
-public class PoisonSphere : MonoBehaviour
+public class PoisonSphere : MagicBase
 {
-    public float lifeTime = 6f; // Time before the projectile is destroyed
-    public float poisonDamagePerSec;         // Damage dealt by the projectile
-    public string enemyTag;          // Tag to identify enemies
-    public string enemyTag2;          // Tag to identify enemies
-    private float timer;             // Timer to track lifetime
-
-    public float projectileSpeed = 10f;        // Speed of the projectile
-    private Transform projectileTransform;
-    private SphereCollider projectileCollider;
+    public float poisonDamagePerSec;
+    public float projectileSpeed = 10f;
     public Vector3 offset;
-    void Start()
+    private Transform projectileTransform;
+
+    protected override void Start()
     {
         projectileTransform = transform;
-        projectileCollider = GetComponent<SphereCollider>();
-        timer = 0f;
         projectileTransform.position += offset;
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag(enemyTag) || other.CompareTag(enemyTag2))
-        {
-            Enemy_stats enemyStats = other.GetComponent<Enemy_stats>();
-            if (enemyStats != null)
-            {
-                enemyStats.EnemyPoison(poisonDamagePerSec);
-            }
-        }
-        else return;
-    }
-    void Update()
-    {
-        timer += Time.deltaTime;
 
-        // Trigger the explosion when the bomb's lifetime expires
-        if (timer >= lifeTime)
+    protected override void ApplyEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy))
         {
-            Destroy(gameObject);
+            enemy.EnemyPoison(poisonDamagePerSec);
         }
-        // Move the projectile towards
+    }
+
+    protected override void Update()
+    {
+        base.Update();
         projectileTransform.position += projectileTransform.forward * projectileSpeed * Time.deltaTime;
     }
 }

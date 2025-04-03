@@ -8,5 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TD_LVL_1.unity
     guid: a02404decac5ab345afafaed8d693e00
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a5fa976c850bd6d4c9a0796ebae0486f,
+      type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: ef2dacf54d9fa3c47815b48540b646c0, type: 2}
   m_UseUCBPForAssetBundles: 0

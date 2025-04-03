@@ -73,10 +73,10 @@ public class TowerUpgradeMenu : MonoBehaviour
     }
     public void ShowTowerStats()
     {
-        bool commonTowerState = tileObject.GetComponent<TileSelect>().commonTowerState;
-        bool splashTowerState = tileObject.GetComponent<TileSelect>().splashTowerState;
-        bool antiAirTowerState = tileObject.GetComponent<TileSelect>().antiAirTowerState;
-        bool freezingTowerState = tileObject.GetComponent<TileSelect>().freezingTowerState;
+        bool commonTowerState = tileObject.GetComponent<Tile>().commonTowerState;
+        bool splashTowerState = tileObject.GetComponent<Tile>().splashTowerState;
+        bool antiAirTowerState = tileObject.GetComponent<Tile>().antiAirTowerState;
+        bool freezingTowerState = tileObject.GetComponent<Tile>().freezingTowerState;
 
         towerName.text = towerNameText;
 
@@ -98,7 +98,7 @@ public class TowerUpgradeMenu : MonoBehaviour
         towerAttackSpeedStat = 1 / towerAttackSpeedStat;
         towerAttackSpeed.text = "Attack/sec: " + towerAttackSpeedStat;
 
-        towerLvlStat = tileObject.GetComponent<TileSelect>().towerLvl + 1;
+        towerLvlStat = tileObject.GetComponent<Tile>().towerLvl + 1;
         towerLvl.text = "Tower LVL: " + towerLvlStat;
         
         if (commonTowerState == true) 

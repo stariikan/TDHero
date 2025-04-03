@@ -1,86 +1,54 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class FlameThrower : MonoBehaviour
-{
-    public float damage;
-    public float duration;
-    private float timer;
 
+public class FlameThrower : MagicBase
+{
     public Transform player;
     public Vector3 offset;
-    private Transform magicTranform;
     private List<Enemy_stats> enemiesInRange = new List<Enemy_stats>();
 
-    void Start()
+    protected override void Start()
     {
-        if (player == null)
-        {
-            Debug.LogError("Player reference is not assigned!");
-            Destroy(gameObject);
-            return;
-        }
-
-        magicTranform = GetComponent<Transform>();
-        duration = player.GetComponent<TDCombat>()?.coolDownTimerDuaration ?? 5f;
-        timer = 0;
-
+        base.Start();
         StartCoroutine(DealDamageOverTime());
     }
 
-    void Update()
+    protected override void Update()
     {
-        timer += Time.deltaTime;
-        if (Input.GetMouseButtonDown(1) || timer >= duration)
-        {
-            StopMagic();
-        }
-
+        base.Update();
         if (player != null)
         {
-            magicTranform.position = player.position + player.TransformDirection(offset);
-            magicTranform.rotation = player.rotation * Quaternion.Euler(0, -90, 0);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if ((other.CompareTag("Enemy") || other.CompareTag("Flying_Enemy")) && other.TryGetComponent(out Enemy_stats enemy))
-        {
-            if (!enemiesInRange.Contains(enemy))
-            {
-                enemiesInRange.Add(enemy);
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.TryGetComponent(out Enemy_stats enemy))
-        {
-            enemiesInRange.Remove(enemy);
+            transform.position = player.position + player.TransformDirection(offset);
+            transform.rotation = player.rotation * Quaternion.Euler(0, -90, 0);
         }
     }
 
     private IEnumerator DealDamageOverTime()
     {
-        while (timer < duration)
+        while (timer < lifeTime)
         {
             yield return new WaitForSeconds(1f);
-
-            for (int i = 0; i < enemiesInRange.Count; i++)
+            foreach (var enemy in enemiesInRange)
             {
-                if (enemiesInRange[i] != null)
+                if (enemy != null)
                 {
-                    enemiesInRange[i].GetDamage(damage);
+                    enemy.GetDamage(damage);
                 }
             }
         }
     }
 
-    private void StopMagic()
+    protected override void ApplyEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy) && !enemiesInRange.Contains(enemy))
+        {
+            enemiesInRange.Add(enemy);
+        }
+    }
+
+    protected override void OnMagicEnd()
     {
         enemiesInRange.Clear();
-        Destroy(gameObject);
     }
 }
