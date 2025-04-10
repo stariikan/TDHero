@@ -8,6 +8,7 @@ public abstract class MagicBase : MonoBehaviour
     public float lifeTime = 5f;
     public string enemyTag = "Enemy";
     public string enemyTag2 = "Flying_Enemy";
+    public int level = 0;
     protected float timer = 0f;
 
     protected virtual void Start()
@@ -38,14 +39,27 @@ public abstract class MagicBase : MonoBehaviour
     {
         damage = dmg;
     }
+    public void IncreaseMagicLevel() 
+    {
+        level += 1;
+        damage *= 1 + (level / 10);
+    }
     protected virtual void OnMagicEnd() { }
 
     protected void ExplosionMousePosition()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        RaycastHit[] hits = Physics.RaycastAll(ray, Mathf.Infinity);
+        foreach (RaycastHit hit in hits)
         {
-            transform.position = new Vector3(hit.point.x, 0.1f, hit.point.z);
+            //Debug.Log("Hit: " + hit.collider.gameObject.name + " on layer " + LayerMask.LayerToName(hit.collider.gameObject.layer));
+
+            // Check if the hit object is a tile
+            if (hit.collider.gameObject.CompareTag("Tile") || hit.collider.gameObject.CompareTag("Ground"))
+            {
+                transform.position = new Vector3(hit.point.x, 0.1f, hit.point.z);
+                break; // Stop looking once we find a tile
+            }
         }
     }
 }

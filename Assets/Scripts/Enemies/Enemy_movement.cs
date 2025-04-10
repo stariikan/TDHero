@@ -14,6 +14,7 @@ public class Enemy_movement : MonoBehaviour
     private string gameObjTag;
     void Start()
     {
+        if (target == null) target = GameObject.Find("Finish");
         navMeshAgent = GetComponent<NavMeshAgent>();
         m_animator = GetComponent<Animator>();
         objTransform = GetComponent<Transform>();

@@ -11,6 +11,7 @@ public class PoisonSphere : MagicBase
     {
         projectileTransform = transform;
         projectileTransform.position += offset;
+        poisonDamagePerSec *= 1 + (level / 10);
     }
 
     protected override void ApplyEffect(Collider other)

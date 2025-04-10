@@ -8,6 +8,7 @@ public class Enemy_stats : MonoBehaviour
     public float e_maxHP;               // Maximum health
     public float e_currentHP;          // Current health
     public float coinReward;            // Reward for death
+    public float expReward;
     private string enemyStarterTag; //Enemy Tag that was on the start
     private CapsuleCollider bodyCollider; // Capsule collider for the enemy
 
@@ -179,21 +180,23 @@ public class Enemy_stats : MonoBehaviour
     {
         if (damage >= 0.1)
         {
-            e_currentHP -= damage;
+            float normalizedDamage = Mathf.Round(damage * 10f) / 10f;
+            e_currentHP -= normalizedDamage;
             HealthBarUI();
             // Create a copy of this GameObject
             GameObject damageUI = Instantiate(takenDamageUi, transform.position, Quaternion.identity);
             damageUI.transform.SetParent(takenDamageUi.transform.parent, false);
 
             // Optionally, set the parent of the copied object to match the original's parent
-            damageUI.GetComponent<TextMeshProUGUI>().text = $"{damage}";
-            damageUI.SetActive(true);
+            damageUI.GetComponent<TextMeshProUGUI>().text = $"{normalizedDamage}";
+            if (MainCamera != null) damageUI.SetActive(true);
 
             if (e_currentHP <= 0)
             {
                 e_currentHP = 0;
                 player.GetComponent<PlayerStats>().CoinPlus(coinReward);
-                MainCamera.GetComponent<Monster_Generate>().KillMonster();
+                player.GetComponent <PlayerStats>().GetExp(expReward);
+                if (MainCamera != null) MainCamera.GetComponent<Monster_Generate>().KillMonster();
                 DeadAndDestroy();
             }
         }

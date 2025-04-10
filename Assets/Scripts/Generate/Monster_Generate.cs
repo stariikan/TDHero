@@ -16,8 +16,11 @@ public class Monster_Generate : MonoBehaviour
     public GameObject[] game_bosses; // List of the enemies that will be created
     private int boos_number;
     public Transform target;       // Position where wave will be created
+    public Transform target_2;       // Position 2 where wave will be created
+    public Transform target_3;       // Position 3 where wave will be created
     public bool createWave;       // Bool for active wave
     public float stage;          // Stage number
+    public bool mainMenu;
 
     public GameObject waveDelayTimer; // UI Wave timer
     public GameObject stageCounter;  // UI Stage counter
@@ -28,23 +31,22 @@ public class Monster_Generate : MonoBehaviour
 
     void Start()
     {
+        roadNavigationSystem.GetComponent<NavMeshManager>().UpdateNavMesh();
         if (population < 0) population = 0;
-        createWave = false;
+        if (!mainMenu) createWave = false;
         timerGen = 0f;
-        stage = 0;
+        if (!mainMenu) stage = 0;
         monsters = 0;
         aliveMonsters = 0;
         timerStageDelay = stageDelay;
         bossLVL = false;
-        roadNavigationSystem.GetComponent<NavMeshManager>().UpdateNavMesh();
-
     }
     // Update is called once per frame
     void Update()
     {
         timerGen += Time.deltaTime;
         if (monsters <= population && aliveMonsters <= 0 && stage <= 29) monsters = 0;
-        if (monsters == 0 && stage <= 29 && aliveMonsters <= 0) DelayBeforeWave();
+        if ((monsters == 0 && stage <= 29 && aliveMonsters <= 0) || mainMenu) DelayBeforeWave();
         StartCoroutine(OnGeneratingRoutine());
     }
     public void DelayBeforeWave()
@@ -52,11 +54,11 @@ public class Monster_Generate : MonoBehaviour
         if (timerStageDelay > 0)
         {
             createWave = false;
-            waveDelayTimer.GetComponent<UICounter>().ActivateUI();
+            if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().ActivateUI();
             timerStageDelay -= Time.deltaTime;
             int displayTimeInt = (int)timerStageDelay;
             float displayTimeFloat = (float)displayTimeInt;
-            waveDelayTimer.GetComponent<UICounter>().TakeCounterData(displayTimeFloat);
+            if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().TakeCounterData(displayTimeFloat);
         }
         if (timerStageDelay <= 0)
         {
@@ -66,12 +68,12 @@ public class Monster_Generate : MonoBehaviour
     }
     public void StartWave()
     {
-        waveDelayTimer.GetComponent<UICounter>().DeactivateUI();
+        if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().DeactivateUI();
         createWave = true;
         stage += 1;
         StagesStats();
-        stageCounter.GetComponent<UICounter>().TakeCounterData(stage);
-        waveDelayTimer.GetComponent<UICounter>().TakeCounterData(timerStageDelay);
+        if (stageCounter != null) stageCounter.GetComponent<UICounter>().TakeCounterData(stage);
+        if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().TakeCounterData(timerStageDelay);
     }
     public void KillMonster()
     {
@@ -295,11 +297,24 @@ public class Monster_Generate : MonoBehaviour
             boos_number = 2;
             bossLVL = true;
         }
+        if (mainMenu) //Main_menu
+        {
+            stage = 99999;
+            population = 99999;
+            delayGeneration = 1;
+            firstEnemyNumber = 0;
+            lastEnemyNumber = 24;
+        }
         aliveMonsters = population;
     }
     public void CreateBoss()
     {
         Vector3 position = target.position;
+        int randomPosition = 0;
+        if (target_2 != null) randomPosition = Random.Range(1, 3);
+        if (target_3 != null) randomPosition = Random.Range(1, 4);
+        if (randomPosition == 2) position = target_2.position;
+        if (randomPosition > 2) position = target_3.position;
         if (bossLVL)
         {
             GameObject boss = Instantiate(game_bosses[boos_number], new Vector3(position.x, position.y, position.z), Quaternion.identity);
@@ -311,6 +326,11 @@ public class Monster_Generate : MonoBehaviour
     public IEnumerator OnGeneratingRoutine()
     {
         Vector3 position = target.position;
+        int randomPosition = 0;
+        if (target_2 != null) randomPosition = Random.Range(1, 3);
+        if (target_3 != null) randomPosition = Random.Range(1, 4);
+        if (randomPosition == 2) position = target_2.position;
+        if (randomPosition > 2) position = target_3.position;
         if (monsters < population && timerGen > delayGeneration && createWave) 
         {
             GameObject enemy = Instantiate(game_units[Random.Range(firstEnemyNumber, lastEnemyNumber)], new Vector3(position.x, position.y, position.z), Quaternion.identity);

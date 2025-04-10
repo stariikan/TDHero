@@ -17,7 +17,7 @@ public class TileSelect : MonoBehaviour
     }
     private void Close()
     {
-        selectedTile.GetComponent<Tile>().CloseTile();
+        if (selectedTile != null) selectedTile.GetComponent<Tile>().CloseTile();
     }
     private void Select()
     {

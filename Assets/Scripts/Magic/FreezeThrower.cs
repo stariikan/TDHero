@@ -11,6 +11,7 @@ public class FreezeThrower : MagicBase
 
     protected override void Start()
     {
+        freezingPower *= 1 + (level / 10);
         base.Start();
         if (player == null)
         {

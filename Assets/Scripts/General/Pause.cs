@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     public GameObject pauseMenuUI; // Assign in Inspector
+    public GameObject levelUpUI;
     public GameObject gameOverUI;
     public bool isPaused = false;
     public bool gameOver = false;
@@ -40,6 +41,29 @@ public class Pause : MonoBehaviour
             {
                 gameOverUI.SetActive(true);
             }
+        }
+    }
+    public void LevelUpPause()
+    {
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0f : 1f;
+
+        // Show/hide the pause menu
+        if (levelUpUI != null)
+        {
+            levelUpUI.SetActive(isPaused);
+            levelUpUI.GetComponent<RandomMagicCard>().OpenLevelUpWindow();
+        }
+    }
+    public void LevelUpResume()
+    {
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0f : 1f;
+
+        // Show/hide the pause menu
+        if (levelUpUI != null)
+        {
+            levelUpUI.SetActive(isPaused);
         }
     }
     public void ResumeGame()

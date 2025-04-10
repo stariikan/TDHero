@@ -8,6 +8,7 @@ public class SunStrike : MagicBase
 
     protected override void Update()
     {
+        timerSpeed *= 1 + (level / 10);
         base.Update();
         ShrinkAndStrike();
     }
@@ -24,7 +25,7 @@ public class SunStrike : MagicBase
         transform.localScale = Vector3.Max(transform.localScale, new Vector3(0.5f, 0.5f, 0.5f));
 
         // When fully shrunk, spawn the SunStrikeHit object
-        if (transform.localScale == new Vector3(0.5f, 0.5f, 0.5f) && !isStruck && sunStrikeHit != null)
+        if (transform.localScale == new Vector3(0.7f, 0.7f, 0.7f) && !isStruck && sunStrikeHit != null)
         {
             Instantiate(sunStrikeHit, new Vector3(transform.position.x, 50f, transform.position.z), Quaternion.Euler(90, 0, 0));
             isStruck = true;

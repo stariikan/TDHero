@@ -18,6 +18,8 @@ public class LowerEnemies : MagicBase
         projectileTransform = transform;
         projectileTransform.position += offset;
         projectileTransform.rotation = Quaternion.Euler(-90, 0, 0);
+        explosionRadius *= 1 + (level / 10);
+        effectTime *= 1 + (level / 10);
     }
 
     protected override void ApplyEffect(Collider other)

@@ -7,6 +7,7 @@ public class MagicExplosion : MagicBase
 
     protected override void Start()
     {
+        explosionRadius *= 1 + (level / 10);
         base.Start();
         sphereCollider = GetComponent<SphereCollider>();
         sphereCollider.radius = explosionRadius;

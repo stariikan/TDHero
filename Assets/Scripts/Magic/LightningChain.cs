@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LightningChain : MagicBase
 {
-    public int maxBounce = 5;
+    public int maxBounce = 4;
     private int currentBounce = 0;
     public GameObject lightningPrefab;
     private bool isDamaged = false;
@@ -10,6 +10,7 @@ public class LightningChain : MagicBase
     protected override void Start()
     {
         this.transform.position = this.transform.position + offset;
+        maxBounce += level;
     }
     protected override void ApplyEffect(Collider other)
     {

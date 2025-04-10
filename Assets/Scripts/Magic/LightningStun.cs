@@ -9,6 +9,7 @@ public class LightningStun : MagicBase
 
     protected override void Start()
     {
+        explosionRadius *= 1 + (level / 10);
         base.Start();
 
         boxCollider = GetComponent<BoxCollider>();
