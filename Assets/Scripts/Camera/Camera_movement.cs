@@ -7,39 +7,77 @@ public class Camera_movement : MonoBehaviour
 
     public Transform target;  // Reference to the player's transform
     public float smoothSpeed = 0.125f;  // How smoothly the camera follows the player
-    public Vector3 offset = new Vector3(0f, 10f, 0f); // Offset from the player's position (adjust height for top-down view)
 
     public float minY;  // Minimum Y position
     public float maxY; // Maximum Y position
-
-    public float cameraAngle = 90f; // Camera angle to control the tilt (default: 90 for top-down)
     private Vector3 currentVelocity; // Used for smoothing
+
+    //Camera Modes
+    public int cameraMode;
+    public GameObject cameraIcon;
+    
+    public Vector3 totalWarCamera;
+    public float totalWarCameraAngle;
+
+    public Vector3 lolCamera;
+    public float lolCameraAngle;
+
+    public Vector3 oldCamera;
+    public float oldCameraAngle;
+
+    private Vector3 offset;
+    private float cameraAngle; // Camera angle to control the tilt (default: 90 for top-down)
+
 
     void Start()
     {
+        cameraMode = 1;
         if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
-    }
-
-      void LateUpdate() // Use LateUpdate for camera follow to ensure all player movement is complete
-    {
         if (target == null)
         {
             Debug.LogWarning("Target not assigned to the camera!");
             return;
         }
-
-        // Adjust camera Y position with mouse scroll (zooming in and out)
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if (scroll != 0f)
+        ChangeCamera();
+    }
+    public void ChangeCamera()
+    {
+        if (cameraMode == 1) 
         {
-            offset.y -= scroll * sensitivity;
-            offset.y = Mathf.Clamp(offset.y, minY, maxY);
+            offset = oldCamera;
+            cameraAngle = oldCameraAngle;
         }
+        if (cameraMode == 2)
+        {
+            offset = lolCamera;
+            cameraAngle = lolCameraAngle;
+        }
+        if (cameraMode == 3)
+        {
+            offset = totalWarCamera;
+            cameraAngle = totalWarCameraAngle;
+        }
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (cameraMode == 1)
+                cameraMode = 2;
+            else if (cameraMode == 2)
+                cameraMode = 3;
+            else if (cameraMode == 3)
+                cameraMode = 1;
 
+            ChangeCamera();
+        }
+    }
+    void LateUpdate() // Use LateUpdate for camera follow to ensure all player movement is complete
+    {
         // Maintain top-down view by adjusting the camera's Y position and looking at the player
         Vector3 desiredPosition = target.position + new Vector3(offset.x, offset.y, offset.z);
 
@@ -51,13 +89,5 @@ public class Camera_movement : MonoBehaviour
 
         // Adjust the camera's tilt using the cameraAngle parameter
         transform.rotation = Quaternion.Euler(cameraAngle, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z); // Set camera to desired angle
-
-        if (offset.y < 10) offset.z = offset.y;
-        if (offset.y > 30)
-        {
-            float offsetAdjaster = offset.y - 30; 
-            offset.z = 10 + offsetAdjaster;
-        }
-
     }
 }

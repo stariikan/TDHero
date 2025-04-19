@@ -38,7 +38,7 @@ public class Enemy_movement : MonoBehaviour
          {
             navMeshAgent.enabled = true;
             navMeshAgent.SetDestination(target.transform.position);
-            m_animator.SetInteger("run", 1);
+            //m_animator.SetInteger("run", 1);
             objTransform.position = Vector3.Lerp(objTransform.position, new Vector3(objTransform.position.x, startY, objTransform.position.z), 1f * Time.deltaTime);
         }
          if (isTagChanged == true)

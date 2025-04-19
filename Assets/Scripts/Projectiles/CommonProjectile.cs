@@ -8,6 +8,7 @@ public class CommonProjectile : MonoBehaviour
     public float freezingPower;             // Power of decreasing enemies speed
     private string targetName;             // Name of the target
     public GameObject target;             // Target object
+    public Transform towerTransform;
 
     public int typeOfProjectile; // 0 - common damage, 1 - freeze damage, 3 - poison damage, 4 - fire damage, 5 - AOE damage
 
@@ -49,6 +50,10 @@ public class CommonProjectile : MonoBehaviour
         targetName = name;
         FindEnemy();
     }
+    public void SetTowerTransform(Transform tower)
+    {
+        towerTransform = tower;
+    }
     private void FindEnemy()
     {
         GameObject targetObject = GameObject.Find(targetName);
@@ -85,7 +90,13 @@ public class CommonProjectile : MonoBehaviour
         }
         else return;
     }
-    void Update()
+    protected virtual void RotateTowardsTarget()
+    {
+        if (target != null)
+            projectileTransform.LookAt(target.transform);
+    }
+
+    protected virtual void Update()
     {
         timer += Time.deltaTime;
 
@@ -96,18 +107,16 @@ public class CommonProjectile : MonoBehaviour
             return;
         }
 
-        // Move the projectile towards the target
         if (target != null)
         {
             Vector3 direction = (target.transform.position - projectileTransform.position).normalized;
             projectileTransform.position += direction * projectileSpeed * Time.deltaTime;
 
-            // Optionally, rotate the projectile to face the target
-            projectileTransform.LookAt(target.transform);
+            // Now call overridable method
+            RotateTowardsTarget();
         }
         else
         {
-            // Destroy the projectile if the target is missing
             Destroy(gameObject);
         }
     }

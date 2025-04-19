@@ -3,44 +3,28 @@
   "WorkspaceRootPath": "C:\\UnityGame\\MagicInsector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\ui\\player\\uicounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\player\\uicounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\buildings\\towerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buildings\\towerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\ui\\towermenu\\towermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\towermenu\\towermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\ui\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\general\\tileselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\general\\tileselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\generate\\monster_generate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\generate\\monster_generate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\general\\buildsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\general\\buildsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\enemies\\enemy_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemy_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\projectiles\\ice_thrower_projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectiles\\ice_thrower_projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\general\\pause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\general\\pause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\enemies\\enemy_stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemy_stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\player\\tdplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\tdplayermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\ui\\magic\\magicdescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\magic\\magicdescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\camera\\camera_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\camera_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|C:\\UnityGame\\MagicInsector\\assets\\scripts\\projectiles\\commonprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10C7902-562B-E307-A584-8B398E6F928F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectiles\\commonprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,128 +34,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UICounter.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\Player\\UICounter.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Player\\UICounter.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\Player\\UICounter.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\Player\\UICounter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "BuildSystem.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\General\\BuildSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\General\\BuildSystem.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\General\\BuildSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\General\\BuildSystem.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwDcAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T06:49:50.575Z",
+              "WhenOpened": "2025-04-19T01:52:52.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Pause.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\General\\Pause.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\General\\Pause.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\General\\Pause.cs",
-              "RelativeToolTip": "Assets\\Scripts\\General\\Pause.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwFMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T06:48:34.603Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\MainMenu\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenu\\MainMenu.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\MainMenu\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\MainMenu\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "TileSelect.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\General\\TileSelect.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\General\\TileSelect.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\General\\TileSelect.cs",
+              "RelativeToolTip": "Assets\\Scripts\\General\\TileSelect.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBwAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T06:44:12.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Enemy_stats.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Enemies\\Enemy_stats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemy_stats.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Enemies\\Enemy_stats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemy_stats.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAtwL8AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T05:03:39.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Enemy_movement.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Enemies\\Enemy_movement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemy_movement.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Enemies\\Enemy_movement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemy_movement.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCcAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:33:45.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Monster_Generate.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Generate\\Monster_Generate.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Generate\\Monster_Generate.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Generate\\Monster_Generate.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Generate\\Monster_Generate.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:32:22.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TDPlayerMovement.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\TDPlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TDPlayerMovement.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\TDPlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\TDPlayerMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T04:26:41.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MagicDescription.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\Magic\\MagicDescription.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Magic\\MagicDescription.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\Magic\\MagicDescription.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\Magic\\MagicDescription.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T08:38:06.672Z"
+              "WhenOpened": "2025-04-18T03:27:11.242Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerStats.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\PlayerStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStats.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Player\\PlayerStats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStats.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAMwCMAAAA6AAAAAAAAAA==",
+              "Title": "TowerMenu.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\TowerMenu\\TowerMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\TowerMenu\\TowerMenu.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\UI\\TowerMenu\\TowerMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\TowerMenu\\TowerMenu.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T08:33:48.601Z"
+              "WhenOpened": "2025-04-16T09:09:58.648Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Camera_movement.cs",
-              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Camera\\Camera_movement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\Camera_movement.cs",
-              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Camera\\Camera_movement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Camera\\Camera_movement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TowerState.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Buildings\\TowerState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Buildings\\TowerState.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Buildings\\TowerState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Buildings\\TowerState.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAArwBkAAACGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T08:28:32.728Z"
+              "WhenOpened": "2025-04-13T23:57:25.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ice_Thrower_Projectile.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Projectiles\\Ice_Thrower_Projectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Projectiles\\Ice_Thrower_Projectile.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Projectiles\\Ice_Thrower_Projectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Projectiles\\Ice_Thrower_Projectile.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:02:40.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CommonProjectile.cs",
+              "DocumentMoniker": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Projectiles\\CommonProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Projectiles\\CommonProjectile.cs",
+              "ToolTip": "C:\\UnityGame\\MagicInsector\\Assets\\Scripts\\Projectiles\\CommonProjectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Projectiles\\CommonProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T01:23:44.856Z"
             }
           ]
         }

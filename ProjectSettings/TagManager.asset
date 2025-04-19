@@ -9,6 +9,7 @@ TagManager:
   - FxTemporaire
   - Flying_Enemy
   - Tile
+  - Tower
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Road
   - Enemy
   - Flying_Enemy
-  - 
+  - Tower
   - 
   - 
   - 

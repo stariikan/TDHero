@@ -5,10 +5,11 @@ public class TileSelect : MonoBehaviour
 {
     // Main camera obj
     public GameObject mainCamera;
-    private GameObject selectedTile;
+    private GameObject selectedTower;
+    public GameObject towerMenu;
     private void Start()
     {
-        selectedTile = null;
+        selectedTower = null;
     }
     void Update()
     {
@@ -17,23 +18,32 @@ public class TileSelect : MonoBehaviour
     }
     private void Close()
     {
-        if (selectedTile != null) selectedTile.GetComponent<Tile>().CloseTile();
+        if (selectedTower != null) selectedTower.GetComponent<TowerState>().UnselectTower();
+        selectedTower = null;
     }
     private void Select()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit[] hits = Physics.RaycastAll(ray, Mathf.Infinity);
-        foreach (RaycastHit hit in hits)
+        bool towerMenuUi = towerMenu.GetComponent<TowerMenu>().windowIsActive;
+        bool isPausedUi = mainCamera.GetComponent<Pause>().isPaused;
+        bool buildSystemIsActive = mainCamera.GetComponent<BuildSystem>().buildMode;
+        if (towerMenuUi == false && isPausedUi == false && buildSystemIsActive == false) 
         {
-            //Debug.Log("Hit: " + hit.collider.gameObject.name + " on layer " + LayerMask.LayerToName(hit.collider.gameObject.layer));
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit[] hits = Physics.RaycastAll(ray, Mathf.Infinity);
 
-            // Check if the hit object is a tile
-            if (hit.collider.gameObject.CompareTag("Tile"))
+            foreach (RaycastHit hit in hits)
             {
-                selectedTile = hit.collider.gameObject;
-                break; // Stop looking once we find a tile
+                Collider col = hit.collider;
+
+                // Check if the hit object is a tower AND it has a BoxCollider (not a trigger)
+                if (col.gameObject.CompareTag("Tower") && col is BoxCollider && !col.isTrigger)
+                {
+                    selectedTower = col.gameObject;
+                    Debug.Log("Selected Tower: " + selectedTower.name);
+                    selectedTower.GetComponent<TowerState>().SelectTower();
+                    break;
+                }
             }
         }
-        selectedTile.GetComponent<Tile>().SelectTile();
     }
 }

@@ -3,86 +3,92 @@ using UnityEngine.UI;
 
 public class TowerMenu : MonoBehaviour
 {
-    public string tileName;
-    public GameObject tileObject;
     public bool windowIsActive; // Check that window already open or not
 
-    // Buttons game objects
-    public GameObject commonTowerButton;
-    public GameObject splashTowerButton;
-    public GameObject antiAirTowerButton;
-    public GameObject FreezingTowerButton;
-    public GameObject removeButton;
-    public GameObject closeButton;
-
     //Tower game objects ant text object for price
-    public GameObject commonTower;
-    public GameObject splashTower;
-    public GameObject antiAirTower;
-    public GameObject freezingTower;
+    public GameObject towerObj;
 
-    public Text commonTowerPriceText;
-    public Text splashTowerPriceText;
-    public Text antiAirTowerPriceText;
-    public Text freezingTowerPriceText;
+    public float maxHP;
+    public float e_currentHP;
+    public float damage;
+    public float attackDelayTime;
+    public float freezingPower;
+    public float bombRadius;
+    public float bombDamage;
+    public float upgradeTowerPrice;
 
-    // Text game object
-    public Text tileNameText;
-    public string towerMenuText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        windowIsActive = true;
-        commonTowerPriceText.text = "" + commonTower.GetComponent<TowerState>().towerPrice;
-        splashTowerPriceText.text = "" + splashTower.GetComponent<TowerState>().towerPrice;
-        antiAirTowerPriceText.text = "" + antiAirTower.GetComponent<TowerState>().towerPrice;
-        freezingTowerPriceText.text = "" + freezingTower.GetComponent<TowerState>().towerPrice;
-    }
+    public Text towerName;
+    public Text maxHPText;
+    public Text e_currentHPText;
+    public Text damageText;
+    public Text attackDelayTimeText;
+    public Text freezingPowerText;
+    public Text bombRadiusText;
+    public Text bombDamageText;
+    public Text upgradeTowerPriceText;
+
     public void OpenWindow(string name)
     {
         if (!windowIsActive)
         {
             windowIsActive = true;
-            tileName = name;
+            towerName.text = name;
+            FindTower(name);
+            GatherTowerStats();
+            UseTowerStats();
             this.gameObject.SetActive(true);
-            FindTile();
         }
+    }
+    public void UpgradeTower()
+    {
+        towerObj.GetComponent<TowerState>().UpgradeTower();
+    }
+    public void SellTower()
+    {
+        towerObj.GetComponent<TowerState>().SellTower();
+        CloseWindow();
     }
     public void CloseWindow()
     {
         if (windowIsActive)
         {
             windowIsActive = false;
-            tileNameText.text = towerMenuText;
+            towerObj = null;
             this.gameObject.SetActive(false);
         }
     }
-    public void ShowTileName()
+    public void FindTower(string name)
     {
-        tileNameText.text = tileName;
-    }
-    public void FindTile()
-    {
-        GameObject targetObject = GameObject.Find(tileName);
+        GameObject targetObject = GameObject.Find(name);
         if (targetObject != null)
         {
-            tileObject = targetObject;
-            ShowTileName();
-            commonTowerButton.GetComponent<TowerButton>().ReciveTileName(tileName);
-            splashTowerButton.GetComponent<TowerButton>().ReciveTileName(tileName);
-            antiAirTowerButton.GetComponent<TowerButton>().ReciveTileName(tileName);
-            FreezingTowerButton.GetComponent<TowerButton>().ReciveTileName(tileName);
-            removeButton.GetComponent<TowerButton>().ReciveTileName(tileName);
-            closeButton.GetComponent<TowerButton>().ReciveTileName(tileName);
+            towerObj = targetObject;
         }
         else
         {
             Debug.LogWarning("Object not found!");
         }
     }
-    // Update is called once per frame
-    void Update()
+    public void GatherTowerStats()
     {
-
+        upgradeTowerPrice = towerObj.GetComponent<TowerState>().upgradeTowerPrice;
+        maxHP = towerObj.GetComponent<TowerState>().e_maxHP;
+        e_currentHP = towerObj.GetComponent<TowerState>().e_currentHP;
+        damage = towerObj.GetComponent<TowerState>().damage;
+        attackDelayTime = towerObj.GetComponent<TowerState>().attackDelayTime;
+        freezingPower = towerObj.GetComponent<TowerState>().freezingPower;
+        bombRadius = towerObj.GetComponent<TowerState>().bombRadius;
+        bombDamage = towerObj.GetComponent<TowerState>().bombDamage;
+    }
+    public void UseTowerStats()
+    {
+        upgradeTowerPriceText.text = "" + upgradeTowerPrice;
+        maxHPText.text = "" + maxHP;
+        e_currentHPText.text = "" + e_currentHP;
+        damageText.text = "" + damage;
+        attackDelayTimeText.text = "" + attackDelayTime;
+        freezingPowerText.text = "" + freezingPower;
+        bombRadiusText.text = "" + bombRadius;
+        bombDamageText.text = "" + bombDamage;
     }
 }

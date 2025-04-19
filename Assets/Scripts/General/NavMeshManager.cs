@@ -9,15 +9,16 @@ public class NavMeshManager : MonoBehaviour
     void Start()
     {
         navMeshSurface = GetComponent<NavMeshSurface>();
+        UpdateNavMesh();
         if (NavMesh.SamplePosition(transform.position, out var hit, 1.0f, NavMesh.AllAreas))
         {
             Debug.Log("NavMesh exists!");
         }
         else
         {
-            navMeshSurface.BuildNavMesh();
+            //navMeshSurface.BuildNavMesh();
             Debug.LogWarning("No NavMesh found under this position!");
-        } 
+        }
     }
     public void UpdateNavMesh()
     {

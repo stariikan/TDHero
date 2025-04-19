@@ -28,7 +28,7 @@ public class TDPlayerMovement : MonoBehaviour
         // Get input for forward/backward movement and strafing
         forwardInput = Input.GetAxis("Vertical");  // W/S or Up/Down arrows
         strafeInput = Input.GetAxis("Horizontal"); // A/D or Left/Right arrows
-        AnimationState();
+        //AnimationState();
         // Check if the player is grounded
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 

@@ -341,6 +341,5 @@ public class Monster_Generate : MonoBehaviour
             timerStageDelay = stageDelay;
         }
         yield return new WaitForEndOfFrame(); // waiting for blocks to be installed
-
     }
 }
