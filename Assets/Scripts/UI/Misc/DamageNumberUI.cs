@@ -79,11 +79,11 @@ public class DamageNumberUI : MonoBehaviour
         //offset.x = targetX;
 
         // Wait for X seconds before moving down
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
         // Reset time for downward motion
         time = 0;
-        float downY = targetY - 2; // Move back down
+        float downY = targetY - 0; // Move back down
 
         // Move down smoothly
         while (time < duration)
@@ -97,7 +97,7 @@ public class DamageNumberUI : MonoBehaviour
         offset.y = downY;
 
         // Wait for X second before destroying
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
         Destroy(gameObject); // Destroy after all movements are completed
     }

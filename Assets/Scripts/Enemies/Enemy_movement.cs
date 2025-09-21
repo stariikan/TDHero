@@ -1,70 +1,75 @@
 using UnityEngine;
 using UnityEngine.AI;
-using static UnityEngine.GraphicsBuffer;
 
 public class Enemy_movement : MonoBehaviour
 {
-    public float rotationSpeed = 3.0f;
+    public float rotationSpeed;
+    public float moveSpeed;
+
     public GameObject target;
     private Transform objTransform;
     private NavMeshAgent navMeshAgent;
     private Animator m_animator;
+
     private float startY;
+    public bool useNavMesh;
     private bool isTagChanged;
-    private string gameObjTag;
+    public string gameObjTag;
+
     void Start()
     {
-        if (target == null) target = GameObject.Find("Finish");
         navMeshAgent = GetComponent<NavMeshAgent>();
         m_animator = GetComponent<Animator>();
-        objTransform = GetComponent<Transform>();
+        navMeshAgent.speed = moveSpeed;
+        objTransform = transform;
         startY = objTransform.position.y;
         isTagChanged = false;
+        useNavMesh = true;
         gameObjTag = tag;
+        navMeshAgent.enabled = true;
 
         if (navMeshAgent == null)
         {
             Debug.LogError("NavMeshAgent not found!");
             return;
         }
-
-        navMeshAgent.enabled = true;
-        SetDestination(target.transform.position);
     }
 
     void Update()
     {
-         if (isTagChanged == false)
-         {
+        if (useNavMesh)
+        {
             navMeshAgent.enabled = true;
             navMeshAgent.SetDestination(target.transform.position);
-            //m_animator.SetInteger("run", 1);
+            if (m_animator != null) m_animator.SetInteger("run", 1);
             objTransform.position = Vector3.Lerp(objTransform.position, new Vector3(objTransform.position.x, startY, objTransform.position.z), 1f * Time.deltaTime);
         }
-         if (isTagChanged == true)
+        CheckDistanceWithTarget();
+    }
+    private void CheckDistanceWithTarget()
+    {
+        if (target != null)
         {
-            navMeshAgent.enabled = false;
-            if (gameObjTag == "Enemy")
+            float distanceToTarget = Vector3.Distance(transform.position, target.transform.position);
+            //Debug.Log(distanceToTarget);
+            if (distanceToTarget < 5f)
             {
-                GoingUp();
+                navMeshAgent.enabled = false;
+                this.gameObject.GetComponent<Enemy_AI>().EnemyAttack();
             }
-            if (gameObjTag == "Flying_Enemy")
+            if (distanceToTarget >= 5f)
             {
-                GoingDown();
+                navMeshAgent.enabled = true;
             }
         }
     }
-    public void ChangeTag()
-    {
-        isTagChanged = true;
-    }
-    public void ReturnTag()
-    {
-        isTagChanged = false;
-    }
+
+    public void ChangeTag() => isTagChanged = true;
+    public void ReturnTag() => isTagChanged = false;
+
     public void GoingUp()
     {
-        float targetY = startY + 2;
+        float targetY = startY + 2f;
         objTransform.position = Vector3.Lerp(objTransform.position, new Vector3(objTransform.position.x, targetY, objTransform.position.z), 1f * Time.deltaTime);
     }
 
@@ -80,5 +85,9 @@ public class Enemy_movement : MonoBehaviour
         {
             navMeshAgent.SetDestination(destination);
         }
+    }
+    public void ChooseTarget(GameObject targetObject)
+    {
+        target = targetObject;
     }
 }

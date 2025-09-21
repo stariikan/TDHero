@@ -42,6 +42,8 @@ public class TowerMenu : MonoBehaviour
     public void UpgradeTower()
     {
         towerObj.GetComponent<TowerState>().UpgradeTower();
+        GatherTowerStats();
+        UseTowerStats();
     }
     public void SellTower()
     {

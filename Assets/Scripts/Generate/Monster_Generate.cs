@@ -1,345 +1,252 @@
+using FischlWorks_FogWar;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class Monster_Generate : MonoBehaviour
 {
-    private float timerGen;                 // Timer for enemy geration
-    public float delayGeneration;          // Delay between enemy generation
-    private float timerStageDelay;        // Timer for stage delay  
-    public float stageDelay;             // Time between stages
+    private float timerGen;
+    private float timerStageDelay;
+    public float stageDelay;
     private bool bossLVL;
 
-    public int population;             // How much enemies will be created
-    public int monsters;              // Enemies that was created
-    public int aliveMonsters;       // How much monster still alive
-    public GameObject[] game_units; // List of the enemies that will be created
-    public GameObject[] game_bosses; // List of the enemies that will be created
+    public int monsters;
+    public int aliveMonsters;
+    public GameObject[] game_units;
+    public GameObject[] game_bosses;
     private int boos_number;
-    public Transform target;       // Position where wave will be created
-    public Transform target_2;       // Position 2 where wave will be created
-    public Transform target_3;       // Position 3 where wave will be created
-    public bool createWave;       // Bool for active wave
-    public float stage;          // Stage number
+
+    public Transform target;
+    public Transform target_2;
+    public Transform target_3;
+    public bool createWave;
     public bool mainMenu;
 
-    public GameObject waveDelayTimer; // UI Wave timer
-    public GameObject stageCounter;  // UI Stage counter
+    public GameObject waveDelayTimer;
+    public GameObject stageCounter;
     public GameObject roadNavigationSystem;
+    public GameObject fogOfWar;
 
-    private int firstEnemyNumber; // Enemy number to chose wich enemy will be on the stage
-    private int lastEnemyNumber; // Enemy number to chose wich enemy will be on the stage
+    private LevelData levelData;
+
+    public int enemyModelIndex;
+    public int stage;
+    public int population;
+    public float delayGeneration;
+
+    public float e_Speed;
+    public float e_maxHP;
+    public float damage;
+    public float attackSpeed;
+    public float attackRange;
+    public float freezePower;
+    public float interestZone;
+    public float coinReward;
+    public float expReward;
+
+    public bool goToFinish;
+    public bool goToPlayer;
+    public bool goToTower;
+    public bool goToNpc;
+    public bool fogOfWarActivated;
 
     void Start()
     {
         roadNavigationSystem.GetComponent<NavMeshManager>().UpdateNavMesh();
-        if (population < 0) population = 0;
-        if (!mainMenu) createWave = false;
         timerGen = 0f;
         if (!mainMenu) stage = 0;
         monsters = 0;
         aliveMonsters = 0;
         timerStageDelay = stageDelay;
         bossLVL = false;
+        createWave = false;
+
+        LoadLevelData();
     }
-    // Update is called once per frame
+
     void Update()
     {
         timerGen += Time.deltaTime;
-        if (monsters <= population && aliveMonsters <= 0 && stage <= 29) monsters = 0;
-        if ((monsters == 0 && stage <= 29 && aliveMonsters <= 0) || mainMenu) DelayBeforeWave();
+        if (!fogOfWarActivated) fogOfWar.GetComponent<csFogWar>().DeactivateFogOfWar();
+
+        if (monsters <= population && aliveMonsters <= 0 && stage <= 49) monsters = 0;
+
+        if ((monsters == 0 && stage <= 49 && aliveMonsters <= 0) || mainMenu)
+            DelayBeforeWave();
+
         StartCoroutine(OnGeneratingRoutine());
     }
+
+    void LoadLevelData()
+    {
+        string path = Path.Combine(Application.streamingAssetsPath, "level1.json");
+
+        if (!File.Exists(path))
+        {
+            Debug.LogError("Level JSON not found: " + path);
+            return;
+        }
+
+        string json = File.ReadAllText(path);
+        levelData = JsonUtility.FromJson<LevelData>(json);
+
+        Debug.Log("Loaded level data for: " + levelData.levelName);
+    }
+
+    void ApplyStageStats()
+    {
+        int currentStage = Mathf.FloorToInt(stage);
+        StageData stageData = levelData.stages.Find(s => s.stage == currentStage);
+        if (stageData == null)
+        {
+            Debug.LogError("No data for stage " + currentStage);
+            return;
+        }
+
+        enemyModelIndex = stageData.enemyModelIndex;
+        population = stageData.population;
+        delayGeneration = stageData.delayGeneration;
+
+        e_Speed = stageData.e_Speed;
+        e_maxHP = stageData.e_maxHP;
+        damage = stageData.damage;
+        attackSpeed = stageData.attackSpeed;
+        attackRange = stageData.attackRange;
+        freezePower = stageData.freezePower;
+        interestZone = stageData.interestZone;
+        coinReward = stageData.coinReward;
+        expReward = stageData.expReward;
+
+        goToFinish = stageData.goToFinish;
+        goToPlayer = stageData.goToPlayer;
+        goToTower = stageData.goToTower;
+        goToNpc = stageData.goToNpc;
+        fogOfWarActivated = stageData.fogOfWarActivated;
+
+        aliveMonsters = population;
+
+        if (goToPlayer || goToNpc || goToTower)
+            roadNavigationSystem.GetComponent<NavMeshManager>().MakeAllWalkable();
+        else
+            roadNavigationSystem.GetComponent<NavMeshManager>().MakeOnlyRoadWalkable();
+    }
+
     public void DelayBeforeWave()
     {
         if (timerStageDelay > 0)
         {
             createWave = false;
+            fogOfWarActivated = false;
+
             if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().ActivateUI();
+
             timerStageDelay -= Time.deltaTime;
             int displayTimeInt = (int)timerStageDelay;
-            float displayTimeFloat = (float)displayTimeInt;
-            if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().TakeCounterData(displayTimeFloat);
+            if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().TakeCounterData(displayTimeInt);
         }
+
         if (timerStageDelay <= 0)
         {
             StartWave();
             CreateBoss();
         }
     }
+
     public void StartWave()
     {
         if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().DeactivateUI();
         createWave = true;
         stage += 1;
-        StagesStats();
-        if (stageCounter != null) stageCounter.GetComponent<UICounter>().TakeCounterData(stage);
-        if (waveDelayTimer != null) waveDelayTimer.GetComponent<UICounter>().TakeCounterData(timerStageDelay);
+        ApplyStageStats();
+
+        if (fogOfWarActivated)
+            fogOfWar.GetComponent<csFogWar>().ActivateFogOfWar();
+
+        if (stageCounter != null)
+            stageCounter.GetComponent<UICounter>().TakeCounterData(stage);
     }
+
     public void KillMonster()
     {
         aliveMonsters -= 1;
     }
-    public void StagesStats()
-    {
-        if (stage == 1)
-        {
-            population = 12;
-            delayGeneration = 2;
-            firstEnemyNumber = 0;
-            lastEnemyNumber = 0;
-        }
-        if (stage == 2)
-        {
-            population = 14;
-            delayGeneration = 2;
-            firstEnemyNumber = 1;
-            lastEnemyNumber = 1;
-        }
-        if (stage == 3)
-        {
-            population = 16;
-            delayGeneration = 2;
-            firstEnemyNumber = 2;
-            lastEnemyNumber = 2;
-        }
-        if (stage == 4)
-        {
-            population = 20;
-            delayGeneration = 1;
-            firstEnemyNumber = 3;
-            lastEnemyNumber = 3;
-        }
-        if (stage == 5)
-        {
-            population = 20;
-            delayGeneration = 1;
-            firstEnemyNumber = 4;
-            lastEnemyNumber = 4;
-        }
-        if (stage == 6)
-        {
-            population = 20;
-            delayGeneration = 1;
-            firstEnemyNumber = 5;
-            lastEnemyNumber = 5;
-        }
-        if (stage == 7)
-        {
-            population = 20;
-            delayGeneration = 1;
-            firstEnemyNumber = 6;
-            lastEnemyNumber = 6;
-        }
-        if (stage == 8)
-        {
-            population = 20;
-            delayGeneration = 1;
-            firstEnemyNumber = 7;
-            lastEnemyNumber = 7;
-        }
-        if (stage == 9)
-        {
-            population = 20;
-            delayGeneration = 1;
-            firstEnemyNumber = 4;
-            lastEnemyNumber = 7;
-        }
-        if (stage == 10)
-        {
-            population = 12;
-            delayGeneration = 1;
-            firstEnemyNumber = 8;
-            lastEnemyNumber = 8;
-            boos_number = 0;
-            bossLVL = true;
-        }
-        if (stage == 11)
-        {
-            population = 20;
-            delayGeneration = 1;
-            firstEnemyNumber = 9;
-            lastEnemyNumber = 9;
-        }
-        if (stage == 12)
-        {
-            population = 22;
-            delayGeneration = 1;
-            firstEnemyNumber = 10;
-            lastEnemyNumber = 10;
-        }
-        if (stage == 13)
-        {
-            population = 22;
-            delayGeneration = 1;
-            firstEnemyNumber = 11;
-            lastEnemyNumber = 11;
-        }
-        if (stage == 14)
-        {
-            population = 24;
-            delayGeneration = 1;
-            firstEnemyNumber = 5;
-            lastEnemyNumber = 11;
-        }
-        if (stage == 15)
-        {
-            population = 24;
-            delayGeneration = 1;
-            firstEnemyNumber = 12;
-            lastEnemyNumber = 12;
-        }
-        if (stage == 16)
-        {
-            population = 24;
-            delayGeneration = 1;
-            firstEnemyNumber = 13;
-            lastEnemyNumber = 13;
-        }
-        if (stage == 17)
-        {
-            population = 24;
-            delayGeneration = 1;
-            firstEnemyNumber = 14;
-            lastEnemyNumber = 14;
-        }
-        if (stage == 18)
-        {
-            population = 26;
-            delayGeneration = 1;
-            firstEnemyNumber = 12;
-            lastEnemyNumber = 14;
-        }
-        if (stage == 19)
-        {
-            population = 26;
-            delayGeneration = 1;
-            firstEnemyNumber = 15;
-            lastEnemyNumber = 15;
-        }
-        if (stage == 20)
-        {
-            population = 15;
-            delayGeneration = 1;
-            firstEnemyNumber = 16;
-            lastEnemyNumber = 16;
-            boos_number = 1;
-            bossLVL = true;
-        }
-        if (stage == 21)
-        {
-            population = 26;
-            delayGeneration = 1;
-            firstEnemyNumber = 17;
-            lastEnemyNumber = 17;
-        }
-        if (stage == 22)
-        {
-            population = 26;
-            delayGeneration = 1;
-            firstEnemyNumber = 18;
-            lastEnemyNumber = 18;
-        }
-        if (stage == 23)
-        {
-            population = 28;
-            delayGeneration = 1;
-            firstEnemyNumber = 15;
-            lastEnemyNumber = 18;
-        }
-        if (stage == 24)
-        {
-            population = 28;
-            delayGeneration = 1;
-            firstEnemyNumber = 19;
-            lastEnemyNumber = 19;
-        }
-        if (stage == 25)
-        {
-            population = 28;
-            delayGeneration = 1;
-            firstEnemyNumber = 20;
-            lastEnemyNumber = 20;
-        }
-        if (stage == 26)
-        {
-            population = 28;
-            delayGeneration = 1;
-            firstEnemyNumber = 21;
-            lastEnemyNumber = 21;
-        }
-        if (stage == 27)
-        {
-            population = 30;
-            delayGeneration = 1;
-            firstEnemyNumber = 18;
-            lastEnemyNumber = 21;
-        }
-        if (stage == 28)
-        {
-            population = 30;
-            delayGeneration = 1;
-            firstEnemyNumber = 22;
-            lastEnemyNumber = 22;
-        }
-        if (stage == 29)
-        {
-            population = 30;
-            delayGeneration = 1;
-            firstEnemyNumber = 23;
-            lastEnemyNumber = 23;
-        }
-        if (stage == 30)
-        {
-            population = 15;
-            delayGeneration = 1;
-            firstEnemyNumber = 24;
-            lastEnemyNumber = 24;
-            boos_number = 2;
-            bossLVL = true;
-        }
-        if (mainMenu) //Main_menu
-        {
-            stage = 99999;
-            population = 99999;
-            delayGeneration = 1;
-            firstEnemyNumber = 0;
-            lastEnemyNumber = 24;
-        }
-        aliveMonsters = population;
-    }
+
     public void CreateBoss()
     {
+        if (!bossLVL) return;
+
         Vector3 position = target.position;
         int randomPosition = 0;
+
         if (target_2 != null) randomPosition = Random.Range(1, 3);
         if (target_3 != null) randomPosition = Random.Range(1, 4);
         if (randomPosition == 2) position = target_2.position;
         if (randomPosition > 2) position = target_3.position;
-        if (bossLVL)
-        {
-            GameObject boss = Instantiate(game_bosses[boos_number], new Vector3(position.x, position.y, position.z), Quaternion.identity);
-            boss.name = "Boss_" + stage + "_" + stage;
-            boss.gameObject.SetActive(true);
-            bossLVL = false;
-        }
+
+        GameObject boss = Instantiate(game_bosses[enemyModelIndex], position, Quaternion.identity);
+        boss.name = "Boss_" + stage + "_" + stage;
+        Enemy_AI ai = boss.GetComponent<Enemy_AI>();
+        Enemy_stats stats = boss.GetComponent<Enemy_stats>();
+        stats.GetSpeedStatStat(e_Speed);
+        stats.GetMaxHPStatStat(e_maxHP);
+        stats.GetCoinRewardStat(coinReward);
+        stats.GetExpRewardStat(expReward);
+
+        ai.GetDamageStat(damage);
+        ai.GetAttackSpeedStat(attackSpeed);
+        ai.GetAttackRangeStat(attackRange);
+        ai.GetFreezePowerStat(freezePower);
+        ai.GetInterestZoneStat(interestZone);
+
+        ai.GoToFinish(goToFinish);
+        ai.GoToPlayer(goToPlayer);
+        ai.GoToTower(goToTower);
+        ai.GoToNpc(goToNpc);
+        boss.SetActive(true);
+
+        bossLVL = false;
     }
+
     public IEnumerator OnGeneratingRoutine()
     {
+        if (!createWave || monsters >= population || timerGen <= delayGeneration)
+            yield break;
+
         Vector3 position = target.position;
         int randomPosition = 0;
         if (target_2 != null) randomPosition = Random.Range(1, 3);
         if (target_3 != null) randomPosition = Random.Range(1, 4);
         if (randomPosition == 2) position = target_2.position;
         if (randomPosition > 2) position = target_3.position;
-        if (monsters < population && timerGen > delayGeneration && createWave) 
-        {
-            GameObject enemy = Instantiate(game_units[Random.Range(firstEnemyNumber, lastEnemyNumber)], new Vector3(position.x, position.y, position.z), Quaternion.identity);
-            enemy.name = "Monster_" + monsters + "_" + stage;
-            enemy.gameObject.SetActive(true);
-            monsters += 1;
-            timerGen = 0f;
-            timerStageDelay = stageDelay;
-        }
-        yield return new WaitForEndOfFrame(); // waiting for blocks to be installed
+
+        //GameObject enemy = Instantiate(game_units[Random.Range(firstEnemyNumber, lastEnemyNumber)], position, Quaternion.identity);
+        GameObject enemy = Instantiate(game_units[enemyModelIndex], position, Quaternion.identity);
+        enemy.name = "Monster_" + monsters + "_" + stage;
+
+        Enemy_AI ai = enemy.GetComponent<Enemy_AI>();
+        Enemy_stats stats = enemy.GetComponent<Enemy_stats>();
+        stats.GetSpeedStatStat(e_Speed);
+        stats.GetMaxHPStatStat(e_maxHP);
+        stats.GetCoinRewardStat(coinReward);
+        stats.GetExpRewardStat(expReward);
+
+        ai.GetDamageStat(damage);
+        ai.GetAttackSpeedStat(attackSpeed);
+        ai.GetAttackRangeStat(attackRange);
+        ai.GetFreezePowerStat(freezePower);
+        ai.GetInterestZoneStat(interestZone);
+
+        ai.GoToFinish(goToFinish);
+        ai.GoToPlayer(goToPlayer);
+        ai.GoToTower(goToTower);
+        ai.GoToNpc(goToNpc);
+        enemy.SetActive(true);
+
+        monsters += 1;
+        timerGen = 0f;
+        timerStageDelay = stageDelay;
+
+        yield return new WaitForEndOfFrame();
     }
 }

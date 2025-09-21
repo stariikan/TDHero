@@ -20,4 +20,11 @@ public class MagicExplosion : MagicBase
             enemy.GetDamage(damage);
         }
     }
+    protected override void CancelEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy))
+        {
+
+        }
+    }
 }

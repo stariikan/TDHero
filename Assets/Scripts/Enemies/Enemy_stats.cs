@@ -1,21 +1,27 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Enemy_stats : MonoBehaviour
 {
+    [Header("Enemy_Stats")]
     public float e_Speed;               // Enemy movement speed
     public float e_maxHP;               // Maximum health
     public float e_currentHP;          // Current health
+
     public float coinReward;            // Reward for death
     public float expReward;
+
+    [Header("Enemy_Status")]
+    public bool isStun; //Enemy stuned? 
+    public bool isFreezing; //Enemy freeze?
+    public bool isPoisoned; //Enemy poisened?
+    public bool isTagChanged; //Enemys tag changed?
+    public bool isDead; //Enemy is dead?
+
     private string enemyStarterTag; //Enemy Tag that was on the start
     private CapsuleCollider bodyCollider; // Capsule collider for the enemy
-
-    private bool isStun; //Enemy stuned? 
-    private bool isFreezing; //Enemy freeze?
-    private bool isPoisoned; //Enemy poisened?
-    private bool isTagChanged; //Enemys tag changed?
 
     private int e_poison_lvl;  // Current poison lvl
     private float e_poison_damage; // damage per tick
@@ -24,6 +30,7 @@ public class Enemy_stats : MonoBehaviour
     private float e_timerFreezing;      // Timer for freezing effect
     private float e_timerPoisonRecovery; // Timer for Poison Recovery
     private float e_timereTagRecovery; // Timer for Tag changing effect
+    private float e_timerDamagePlayer;
 
     public float stunRecoveryTime;        // Timer for Stun effect
     public float freezingRecoveryTime;      // Timer for freezing effect
@@ -39,6 +46,7 @@ public class Enemy_stats : MonoBehaviour
     public GameObject stunIcon;         // Reference for Stun Icon
     public GameObject poisonIcon;       // Reference for Poison Icon
     public GameObject takenDamageUi;    // Reference for DamageNumbers Icon
+    public GameObject [] bloodDecals; // Blood decal
 
     public GameObject MainCamera; // MainCamera object for access to Monster_Generate script.
 
@@ -53,6 +61,7 @@ public class Enemy_stats : MonoBehaviour
         isFreezing = false;
         isPoisoned = false;
         isTagChanged = false;
+        isDead = false;
         enemyStarterTag = tag;
 
         if (finishLine == null)
@@ -61,15 +70,31 @@ public class Enemy_stats : MonoBehaviour
         }
 
         navMeshAgent = this.gameObject.GetComponent<NavMeshAgent>();
-        e_Speed = navMeshAgent.speed;
     }
 
     void Update()
     {
-        RecoveryAfterEffects();
+        if (isDead == false) RecoveryAfterEffects();
+    }
+    public void GetSpeedStatStat(float stat)
+    {
+        e_Speed = stat;
+    }
+    public void GetMaxHPStatStat(float stat)
+    {
+        e_maxHP = stat;
+    }
+    public void GetCoinRewardStat(float stat)
+    {
+        coinReward = stat;
+    }
+    public void GetExpRewardStat(float stat)
+    {
+        expReward = stat;
     }
     public void RecoveryAfterEffects()
     {
+        e_timerDamagePlayer += Time.deltaTime;
         if (isFreezing == true)
         {
             e_timerFreezing += Time.deltaTime;
@@ -115,7 +140,6 @@ public class Enemy_stats : MonoBehaviour
                 isPoisoned = false;
             }
         }
-        if (navMeshAgent.speed < e_Speed * 0.4f && isStun == false) navMeshAgent.speed = e_Speed * 0.4f;
     }
     public void Stun()
     {
@@ -147,6 +171,7 @@ public class Enemy_stats : MonoBehaviour
         navMeshAgent.speed *= freezeDmg;
         freezeIcon.GetComponent<UIBarLogic>().ActivateBar();
         e_timerFreezing = 0;
+        if (navMeshAgent.speed < e_Speed * 0.3f && isStun == false) navMeshAgent.speed = e_Speed * 0.3f;
     }
     public void EnemyPoison(float damage)
     {
@@ -159,13 +184,18 @@ public class Enemy_stats : MonoBehaviour
     }
     public void GetHP(float heal)
     {
-        e_currentHP += heal;
+        float normalizedHeal = Mathf.Round(heal * 10f) / 10f;
+        e_currentHP += normalizedHeal;
+        GameObject healUI = Instantiate(takenDamageUi, transform.position, Quaternion.identity);
+        healUI.transform.SetParent(takenDamageUi.transform.parent, false);
+        healUI.GetComponent<TextMeshProUGUI>().text = $"      {normalizedHeal}";
+        healUI.GetComponent<TextMeshProUGUI>().color = Color.green;
         if (e_currentHP > e_maxHP) e_currentHP = e_maxHP;
     }
     private void OnReachFinishLine()
     {
         // Example: Reduce player health or trigger a game over
-        Debug.Log("Enemy has reached the finish line. Triggering event.");
+        Debug.Log("Enemy has reached the finish line.");
         player.GetComponent<PlayerStats>().VillageDamaged(1);
         MainCamera.GetComponent<Monster_Generate>().KillMonster();
         e_currentHP = 0;
@@ -183,12 +213,15 @@ public class Enemy_stats : MonoBehaviour
             float normalizedDamage = Mathf.Round(damage * 10f) / 10f;
             e_currentHP -= normalizedDamage;
             HealthBarUI();
-            // Create a copy of this GameObject
+            // Creating floating taken damage numbers
             GameObject damageUI = Instantiate(takenDamageUi, transform.position, Quaternion.identity);
             damageUI.transform.SetParent(takenDamageUi.transform.parent, false);
 
+            // Creating blood
+            GameObject blood = Instantiate(bloodDecals[Random.Range(0, 7)], this.gameObject.transform.position, Quaternion.identity);
+
             // Optionally, set the parent of the copied object to match the original's parent
-            damageUI.GetComponent<TextMeshProUGUI>().text = $"{normalizedDamage}";
+            damageUI.GetComponent<TextMeshProUGUI>().text = $"   {normalizedDamage}";
             if (MainCamera != null) damageUI.SetActive(true);
 
             if (e_currentHP <= 0)
@@ -203,7 +236,23 @@ public class Enemy_stats : MonoBehaviour
     }
     public void DeadAndDestroy()
     {
-        Destroy(gameObject); // Destroy the enemy game object
+        if (isDead == false) isDead = true;
+        Destroy(this.gameObject.GetComponent<Enemy_AI>());
+        Destroy(this.gameObject.GetComponent<Enemy_stats>());
+        Destroy(this.gameObject.GetComponent<Enemy_movement>());
+        Destroy(this.gameObject.GetComponent<Animator>());
+        Destroy(this.gameObject.GetComponent<NavMeshAgent>());
+        this.gameObject.GetComponent<CapsuleCollider>().isTrigger = false;
+        this.gameObject.tag = "Untagged";
+        this.gameObject.layer = 0;
+        //Destroy(gameObject); // Destroy the enemy game object
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            //other.GetComponent<PlayerStats>().PlayerDamaged(1);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -211,6 +260,15 @@ public class Enemy_stats : MonoBehaviour
         {
             Debug.Log("Enemy reached the finish line!");
             OnReachFinishLine();
+            Destroy(gameObject);
+        }
+        if (other.gameObject == player)
+        {
+            if(e_timerDamagePlayer > 1f)
+            {
+                e_timerDamagePlayer = 0;
+                player.GetComponent<PlayerStats>().PlayerDamaged(3);
+            }
         }
     }
 }

@@ -24,12 +24,14 @@ public class MagicCard : MonoBehaviour
         {
             mainCamera.GetComponent<Pause>().LevelUpResume();
             magicObject.GetComponent<MagicBase>().IncreaseMagicLevel();
+            player.GetComponent<PlayerStats>().SpentPoint();
         }
         if (magicLevel < 1) 
         {
             player.GetComponent<TDCombat>().PutNewMagicIntoSlot(magicObject);
             mainCamera.GetComponent<Pause>().LevelUpResume();
             magicObject.GetComponent<MagicBase>().IncreaseMagicLevel();
+            player.GetComponent<PlayerStats>().SpentPoint();
         }
 
     }

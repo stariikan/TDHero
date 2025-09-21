@@ -20,6 +20,19 @@ public class NavMeshManager : MonoBehaviour
             Debug.LogWarning("No NavMesh found under this position!");
         }
     }
+    // Call this to include both Road and Ground layers as walkable
+    public void MakeAllWalkable()
+    {
+        navMeshSurface.layerMask = LayerMask.GetMask("Road", "Tile");
+        UpdateNavMesh();
+    }
+
+    // Call this to make only Road walkable again
+    public void MakeOnlyRoadWalkable()
+    {
+        navMeshSurface.layerMask = LayerMask.GetMask("Road");
+        UpdateNavMesh();
+    }
     public void UpdateNavMesh()
     {
         if (navMeshSurface != null)

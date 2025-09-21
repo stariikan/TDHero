@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +13,7 @@ public class BuildSystem : MonoBehaviour
     // Towers
     public GameObject commonTower;
     public GameObject iceTower;
-    public GameObject antiFlyTower;
+    public GameObject airDefenceTower;
     public GameObject aoeTower;
 
     private GameObject newTower;
@@ -32,8 +31,8 @@ public class BuildSystem : MonoBehaviour
     void Update()
     {
         if (buildMode == true && towerPlaced == true && Input.GetMouseButtonDown(1)) Close();
-        if (towerPlaced == true && buildMode == true) TowerFollowTheCursor();
-        if (towerPlaced == true && buildMode == true && Input.GetMouseButtonDown(0)) PlaceNewTower();
+        if (towerPlaced == true && buildMode == true && newTower != null) TowerFollowTheCursor();
+        if (towerPlaced == true && buildMode == true && newTower != null &&  Input.GetMouseButtonDown(0)) PlaceNewTower();
     }
     private void Close()
     {
@@ -46,17 +45,69 @@ public class BuildSystem : MonoBehaviour
         buildMode = true;
         float needCoins = commonTower.GetComponent<TowerState>().towerPrice;
         float availableCoins = playerObj.GetComponent<PlayerStats>().coins;
-        if (availableCoins > needCoins)
+        if (availableCoins >= needCoins)
         {
             GameObject tower = Instantiate(commonTower, Input.mousePosition, commonTower.transform.rotation);
             towerCounter += 1;
-            tower.name = "Common Tower " + towerCounter;
+            tower.name = "fire tower #" + towerCounter;
             tower.SetActive(true);
             newTower = tower;
             newTower.GetComponent<TowerState>().BuildTower();
             towerPlaced = true;
+            offset = new Vector3(0, 0, 0);
         }
         else if (infoText != null) infoText.GetComponent<Text>().text = "Need more souls: " + (needCoins - availableCoins);
+    }
+    public void CreateIceTower()
+    {
+        buildMode = true;
+        float needCoins = iceTower.GetComponent<TowerState>().towerPrice;
+        float availableCoins = playerObj.GetComponent<PlayerStats>().coins;
+        if (availableCoins >= needCoins)
+        {
+            GameObject tower = Instantiate(iceTower, Input.mousePosition, iceTower.transform.rotation);
+            tower.name = "ice tower #" + towerCounter;
+            tower.SetActive(true);
+            newTower = tower;
+            newTower.GetComponent<TowerState>().BuildTower();
+            towerPlaced = true;
+            offset = new Vector3(0, 4, 0);
+        }
+        else if (infoText != null) infoText.GetComponent<Text>().text = "need more souls: " + (needCoins - availableCoins);
+    }
+    public void CreateAirDefenceTower()
+    {
+        buildMode = true;
+        float needCoins = airDefenceTower.GetComponent<TowerState>().towerPrice;
+        float availableCoins = playerObj.GetComponent<PlayerStats>().coins;
+        if (availableCoins >= needCoins)
+        {
+            GameObject tower = Instantiate(airDefenceTower, Input.mousePosition, airDefenceTower.transform.rotation);
+            tower.name = "air defence #" + towerCounter;
+            tower.SetActive(true);
+            newTower = tower;
+            newTower.GetComponent<TowerState>().BuildTower();
+            towerPlaced = true;
+            offset = new Vector3(0, 5, 0);
+        }
+        else if (infoText != null) infoText.GetComponent<Text>().text = "need more souls: " + (needCoins - availableCoins);
+    }
+    public void CreateAoeTower()
+    {
+        buildMode = true;
+        float needCoins = aoeTower.GetComponent<TowerState>().towerPrice;
+        float availableCoins = playerObj.GetComponent<PlayerStats>().coins;
+        if (availableCoins >= needCoins)
+        {
+            GameObject tower = Instantiate(aoeTower, Input.mousePosition, airDefenceTower.transform.rotation);
+            tower.name = "aoe tower #" + towerCounter;
+            tower.SetActive(true);
+            newTower = tower;
+            newTower.GetComponent<TowerState>().BuildTower();
+            towerPlaced = true;
+            offset = new Vector3(0, 5, 0);
+        }
+        else if (infoText != null) infoText.GetComponent<Text>().text = "need more souls: " + (needCoins - availableCoins);
     }
     private void TowerFollowTheCursor()
     {
@@ -82,7 +133,9 @@ public class BuildSystem : MonoBehaviour
         {
             buildMode = false;
             towerPlaced = false;
+            towerCounter += 1;
             newTower.GetComponent<TowerState>().PlaceTower();
+            offset = new Vector3(0, 0, 0);
         }
     }
 }

@@ -4,11 +4,10 @@ using UnityEngine.UI;
 public class UICounter : MonoBehaviour
 {
     public Text uiCounterText;
-    private string currentText;
+    private float currentText;
     void Start()
     {
         uiCounterText = this.gameObject.GetComponent<Text>();
-        currentText = uiCounterText.text;
     }
     public void ActivateUI()
     {
@@ -21,6 +20,6 @@ public class UICounter : MonoBehaviour
     // Update is called once per frame
     public void TakeCounterData(float counter)
     {
-        uiCounterText.text = currentText + counter;
+        uiCounterText.text = "" + (currentText + counter);
     }
 }

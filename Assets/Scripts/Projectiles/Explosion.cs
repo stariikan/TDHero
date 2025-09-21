@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    public float bombLifeTime = 1.5f; // Time before the projectile is destroyed
+    public float bombLifeTime = 0.5f; // Time before the projectile is destroyed
     public float bombDamage;         // Damage dealt by the projectile
+    public float freezePower;
     public float explosionRadius = 5f; // Radius of the AOE explosion
     public string enemyTag;          // Tag to identify enemies
+    public string enemyTag2;          // Tag to identify enemies
     private float timer;             // Timer to track lifetime
 
     void Start()
@@ -22,6 +24,10 @@ public class Explosion : MonoBehaviour
     {
         explosionRadius = radius;
     }
+    public void SetFreezePower (float freezeP)
+    {
+        freezePower = freezeP;
+    }
     private void Explode()
     {
         // Find all colliders within the explosion radius
@@ -29,12 +35,13 @@ public class Explosion : MonoBehaviour
 
         foreach (Collider hitCollider in hitColliders)
         {
-            if (hitCollider.CompareTag(enemyTag))
+            if (hitCollider.CompareTag(enemyTag) || hitCollider.CompareTag(enemyTag2))
             {
                 Enemy_stats enemyStats = hitCollider.GetComponent<Enemy_stats>();
                 if (enemyStats != null)
                 {
                     enemyStats.GetDamage(bombDamage);
+                    if(freezePower > 0) enemyStats.ReduceSpeed(freezePower);
                 }
             }
         }

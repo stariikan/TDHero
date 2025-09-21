@@ -29,4 +29,11 @@ public class LowerEnemies : MagicBase
             enemy.ChangeEnemyTag(effectTime);
         }
     }
+    protected override void CancelEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy))
+        {
+
+        }
+    }
 }

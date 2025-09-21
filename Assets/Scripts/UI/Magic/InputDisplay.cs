@@ -246,8 +246,8 @@ public class InputDisplay : MonoBehaviour
             mouseState = false;
             inputText.text = "";
         }
-        if (mouseState && Input.GetKeyDown(KeyCode.Q) && inputText.text.Length < 3) inputText.text = inputText.text + "Q";
-        if (mouseState && Input.GetKeyDown(KeyCode.E) && inputText.text.Length < 3) inputText.text = inputText.text + "E";
-        if (mouseState && Input.GetKeyDown(KeyCode.F) && inputText.text.Length < 3) inputText.text = inputText.text + "F";
+        if (mouseState && Input.GetKeyDown(KeyCode.Q) && inputText.text.Length < 3) inputText.text = inputText.text + "q";
+        if (mouseState && Input.GetKeyDown(KeyCode.E) && inputText.text.Length < 3) inputText.text = inputText.text + "e";
+        if (mouseState && Input.GetKeyDown(KeyCode.F) && inputText.text.Length < 3) inputText.text = inputText.text + "f";
     }
 }

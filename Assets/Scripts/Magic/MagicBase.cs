@@ -9,11 +9,12 @@ public abstract class MagicBase : MonoBehaviour
     public string enemyTag = "Enemy";
     public string enemyTag2 = "Flying_Enemy";
     public int level = 0;
+    public bool onCoursor;
     protected float timer = 0f;
 
     protected virtual void Start()
     {
-        ExplosionMousePosition();
+        if (onCoursor == true) ExplosionMousePosition();
     }
 
     protected virtual void Update()
@@ -33,8 +34,16 @@ public abstract class MagicBase : MonoBehaviour
             ApplyEffect(other);
         }
     }
+    protected virtual void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(enemyTag) || other.CompareTag(enemyTag2))
+        {
+            CancelEffect(other);
+        }
+    }
 
     protected abstract void ApplyEffect(Collider enemy); // Force each magic to define its effect.
+    protected abstract void CancelEffect(Collider enemy); // Force each magic to define its effect.
     public void SetDamage(float dmg)
     {
         damage = dmg;

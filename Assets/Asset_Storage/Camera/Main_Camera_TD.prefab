@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5765265555765190915}
   - component: {fileID: 8558864977157291485}
   - component: {fileID: 5876872462304218773}
+  - component: {fileID: 8680087366302342762}
   m_Layer: 0
   m_Name: Main_Camera_TD
   m_TagString: MainCamera
@@ -85,11 +86,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   target: {fileID: 0}
+  target_2: {fileID: 0}
+  target_3: {fileID: 0}
   createWave: 0
   stage: 0
+  mainMenu: 0
   waveDelayTimer: {fileID: 0}
   stageCounter: {fileID: 0}
   roadNavigationSystem: {fileID: 0}
+  fogOfWar: {fileID: 0}
 --- !u!114 &408432518790405380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,10 +129,16 @@ MonoBehaviour:
   lockCursor: 0
   target: {fileID: 0}
   smoothSpeed: 0
-  offset: {x: 0, y: 50, z: 10}
   minY: 14
   maxY: 80
-  cameraAngle: 60
+  cameraMode: 0
+  cameraIcon: {fileID: 0}
+  totalWarCamera: {x: 0, y: 0, z: 0}
+  totalWarCameraAngle: 0
+  lolCamera: {x: 0, y: 0, z: 0}
+  lolCameraAngle: 0
+  oldCamera: {x: 0, y: 0, z: 0}
+  oldCameraAngle: 0
 --- !u!114 &5765265555765190915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 6658589814589240559}
+  towerMenu: {fileID: 0}
 --- !u!81 &8558864977157291485
 AudioListener:
   m_ObjectHideFlags: 0
@@ -200,3 +212,47 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &8680087366302342762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658589814589240559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0

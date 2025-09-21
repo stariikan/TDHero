@@ -25,6 +25,13 @@ public class LightningChain : MagicBase
             }
         }
     }
+    protected override void CancelEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy))
+        {
+
+        }
+    }
     private void DecreaseChainDamage() 
     {
         damage = damage * 0.9f;

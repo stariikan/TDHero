@@ -46,6 +46,13 @@ public class FlameThrower : MagicBase
             enemiesInRange.Add(enemy);
         }
     }
+    protected override void CancelEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy) && enemiesInRange.Contains(enemy))
+        {
+            enemiesInRange.Remove(enemy);
+        }
+    }
 
     protected override void OnMagicEnd()
     {

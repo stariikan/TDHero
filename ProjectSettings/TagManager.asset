@@ -10,6 +10,7 @@ TagManager:
   - Flying_Enemy
   - Tile
   - Tower
+  - Npc
   layers:
   - Default
   - TransparentFX
@@ -23,8 +24,8 @@ TagManager:
   - Enemy
   - Flying_Enemy
   - Tower
-  - 
-  - 
+  - Npc
+  - Player
   - 
   - 
   - 

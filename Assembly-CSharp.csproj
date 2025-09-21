@@ -62,90 +62,184 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\TDPlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Generate\Map_Generate.cs" />
-    <Compile Include="Assets\Scripts\General\ModelColorChanger.cs" />
-    <Compile Include="Assets\Scripts\UI\Misc\TextBoxRefresh.cs" />
+    <Compile Include="Assets\Scripts\LevelEditor\LevelManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\UI\Player\UIBarLogic.cs" />
     <Compile Include="Assets\Scripts\General\Pause.cs" />
-    <Compile Include="Assets\Scripts\UI\Magic\MagicCard.cs" />
-    <Compile Include="Assets\Unity_content\AOSFogWar\csFogWar.cs" />
-    <Compile Include="Assets\Scripts\UI\LoadingScreen\Loading_Screen.cs" />
-    <Compile Include="Assets\Scripts\Enemies\Enemy_stats.cs" />
-    <Compile Include="Assets\Scripts\Generate\Monster_Generate.cs" />
-    <Compile Include="Assets\Scripts\Level\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\UI\Misc\DamageNumberUI.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\Scripts\LevelEditor\WaveViewer.cs" />
+    <Compile Include="Assets\Scripts\Player\MeleeAttackZone.cs" />
+    <Compile Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Scripts\TerrainTreeToggle.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Audio\CheckSFXVolume.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUI.cs" />
+    <Compile Include="Assets\Scripts\UI\WindowController.cs" />
+    <Compile Include="Assets\Scripts\LevelEditor\Tile\TileState.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\Magic\LiftEnemies.cs" />
-    <Compile Include="Assets\Scripts\Magic\MagicBase.cs" />
     <Compile Include="Assets\Scripts\Player\TDCombat.cs" />
-    <Compile Include="Assets\Scripts\Magic\ElectricShield.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy_movement.cs" />
-    <Compile Include="Assets\Unity_content\AOSFogWar\Demo\Scripts\csEyeController.cs" />
-    <Compile Include="Assets\Unity_content\AOSFogWar\Examples\csFogVisibilityAgent.cs" />
-    <Compile Include="Assets\Scripts\UI\Misc\HighlightOnClick.cs" />
+    <Compile Include="Assets\Scripts\LevelEditor\LevelSaver.cs" />
     <Compile Include="Assets\Scripts\Magic\PoisonSphere.cs" />
     <Compile Include="Assets\Scripts\Magic\FlameThrower.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
-    <Compile Include="Assets\Scripts\General\TD_Timer.cs" />
+    <Compile Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Scripts\SceneAnnotation.cs" />
     <Compile Include="Assets\Scripts\General\TileSelect.cs" />
     <Compile Include="Assets\Scripts\Magic\LightningChain.cs" />
     <Compile Include="Assets\Scripts\Projectiles\CommonProjectile.cs" />
     <Compile Include="Assets\Unity_content\AOSFogWar\Shadowcaster.cs" />
-    <Compile Include="Assets\Scripts\Buildings\TowerState.cs" />
-    <Compile Include="Assets\Scripts\Projectiles\Ice_Thrower_Projectile.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\Scripts\LevelEditor\StageSaver.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUIElement.cs" />
     <Compile Include="Assets\Scripts\Magic\LightningStun.cs" />
     <Compile Include="Assets\Scripts\UI\LoadingScreen\Loading_Percent.cs" />
-    <Compile Include="Assets\Scripts\UI\Magic\MagicDescription.cs" />
+    <Compile Include="Assets\Scripts\LevelEditor\Tile\TileSelector.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\Magic\LowerEnemies.cs" />
-    <Compile Include="Assets\Scripts\Magic\MagicExplosion.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\Camera\Camera_movement.cs" />
-    <Compile Include="Assets\Scripts\General\NavMeshManager.cs" />
-    <Compile Include="Assets\Scripts\Magic\SunStrike.cs" />
-    <Compile Include="Assets\Scripts\UI\Magic\RandomMagicCard.cs" />
-    <Compile Include="Assets\Scripts\UI\TowerMenu\TowerMenu.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Enemy_AI.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUIData.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\UI\Player\UICounter.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Audio\CheckMusicVolume.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\MainMenu.cs" />
     <Compile Include="Assets\Unity_content\AOSFogWar\Examples\csRevealerSpawner.cs" />
     <Compile Include="Assets\Scripts\Projectiles\Explosion.cs" />
-    <Compile Include="Assets\Scripts\UI\TurnOfUiObject.cs" />
     <Compile Include="Assets\Scripts\UI\Magic\InputDisplay.cs" />
-    <Compile Include="Assets\Scripts\General\BuildSystem.cs" />
+    <Compile Include="Assets\Scripts\LevelEditor\Environment_selector.cs" />
     <Compile Include="Assets\Scripts\Magic\FreezeThrower.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\Scripts\Blood\PickUpBlood.cs" />
+    <Compile Include="Assets\Scripts\General\ModelColorChanger.cs" />
+    <Compile Include="Assets\Scripts\UI\Misc\TextBoxRefresh.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\Scripts\UI\Magic\MagicCard.cs" />
+    <Compile Include="Assets\Scripts\Magic\FlameWall.cs" />
+    <Compile Include="Assets\Unity_content\AOSFogWar\csFogWar.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+    <Compile Include="Assets\Scripts\Challenges\MagicBall.cs" />
+    <Compile Include="Assets\Vefects\Trails VFX URP\Scripts\Demo_FreeCam.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Misc\ExtraLinks.cs" />
+    <Compile Include="Assets\Scripts\UI\LoadingScreen\Loading_Screen.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Enemy_stats.cs" />
+    <Compile Include="Assets\Scripts\Generate\Monster_Generate.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\UI\Misc\DamageNumberUI.cs" />
+    <Compile Include="Assets\Scripts\Magic\MagicBase.cs" />
+    <Compile Include="Assets\Scripts\Magic\ElectricShield.cs" />
+    <Compile Include="Assets\Unity_content\AOSFogWar\Demo\Scripts\csEyeController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Unity_content\AOSFogWar\Examples\csFogVisibilityAgent.cs" />
+    <Compile Include="Assets\Scripts\UI\Misc\HighlightOnClick.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\General\TD_Timer.cs" />
+    <Compile Include="Assets\Scripts\Buildings\TowerState.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Managers\UIMenuManager.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Misc\ResetDemo.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\Cool Visual Effects - Part 1\Scripts\EffectManager.cs" />
+    <Compile Include="Assets\Scripts\UI\Magic\MagicDescription.cs" />
+    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Managers\UISettingsManager.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Cool Visual Effects - Part 1\Scripts\ConstantRotation.cs" />
+    <Compile Include="Assets\Scripts\Magic\MagicExplosion.cs" />
+    <Compile Include="Assets\Scripts\General\NavMeshManager.cs" />
+    <Compile Include="Assets\Scripts\Magic\SunStrike.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Scripts\UI\Magic\RandomMagicCard.cs" />
+    <Compile Include="Assets\Scripts\UI\TowerMenu\TowerMenu.cs" />
+    <Compile Include="Assets\Vefects\Trails VFX URP\Scripts\Demo_TurningAround.cs" />
+    <Compile Include="Assets\Scripts\UI\TurnOfUiObject.cs" />
+    <Compile Include="Assets\Scripts\General\BuildSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Unity_content\Effects\FX_Kandol_Pack\FX_magic_plane_II\Shaders\built-in\Flipbook_Effects_built-in.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\Stamps.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\FadeDistances.txt" />
+    <None Include="Assets\Vefects\Zap VFX URP\Demo\Resources\Shaders\SH_Vefects_URP_VFX_Character_Showoff.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\Importing maps.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\ShaderGraphs\CustomFunctions\CustomLighting.hlsl" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\Fonts\Environment Maps\cc0.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\ShaderGraphs\CustomFunctions\PseudoSubsurface.hlsl" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\ThirdPartyLicenses\RobotoSlab Font License.txt" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\ProxyTerrain.txt" />
+    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+    <None Include="Assets\Unity_content\Enemies\MonsterMutant 7\Stand\Standard_Two_Sided .shader" />
+    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+    <None Include="Assets\Vefects\Zap VFX URP\VFX\Zap\Shaders\SH_Vefects_Zap_URP.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\ThirdPartyLicenses\Arvo Font License.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Unity_content\Effects\Trails VFX\VFX\Shaders\SH_Vefects_VFX_AdvTrail.shader" />
-    <None Include="Assets\Unity_content\Effects\Trails VFX\VFX\Shaders\SH_Vefects_VFX_Distortion.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Scripts\Resources\SceneAnnotation.uxml" />
+    <None Include="Assets\Vefects\Trails VFX URP\VFX\Shaders\SH_Vefects_VFX_AdvTrail.shader" />
+    <None Include="Assets\Vefects\Trails VFX URP\VFX\Shaders\SH_Vefects_VFX_Distortion.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\Layers.txt" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\Fonts\BebasNeue\OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\Vefects\Trails VFX URP\VFX\Shaders\SH_Vefects_VFX_Distor.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\Welcome.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Vefects\Free Fire VFX URP\_ Extra\Resources\Shaders\SH_Vefects_Extra_Billboard_01.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\Reflections.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Vefects\Free Fire VFX URP\Shaders\SH_Vefects_VFX_URP_Heat_Haze_01.shader" />
+    <None Include="Assets\Vefects\Free Fire VFX URP\Shaders\SH_Vefects_VFX_URP_Particles_Erosion_01.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Unity_content\AOSFogWar\README.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\Fonts\RobotoSlab\LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Scripts\Resources\SceneAnnotationUI.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\DenseDetails.txt" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\Fonts\Arvo\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Vefects\Free Fire VFX URP\Shaders\SH_Vefects_VFX_URP_Fire_Flames_01.shader" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\ThirdPartyLicenses\Environment Maps cc0.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\License.txt" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\Tiles.txt" />
+    <None Include="Assets\Vefects\Zap VFX URP\Demo\Scene\Shaders\SH_Vefects_Grid_01.shader" />
     <None Include="Assets\Unity_content\UI\SteampunkUI\ThirdPartyLicenses\BebasNeue Font License.txt" />
     <None Include="Assets\Unity_content\Towers\Moba Tower\Read Me.txt" />
+    <None Include="Assets\Vefects\Free Fire VFX URP\_ Extra\Resources\Shaders\SH_Vefects_Extra_Grid_01.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Unity_content\AOSFogWar\Shaders\FogPlane.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\SkyboxAssets.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\WaterShader.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Unity_content\Environment\TerrainDemoScene_URP\Notes\SpeedTrees.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Vefects\Zap VFX URP\VFX\Zap\Shaders\SH_Vefects_Extra_Particles_URP.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -506,6 +600,10 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Android.Types">
@@ -1004,6 +1102,10 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2023.1.20f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1044,12 +1146,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.Notifications.Unified.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.TerrainTools">
-      <HintPath>Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>Library\ScriptAssemblies\Unity.TerrainTools.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline">
@@ -1060,12 +1162,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.Notifications.Android.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.AdaptivePerformance.Simulator.Extension">
@@ -1100,20 +1202,36 @@
       <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Profiling.Core">
       <HintPath>Library\ScriptAssemblies\Unity.Profiling.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Animation.Rigging">
-      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
@@ -1136,6 +1254,14 @@
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1148,8 +1274,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Mathematics">
@@ -1170,6 +1308,10 @@
     </Reference>
     <Reference Include="Unity.AdaptivePerformance.UI.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.UI.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
@@ -1202,6 +1344,10 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Notifications.iOS">

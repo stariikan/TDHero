@@ -21,7 +21,13 @@ public class PoisonSphere : MagicBase
             enemy.EnemyPoison(poisonDamagePerSec);
         }
     }
+    protected override void CancelEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy))
+        {
 
+        }
+    }
     protected override void Update()
     {
         base.Update();

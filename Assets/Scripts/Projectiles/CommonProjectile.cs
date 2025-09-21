@@ -76,13 +76,14 @@ public class CommonProjectile : MonoBehaviour
             if (enemyStats != null)
             {
                 enemyStats.GetDamage(projectileDamage);
-                if (typeOfProjectile == 1) enemyStats.ReduceSpeed(freezingPower);
                 if (typeOfProjectile == 5)
                 {
                     GameObject bomb = Instantiate(aoeProjectile, transform.position, transform.rotation);
                     bomb.name = "bomb" + this.gameObject.name;
                     bomb.GetComponent<Explosion>().SetDamage(bombDamage);
                     bomb.GetComponent<Explosion>().SetRadius(bombRadius);
+                    bomb.GetComponent<Explosion>().SetFreezePower(freezingPower);
+                    if (freezingPower > 0)enemyStats.ReduceSpeed(freezingPower);
                     bomb.SetActive(true);
                 }
             }

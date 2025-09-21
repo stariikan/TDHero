@@ -7,14 +7,26 @@ public class TileSelect : MonoBehaviour
     public GameObject mainCamera;
     private GameObject selectedTower;
     public GameObject towerMenu;
+    private bool rightMouseActive;
+    private bool leftMouseActive;
     private void Start()
     {
         selectedTower = null;
+        rightMouseActive = false;
+        leftMouseActive = false;
     }
     void Update()
     {
+        MouseButtonState();
         if (Input.GetMouseButtonDown(1)) Close();
-        if (Input.GetMouseButtonDown(0)) Select();
+        if (Input.GetMouseButtonDown(0) && !rightMouseActive) Select();
+    }
+    private void MouseButtonState() 
+    {
+        if (Input.GetMouseButtonDown(1)) rightMouseActive = true;
+        if (Input.GetMouseButtonUp(1)) rightMouseActive = false;
+        if (Input.GetMouseButtonDown(0)) leftMouseActive = true;
+        if (Input.GetMouseButtonUp(0)) leftMouseActive = false;
     }
     private void Close()
     {

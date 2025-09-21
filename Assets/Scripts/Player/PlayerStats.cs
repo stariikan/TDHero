@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
@@ -7,10 +8,11 @@ public class PlayerStats : MonoBehaviour
     public float villageHp; //HP of the village
     public float coins; //money for upgrade of abilities and towers
     public float exp;
-    private int skillPoint;
+    public int skillPoint;
     public int playerLevel;
     public bool godmode;
-
+    public bool isAlive;
+    public bool playerDemon;
     public float takkenDamageFromEnemy;
     public bool gameover;
 
@@ -22,6 +24,8 @@ public class PlayerStats : MonoBehaviour
     public GameObject hpCounter;
     public GameObject expCounter;
     public GameObject mainCamera;
+    public GameObject takenDamageUi;    // Reference for DamageNumbers Icon
+    public GameObject LevelUpButton;    // Reference for DamageNumbers Icon
     public static PlayerStats Instance { get; set; } // To collect and send data from this script
 
     // Start is called before the first frame update
@@ -32,6 +36,7 @@ public class PlayerStats : MonoBehaviour
         Instance = this;
         gameover = false;
         godmode = false;
+        isAlive = true;
         maxhp = hp;
         coinsCounter.GetComponent<UICounter>().TakeCounterData(coins);
         villageHpCounter.GetComponent<UICounter>().TakeCounterData(villageHp);
@@ -41,15 +46,35 @@ public class PlayerStats : MonoBehaviour
 
     public void PlayerDamaged(float damageDeal)
     {
-        if (godmode == false) hp -= damageDeal;
+        float normalizedDamage = Mathf.Round(damageDeal * 10f) / 10f;
+
+        if (!godmode)
+            hp -= damageDeal;
+
         float ratio = hp / maxhp;
         hpCounter.GetComponent<UIBarLogic>().BarUpdate(ratio);
+
+        
+        GameObject damageUI = Instantiate(takenDamageUi, transform.position, Quaternion.identity);
+        damageUI.transform.SetParent(takenDamageUi.transform.parent, false);
+
+        var damageText = damageUI.GetComponent<TextMeshProUGUI>();
+        damageText.text = $"   {normalizedDamage}";
+        damageText.color = Color.red;
+
+        damageUI.SetActive(true);
     }
     public void PlayerHealed(float healDeal)
     {
-        hp += healDeal;
+        float normalizedHeal = Mathf.Round(healDeal * 10f) / 10f;
+        if (hp < maxhp) hp += healDeal;
         float ratio = hp / maxhp;
         hpCounter.GetComponent<UIBarLogic>().BarUpdate(ratio);
+        GameObject healUI = Instantiate(takenDamageUi, transform.position, Quaternion.identity);
+        healUI.transform.SetParent(takenDamageUi.transform.parent, false);
+        healUI.GetComponent<TextMeshProUGUI>().text = $"       {normalizedHeal}";
+        healUI.GetComponent<TextMeshProUGUI>().color = Color.green;
+        healUI.SetActive(true);
     }
     public void VillageDamaged(float damageDeal)
     {
@@ -66,10 +91,19 @@ public class PlayerStats : MonoBehaviour
         coins += amount;
         if (coinsCounter != null) coinsCounter.GetComponent<UICounter>().TakeCounterData(coins);
     }
+    public void CoinPlusDebug()
+    {
+        coins += 50;
+        if (coinsCounter != null) coinsCounter.GetComponent<UICounter>().TakeCounterData(coins);
+    }
     public void CoinMinus(float amount)
     {
         coins -= amount;
         if (coinsCounter != null) coinsCounter.GetComponent<UICounter>().TakeCounterData(coins);
+    }
+    public void SpentPoint()
+    {
+        skillPoint -= 1;
     }
     public void GetExp(float amount)
     {
@@ -86,19 +120,40 @@ public class PlayerStats : MonoBehaviour
             skillPoint += 1;
             needExpForNextLevel = playerLevel * 1000;
             ratio = exp / needExpForNextLevel;
+            this.gameObject.GetComponent<TDCombat>().ImproveAttack();
+            this.gameObject.GetComponent<TDCombat>().ImproveFreezePower();
             if (playerLevelNumberText != null) playerLevelNumberText.GetComponent<UICounter>().TakeCounterData(playerLevel);
             if (expNumberText != null) expNumberText.GetComponent<UICounter>().TakeCounterData(exp);
             if (expCounter != null) expCounter.GetComponent<UIBarLogic>().BarUpdate(ratio);
-            if (mainCamera != null) mainCamera.GetComponent<Pause>().LevelUpPause();
         } 
     }
-    private void OnTriggerStay(Collider other)
+    public void GetExpDebug()
     {
-        if (other.CompareTag("Enemy") || other.CompareTag("Flying_Enemy"))
+        exp += 100;
+        int needExpForNextLevel = playerLevel * 1000;
+        if (needExpForNextLevel < 1000) needExpForNextLevel = 1000;
+        float ratio = exp / needExpForNextLevel;
+        if (expCounter != null) expCounter.GetComponent<UIBarLogic>().BarUpdate(ratio);
+        if (expNumberText != null) expNumberText.GetComponent<UICounter>().TakeCounterData(exp);
+        if (exp >= needExpForNextLevel)
         {
-            PlayerDamaged(takkenDamageFromEnemy);
+            playerLevel += 1;
+            exp = 0;
+            skillPoint += 1;
+            needExpForNextLevel = playerLevel * 1000;
+            ratio = exp / needExpForNextLevel;
+            if (playerLevelNumberText != null) playerLevelNumberText.GetComponent<UICounter>().TakeCounterData(playerLevel);
+            if (expNumberText != null) expNumberText.GetComponent<UICounter>().TakeCounterData(exp);
+            if (expCounter != null) expCounter.GetComponent<UIBarLogic>().BarUpdate(ratio);
         }
-        else return;
+    }
+    public void GodModeOn()
+    {
+        godmode = true;
+    }
+    public void GodModeOff()
+    {
+        godmode = false;
     }
     void Update()
     {
@@ -108,7 +163,14 @@ public class PlayerStats : MonoBehaviour
         }
         if (hp <= 0 && gameover == false)
         {
+            isAlive = false;
+            this.gameObject.GetComponent<TDPlayerMovement>().isDead();
             mainCamera.GetComponent<Pause>().GameOver();
         }
+        if (skillPoint > 0)
+        {
+            if (LevelUpButton != null) LevelUpButton.SetActive(true);
+        }
+        else if (LevelUpButton != null) LevelUpButton.SetActive(false);
     }
 }

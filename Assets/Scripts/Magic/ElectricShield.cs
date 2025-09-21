@@ -6,6 +6,7 @@ public class ElectricShield : MagicBase
 {
     private List<Enemy_stats> enemiesInShield = new List<Enemy_stats>();
     public Transform player;
+    public float tickPerSec;
     public Vector3 offset;
 
     protected override void Start()
@@ -34,7 +35,7 @@ public class ElectricShield : MagicBase
     {
         while (timer < lifeTime)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1 / tickPerSec);
             foreach (var enemy in enemiesInShield)
             {
                 if (enemy != null)
@@ -52,7 +53,13 @@ public class ElectricShield : MagicBase
             enemiesInShield.Add(enemy);
         }
     }
-
+    protected override void CancelEffect(Collider other)
+    {
+        if (other.TryGetComponent(out Enemy_stats enemy) && enemiesInShield.Contains(enemy))
+        {
+            enemiesInShield.Remove(enemy);
+        }
+    }
     protected override void OnMagicEnd()
     {
         player.GetComponent<PlayerStats>().godmode = false;
